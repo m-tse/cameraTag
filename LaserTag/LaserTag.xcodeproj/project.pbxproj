@@ -12,18 +12,33 @@
 		070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B452D1838104500ED29B5 /* UIKit.framework */; };
 		070B45341838104500ED29B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 070B45321838104500ED29B5 /* InfoPlist.strings */; };
 		070B45361838104500ED29B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45351838104500ED29B5 /* main.m */; };
-		070B453A1838104500ED29B5 /* LTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45391838104500ED29B5 /* LTAppDelegate.m */; };
+		070B453A1838104500ED29B5 /* LTAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B45391838104500ED29B5 /* LTAppDelegate.mm */; };
 		070B453D1838104500ED29B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070B453B1838104500ED29B5 /* Main.storyboard */; };
-		070B45401838104500ED29B5 /* LTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B453F1838104500ED29B5 /* LTViewController.m */; };
+		070B45401838104500ED29B5 /* LTViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B453F1838104500ED29B5 /* LTViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		070B45421838104500ED29B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070B45411838104500ED29B5 /* Images.xcassets */; };
 		070B45491838104500ED29B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45481838104500ED29B5 /* XCTest.framework */; };
 		070B454A1838104500ED29B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45291838104500ED29B5 /* Foundation.framework */; };
 		070B454B1838104500ED29B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B452D1838104500ED29B5 /* UIKit.framework */; };
 		070B45531838104500ED29B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 070B45511838104500ED29B5 /* InfoPlist.strings */; };
 		070B45551838104500ED29B5 /* LaserTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45541838104500ED29B5 /* LaserTagTests.m */; };
-		070B4560183810A900ED29B5 /* LaserParticleSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B455F183810A900ED29B5 /* LaserParticleSystemView.m */; };
+		070B4560183810A900ED29B5 /* LaserParticleSystemView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */; };
 		070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B4561183810F400ED29B5 /* QuartzCore.framework */; };
 		070B4564183811C700ED29B5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 070B4563183811C700ED29B5 /* particle.png */; };
+		07F1124318381F4F00CF86CD /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124218381F4F00CF86CD /* metaioSDK.framework */; };
+		07F1124518381FC700CF86CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124418381FC700CF86CD /* libz.dylib */; };
+		07F1124718381FCD00CF86CD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124618381FCD00CF86CD /* libxml2.dylib */; };
+		07F1124918381FD300CF86CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124818381FD300CF86CD /* CFNetwork.framework */; };
+		07F1124B18381FD900CF86CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124A18381FD900CF86CD /* AudioToolbox.framework */; };
+		07F1124D18381FDE00CF86CD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124C18381FDE00CF86CD /* OpenGLES.framework */; };
+		07F1124F18381FE300CF86CD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124E18381FE300CF86CD /* AVFoundation.framework */; };
+		07F1125118381FE800CF86CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125018381FE800CF86CD /* Security.framework */; };
+		07F1125318381FEF00CF86CD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125218381FEF00CF86CD /* CoreMedia.framework */; };
+		07F1125518381FF400CF86CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125418381FF400CF86CD /* CoreLocation.framework */; };
+		07F1125718381FFA00CF86CD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125618381FFA00CF86CD /* CoreMotion.framework */; };
+		07F1125918381FFF00CF86CD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125818381FFF00CF86CD /* CoreVideo.framework */; };
+		07F1125E1838203500CF86CD /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125B1838203500CF86CD /* EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07F112611838220B00CF86CD /* TrackingData_Marker.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +61,10 @@
 		070B45351838104500ED29B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		070B45371838104500ED29B5 /* LaserTag-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaserTag-Prefix.pch"; sourceTree = "<group>"; };
 		070B45381838104500ED29B5 /* LTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
-		070B45391838104500ED29B5 /* LTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
+		070B45391838104500ED29B5 /* LTAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LTAppDelegate.mm; sourceTree = "<group>"; };
 		070B453C1838104500ED29B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		070B453E1838104500ED29B5 /* LTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTViewController.h; sourceTree = "<group>"; };
-		070B453F1838104500ED29B5 /* LTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTViewController.m; sourceTree = "<group>"; };
+		070B453F1838104500ED29B5 /* LTViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LTViewController.mm; sourceTree = "<group>"; };
 		070B45411838104500ED29B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		070B45471838104500ED29B5 /* LaserTagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaserTagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		070B45481838104500ED29B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,9 +72,26 @@
 		070B45521838104500ED29B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		070B45541838104500ED29B5 /* LaserTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaserTagTests.m; sourceTree = "<group>"; };
 		070B455E183810A900ED29B5 /* LaserParticleSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaserParticleSystemView.h; sourceTree = "<group>"; };
-		070B455F183810A900ED29B5 /* LaserParticleSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaserParticleSystemView.m; sourceTree = "<group>"; };
+		070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LaserParticleSystemView.mm; sourceTree = "<group>"; };
 		070B4561183810F400ED29B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		070B4563183811C700ED29B5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+		07F1124218381F4F00CF86CD /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = metaioSDK.framework; sourceTree = "<group>"; };
+		07F1124418381FC700CF86CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		07F1124618381FCD00CF86CD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		07F1124818381FD300CF86CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		07F1124A18381FD900CF86CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		07F1124C18381FDE00CF86CD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		07F1124E18381FE300CF86CD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07F1125018381FE800CF86CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		07F1125218381FEF00CF86CD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		07F1125418381FF400CF86CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		07F1125618381FFA00CF86CD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		07F1125818381FFF00CF86CD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		07F1125A1838203500CF86CD /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		07F1125B1838203500CF86CD /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		07F1125C1838203500CF86CD /* MetaioSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaioSDKViewController.h; sourceTree = "<group>"; };
+		07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetaioSDKViewController.mm; sourceTree = "<group>"; };
+		07F112611838220B00CF86CD /* TrackingData_Marker.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrackingData_Marker.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +99,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F1125918381FFF00CF86CD /* CoreVideo.framework in Frameworks */,
+				07F1125718381FFA00CF86CD /* CoreMotion.framework in Frameworks */,
+				07F1125518381FF400CF86CD /* CoreLocation.framework in Frameworks */,
+				07F1125318381FEF00CF86CD /* CoreMedia.framework in Frameworks */,
+				07F1125118381FE800CF86CD /* Security.framework in Frameworks */,
+				07F1124F18381FE300CF86CD /* AVFoundation.framework in Frameworks */,
+				07F1124D18381FDE00CF86CD /* OpenGLES.framework in Frameworks */,
+				07F1124B18381FD900CF86CD /* AudioToolbox.framework in Frameworks */,
+				07F1124918381FD300CF86CD /* CFNetwork.framework in Frameworks */,
+				07F1124718381FCD00CF86CD /* libxml2.dylib in Frameworks */,
+				07F1124518381FC700CF86CD /* libz.dylib in Frameworks */,
 				070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */,
 				070B452C1838104500ED29B5 /* CoreGraphics.framework in Frameworks */,
 				070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */,
+				07F1124318381F4F00CF86CD /* metaioSDK.framework in Frameworks */,
 				070B452A1838104500ED29B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +134,7 @@
 		070B451D1838104500ED29B5 = {
 			isa = PBXGroup;
 			children = (
+				07F11260183821F900CF86CD /* ARResources */,
 				070B452F1838104500ED29B5 /* LaserTag */,
 				070B454E1838104500ED29B5 /* LaserTagTests */,
 				070B45281838104500ED29B5 /* Frameworks */,
@@ -109,6 +154,18 @@
 		070B45281838104500ED29B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07F1125818381FFF00CF86CD /* CoreVideo.framework */,
+				07F1125618381FFA00CF86CD /* CoreMotion.framework */,
+				07F1125418381FF400CF86CD /* CoreLocation.framework */,
+				07F1125218381FEF00CF86CD /* CoreMedia.framework */,
+				07F1125018381FE800CF86CD /* Security.framework */,
+				07F1124E18381FE300CF86CD /* AVFoundation.framework */,
+				07F1124C18381FDE00CF86CD /* OpenGLES.framework */,
+				07F1124A18381FD900CF86CD /* AudioToolbox.framework */,
+				07F1124818381FD300CF86CD /* CFNetwork.framework */,
+				07F1124618381FCD00CF86CD /* libxml2.dylib */,
+				07F1124418381FC700CF86CD /* libz.dylib */,
+				07F1124218381F4F00CF86CD /* metaioSDK.framework */,
 				070B4561183810F400ED29B5 /* QuartzCore.framework */,
 				070B45291838104500ED29B5 /* Foundation.framework */,
 				070B452B1838104500ED29B5 /* CoreGraphics.framework */,
@@ -121,16 +178,20 @@
 		070B452F1838104500ED29B5 /* LaserTag */ = {
 			isa = PBXGroup;
 			children = (
+				07F1125A1838203500CF86CD /* EAGLView.h */,
+				07F1125B1838203500CF86CD /* EAGLView.mm */,
+				07F1125C1838203500CF86CD /* MetaioSDKViewController.h */,
+				07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */,
 				070B4563183811C700ED29B5 /* particle.png */,
 				070B45381838104500ED29B5 /* LTAppDelegate.h */,
-				070B45391838104500ED29B5 /* LTAppDelegate.m */,
+				070B45391838104500ED29B5 /* LTAppDelegate.mm */,
 				070B453B1838104500ED29B5 /* Main.storyboard */,
 				070B453E1838104500ED29B5 /* LTViewController.h */,
-				070B453F1838104500ED29B5 /* LTViewController.m */,
+				070B453F1838104500ED29B5 /* LTViewController.mm */,
 				070B45411838104500ED29B5 /* Images.xcassets */,
 				070B45301838104500ED29B5 /* Supporting Files */,
 				070B455E183810A900ED29B5 /* LaserParticleSystemView.h */,
-				070B455F183810A900ED29B5 /* LaserParticleSystemView.m */,
+				070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */,
 			);
 			path = LaserTag;
 			sourceTree = "<group>";
@@ -162,6 +223,14 @@
 				070B45511838104500ED29B5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07F11260183821F900CF86CD /* ARResources */ = {
+			isa = PBXGroup;
+			children = (
+				07F112611838220B00CF86CD /* TrackingData_Marker.xml */,
+			);
+			name = ARResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +312,7 @@
 			files = (
 				070B45421838104500ED29B5 /* Images.xcassets in Resources */,
 				070B45341838104500ED29B5 /* InfoPlist.strings in Resources */,
+				07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */,
 				070B453D1838104500ED29B5 /* Main.storyboard in Resources */,
 				070B4564183811C700ED29B5 /* particle.png in Resources */,
 			);
@@ -263,10 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070B453A1838104500ED29B5 /* LTAppDelegate.m in Sources */,
+				070B453A1838104500ED29B5 /* LTAppDelegate.mm in Sources */,
 				070B45361838104500ED29B5 /* main.m in Sources */,
-				070B45401838104500ED29B5 /* LTViewController.m in Sources */,
-				070B4560183810A900ED29B5 /* LaserParticleSystemView.m in Sources */,
+				07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */,
+				07F1125E1838203500CF86CD /* EAGLView.mm in Sources */,
+				070B45401838104500ED29B5 /* LTViewController.mm in Sources */,
+				070B4560183810A900ED29B5 /* LaserParticleSystemView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +465,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ark5/projects/cameraTag/LaserTag,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
 				INFOPLIST_FILE = "LaserTag/LaserTag-Info.plist";
@@ -406,6 +484,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ark5/projects/cameraTag/LaserTag,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
 				INFOPLIST_FILE = "LaserTag/LaserTag-Info.plist";
@@ -475,6 +559,7 @@
 				070B455A1838104500ED29B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		070B455B1838104500ED29B5 /* Build configuration list for PBXNativeTarget "LaserTagTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +568,7 @@
 				070B455D1838104500ED29B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

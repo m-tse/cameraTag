@@ -10,4 +10,6 @@
 
 @interface LaserParticleSystemView : UIView
 
+- (void)setBirthrate:(float)birthrate;
+
 @end

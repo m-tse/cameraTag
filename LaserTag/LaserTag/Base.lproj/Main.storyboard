@@ -12,11 +12,15 @@
                         <viewControllerLayoutGuide type="top" id="BEf-45-3rv"/>
                         <viewControllerLayoutGuide type="bottom" id="0rQ-Ov-tj1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="LaserParticleSystemView">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" userLabel="GLView" customClass="EAGLView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.90419072690217395" green="0.90419072690217395" blue="0.90419072690217395" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" label=""/>
                     </view>
+                    <connections>
+                        <outlet property="glView" destination="kh9-bI-dsS" id="AKf-Ni-exa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
