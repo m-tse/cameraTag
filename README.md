@@ -10,7 +10,7 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 - Hosting: Amazon EC2
 
 ## Node.js REST api:
-- round/create(numUsers, roundName) -> Check roundName is unique
+- round/create) -> Check roundName is unique
 - shoot(roundID, ownName, targetMarkerID)
 - rounds() -> rounds[] { roundName: String, numMaxContestants: int, numCurrentContestants: int, contestantNames: string[], timeStart: date}
 - enterRound(ownName, roundName) -> Check that ownNAme is unique
@@ -25,6 +25,7 @@ Round:{
   roundName: String,
   duration: int,
   timeStart: int,
+  maxUsers: int,
   users [
     {userName: String}
   ]
