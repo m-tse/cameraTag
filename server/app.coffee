@@ -20,13 +20,17 @@ app.use(app.router)
 app.use(express.static(path.join(__dirname, 'public')))
 
 # development only
-if ('development' == app.get('env')) 
-  app.use(express.errorHandler())
+# if ('development' == app.get('env')) 
+  # app.use(express.errorHandler())
 
 
 app.get('/', routes.index)
 app.get('/rounds', routes.rounds.all)
-app.post('/createRound', routes.rounds.create)
+# app.get('/activeRounds', routes.activeRounds.all)
+app.get('/activeRounds/:roundName', routes.activeRounds.one)
+app.get('/activeRounds', routes.activeRounds.all)
+app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
+app.post('/rounds/register/:userName/:roundName', routes.rounds.register)
 
 http.createServer(app).listen(app.get('port'), ()->
   console.log('Express server listening on port ' + app.get('port'))
