@@ -10,9 +10,11 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 - Hosting: Amazon EC2
 
 ## Node.js REST api:
-- POST /round/create/:roundName/:users -> create a round with a name and number of users
+- POST /rounds/create/:roundName/:maxUsers/:duration -> create a round with a name and number of users
 - POST /shoot/:roundName/:ownName/:targetMarkerID -> shoot a target
-- GET /rounds -> returns JSON of all the current rounds
+- GET /rounds -> returns JSON of all the rounds
+- GET /activeRounds/:roundName -> returns active rounds with roundName
+- GET /activeRounds/ -> returns all active rounds
 - POST /rounds/register/:userName/:roundName
 
 ## Game Logic:
