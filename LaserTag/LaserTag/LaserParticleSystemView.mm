@@ -11,6 +11,7 @@
 
 @implementation LaserParticleSystemView {
     CAEmitterLayer *laserEmitter;
+    CAEmitterCell *laser;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -18,39 +19,41 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        laserEmitter = (CAEmitterLayer *)self.layer;
+        
+        //configure the emitter layer
+        laserEmitter.emitterPosition = CGPointMake(50, 50);
+        laserEmitter.emitterSize = CGSizeMake(10, 10);
+        laserEmitter.renderMode = kCAEmitterLayerAdditive;
+        
+        laser = [CAEmitterCell emitterCell];
+        laser.birthRate = 0;
+        laser.lifetime = 3.0;
+        laser.lifetimeRange = 0.5;
+        laser.color = [[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1] CGColor];
+        laser.contents = (id)[[UIImage imageNamed:@"particle.png"] CGImage];
+        [laser setName:@"laser"];
+        
+        //add the cell to the layer and we're done
+        laserEmitter.emitterCells = [NSArray arrayWithObject:laser];
+        
+        laser.velocity = 10;
+        laser.velocityRange = 20;
+        laser.emissionRange = M_PI_2;
+        
+        laser.scaleSpeed = 0.3;
+        laser.spin = 0.5;
     }
     return self;
 }
 
-- (void)awakeFromNib {
-    laserEmitter = (CAEmitterLayer *)self.layer;
-    
-    //configure the emitter layer
-    laserEmitter.emitterPosition = CGPointMake(50, 50);
-    laserEmitter.emitterSize = CGSizeMake(10, 10);
-    laserEmitter.renderMode = kCAEmitterLayerAdditive;
-    
-    CAEmitterCell* laser = [CAEmitterCell emitterCell];
-    laser.birthRate = 200;
-    laser.lifetime = 3.0;
-    laser.lifetimeRange = 0.5;
-    laser.color = [[UIColor colorWithRed:0.8 green:0.4 blue:0.2 alpha:0.1] CGColor];
-    laser.contents = (id)[[UIImage imageNamed:@"particle.png"] CGImage];
-    [laser setName:@"fire"];
-    
-    //add the cell to the layer and we're done
-    laserEmitter.emitterCells = [NSArray arrayWithObject:laser];
-    
-    laser.velocity = 10;
-    laser.velocityRange = 20;
-    laser.emissionRange = M_PI_2;
-    
-    laser.scaleSpeed = 0.3;
-    laser.spin = 0.5;
-}
-
 + (Class)layerClass {
     return [CAEmitterLayer class];
+}
+
+- (void)setBirthrate:(float)birthrate {
+    [laserEmitter setValue:[NSNumber numberWithInt:birthrate]
+               forKeyPath:@"emitterCells.laser.birthRate"];
 }
 
 /*

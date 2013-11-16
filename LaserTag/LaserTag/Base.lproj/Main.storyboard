@@ -19,7 +19,7 @@
                         <accessibility key="accessibilityConfiguration" label=""/>
                     </view>
                     <connections>
-                        <outlet property="glView" destination="kh9-bI-dsS" id="XVR-oj-4AS"/>
+                        <outlet property="glView" destination="kh9-bI-dsS" id="AKf-Ni-exa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

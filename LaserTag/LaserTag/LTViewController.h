@@ -10,6 +10,8 @@
 #import "MetaioSDKViewController.h"
 #import "EAGLView.h"
 
-@interface LTViewController : MetaioSDKViewController
+@interface LTViewController : MetaioSDKViewController {
+    NSString *trackingConfigFile;
+}
 
 @end

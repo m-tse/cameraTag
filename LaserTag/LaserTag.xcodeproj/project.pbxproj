@@ -14,7 +14,7 @@
 		070B45361838104500ED29B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45351838104500ED29B5 /* main.m */; };
 		070B453A1838104500ED29B5 /* LTAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B45391838104500ED29B5 /* LTAppDelegate.mm */; };
 		070B453D1838104500ED29B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070B453B1838104500ED29B5 /* Main.storyboard */; };
-		070B45401838104500ED29B5 /* LTViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B453F1838104500ED29B5 /* LTViewController.mm */; };
+		070B45401838104500ED29B5 /* LTViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B453F1838104500ED29B5 /* LTViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		070B45421838104500ED29B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070B45411838104500ED29B5 /* Images.xcassets */; };
 		070B45491838104500ED29B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45481838104500ED29B5 /* XCTest.framework */; };
 		070B454A1838104500ED29B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45291838104500ED29B5 /* Foundation.framework */; };
@@ -38,6 +38,7 @@
 		07F1125918381FFF00CF86CD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125818381FFF00CF86CD /* CoreVideo.framework */; };
 		07F1125E1838203500CF86CD /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125B1838203500CF86CD /* EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07F112611838220B00CF86CD /* TrackingData_Marker.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		07F1125B1838203500CF86CD /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
 		07F1125C1838203500CF86CD /* MetaioSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaioSDKViewController.h; sourceTree = "<group>"; };
 		07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetaioSDKViewController.mm; sourceTree = "<group>"; };
+		07F112611838220B00CF86CD /* TrackingData_Marker.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrackingData_Marker.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		070B451D1838104500ED29B5 = {
 			isa = PBXGroup;
 			children = (
+				07F11260183821F900CF86CD /* ARResources */,
 				070B452F1838104500ED29B5 /* LaserTag */,
 				070B454E1838104500ED29B5 /* LaserTagTests */,
 				070B45281838104500ED29B5 /* Frameworks */,
@@ -222,6 +225,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		07F11260183821F900CF86CD /* ARResources */ = {
+			isa = PBXGroup;
+			children = (
+				07F112611838220B00CF86CD /* TrackingData_Marker.xml */,
+			);
+			name = ARResources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +312,7 @@
 			files = (
 				070B45421838104500ED29B5 /* Images.xcassets in Resources */,
 				070B45341838104500ED29B5 /* InfoPlist.strings in Resources */,
+				07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */,
 				070B453D1838104500ED29B5 /* Main.storyboard in Resources */,
 				070B4564183811C700ED29B5 /* particle.png in Resources */,
 			);
