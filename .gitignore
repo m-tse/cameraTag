@@ -9,3 +9,6 @@
 
 # Ignore logs
 *.log
+
+# Ignore framework too big
+LaserTag/metaioSDK.framework/
