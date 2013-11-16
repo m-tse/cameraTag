@@ -25,6 +25,17 @@
 		070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B4561183810F400ED29B5 /* QuartzCore.framework */; };
 		070B4564183811C700ED29B5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 070B4563183811C700ED29B5 /* particle.png */; };
 		07F1124318381F4F00CF86CD /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124218381F4F00CF86CD /* metaioSDK.framework */; };
+		07F1124518381FC700CF86CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124418381FC700CF86CD /* libz.dylib */; };
+		07F1124718381FCD00CF86CD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124618381FCD00CF86CD /* libxml2.dylib */; };
+		07F1124918381FD300CF86CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124818381FD300CF86CD /* CFNetwork.framework */; };
+		07F1124B18381FD900CF86CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124A18381FD900CF86CD /* AudioToolbox.framework */; };
+		07F1124D18381FDE00CF86CD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124C18381FDE00CF86CD /* OpenGLES.framework */; };
+		07F1124F18381FE300CF86CD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124E18381FE300CF86CD /* AVFoundation.framework */; };
+		07F1125118381FE800CF86CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125018381FE800CF86CD /* Security.framework */; };
+		07F1125318381FEF00CF86CD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125218381FEF00CF86CD /* CoreMedia.framework */; };
+		07F1125518381FF400CF86CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125418381FF400CF86CD /* CoreLocation.framework */; };
+		07F1125718381FFA00CF86CD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125618381FFA00CF86CD /* CoreMotion.framework */; };
+		07F1125918381FFF00CF86CD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1125818381FFF00CF86CD /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +73,17 @@
 		070B4561183810F400ED29B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		070B4563183811C700ED29B5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 		07F1124218381F4F00CF86CD /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = metaioSDK.framework; sourceTree = "<group>"; };
+		07F1124418381FC700CF86CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		07F1124618381FCD00CF86CD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		07F1124818381FD300CF86CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		07F1124A18381FD900CF86CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		07F1124C18381FDE00CF86CD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		07F1124E18381FE300CF86CD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07F1125018381FE800CF86CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		07F1125218381FEF00CF86CD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		07F1125418381FF400CF86CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		07F1125618381FFA00CF86CD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		07F1125818381FFF00CF86CD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +91,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F1125918381FFF00CF86CD /* CoreVideo.framework in Frameworks */,
+				07F1125718381FFA00CF86CD /* CoreMotion.framework in Frameworks */,
+				07F1125518381FF400CF86CD /* CoreLocation.framework in Frameworks */,
+				07F1125318381FEF00CF86CD /* CoreMedia.framework in Frameworks */,
+				07F1125118381FE800CF86CD /* Security.framework in Frameworks */,
+				07F1124F18381FE300CF86CD /* AVFoundation.framework in Frameworks */,
+				07F1124D18381FDE00CF86CD /* OpenGLES.framework in Frameworks */,
+				07F1124B18381FD900CF86CD /* AudioToolbox.framework in Frameworks */,
+				07F1124918381FD300CF86CD /* CFNetwork.framework in Frameworks */,
+				07F1124718381FCD00CF86CD /* libxml2.dylib in Frameworks */,
+				07F1124518381FC700CF86CD /* libz.dylib in Frameworks */,
 				070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */,
 				070B452C1838104500ED29B5 /* CoreGraphics.framework in Frameworks */,
 				070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */,
@@ -112,6 +145,17 @@
 		070B45281838104500ED29B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07F1125818381FFF00CF86CD /* CoreVideo.framework */,
+				07F1125618381FFA00CF86CD /* CoreMotion.framework */,
+				07F1125418381FF400CF86CD /* CoreLocation.framework */,
+				07F1125218381FEF00CF86CD /* CoreMedia.framework */,
+				07F1125018381FE800CF86CD /* Security.framework */,
+				07F1124E18381FE300CF86CD /* AVFoundation.framework */,
+				07F1124C18381FDE00CF86CD /* OpenGLES.framework */,
+				07F1124A18381FD900CF86CD /* AudioToolbox.framework */,
+				07F1124818381FD300CF86CD /* CFNetwork.framework */,
+				07F1124618381FCD00CF86CD /* libxml2.dylib */,
+				07F1124418381FC700CF86CD /* libz.dylib */,
 				07F1124218381F4F00CF86CD /* metaioSDK.framework */,
 				070B4561183810F400ED29B5 /* QuartzCore.framework */,
 				070B45291838104500ED29B5 /* Foundation.framework */,
