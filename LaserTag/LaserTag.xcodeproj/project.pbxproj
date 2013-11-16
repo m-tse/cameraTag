@@ -21,6 +21,8 @@
 		070B454B1838104500ED29B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B452D1838104500ED29B5 /* UIKit.framework */; };
 		070B45531838104500ED29B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 070B45511838104500ED29B5 /* InfoPlist.strings */; };
 		070B45551838104500ED29B5 /* LaserTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45541838104500ED29B5 /* LaserTagTests.m */; };
+		070B4560183810A900ED29B5 /* LaserParticleSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B455F183810A900ED29B5 /* LaserParticleSystemView.m */; };
+		070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B4561183810F400ED29B5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		070B45501838104500ED29B5 /* LaserTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaserTagTests-Info.plist"; sourceTree = "<group>"; };
 		070B45521838104500ED29B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		070B45541838104500ED29B5 /* LaserTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaserTagTests.m; sourceTree = "<group>"; };
+		070B455E183810A900ED29B5 /* LaserParticleSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaserParticleSystemView.h; sourceTree = "<group>"; };
+		070B455F183810A900ED29B5 /* LaserParticleSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaserParticleSystemView.m; sourceTree = "<group>"; };
+		070B4561183810F400ED29B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */,
 				070B452C1838104500ED29B5 /* CoreGraphics.framework in Frameworks */,
 				070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */,
 				070B452A1838104500ED29B5 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		070B45281838104500ED29B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				070B4561183810F400ED29B5 /* QuartzCore.framework */,
 				070B45291838104500ED29B5 /* Foundation.framework */,
 				070B452B1838104500ED29B5 /* CoreGraphics.framework */,
 				070B452D1838104500ED29B5 /* UIKit.framework */,
@@ -119,6 +126,8 @@
 				070B453F1838104500ED29B5 /* LTViewController.m */,
 				070B45411838104500ED29B5 /* Images.xcassets */,
 				070B45301838104500ED29B5 /* Supporting Files */,
+				070B455E183810A900ED29B5 /* LaserParticleSystemView.h */,
+				070B455F183810A900ED29B5 /* LaserParticleSystemView.m */,
 			);
 			path = LaserTag;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 				070B453A1838104500ED29B5 /* LTAppDelegate.m in Sources */,
 				070B45361838104500ED29B5 /* main.m in Sources */,
 				070B45401838104500ED29B5 /* LTViewController.m in Sources */,
+				070B4560183810A900ED29B5 /* LaserParticleSystemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
