@@ -10,9 +10,9 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 - Hosting: Amazon EC2
 
 ## Node.js REST api:
-- createRound(numUsers, roundName) -> Check roundName is unique
+- round/create(numUsers, roundName) -> Check roundName is unique
 - shoot(roundID, ownName, targetMarkerID)
-- getRounds() -> rounds[] { roundName: String, numMaxContestants: int, numCurrentContestants: int, contestantNames: string[], timeStart: date}
+- rounds() -> rounds[] { roundName: String, numMaxContestants: int, numCurrentContestants: int, contestantNames: string[], timeStart: date}
 - enterRound(ownName, roundName) -> Check that ownNAme is unique
 
 ## Game Logic:
@@ -20,7 +20,15 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 2. Round will automatically start in 30 seconds
 
 ## Schema Database:
-- Round: { roundName, contestants[], timeLimit }
+```
+Round:{
+  roundName: String,
+  duration: int,
+  timeStart: int,
+  users [
+    {userName: String}
+  ]
+```
 - Users: { user, round, points, markerID }
 
 ## Future Features:
