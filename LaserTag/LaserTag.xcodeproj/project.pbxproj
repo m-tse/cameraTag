@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070B452A1838104500ED29B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45291838104500ED29B5 /* Foundation.framework */; };
+		070B452C1838104500ED29B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B452B1838104500ED29B5 /* CoreGraphics.framework */; };
+		070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B452D1838104500ED29B5 /* UIKit.framework */; };
+		070B45341838104500ED29B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 070B45321838104500ED29B5 /* InfoPlist.strings */; };
+		070B45361838104500ED29B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45351838104500ED29B5 /* main.m */; };
+		070B453A1838104500ED29B5 /* LTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45391838104500ED29B5 /* LTAppDelegate.m */; };
+		070B453D1838104500ED29B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070B453B1838104500ED29B5 /* Main.storyboard */; };
+		070B45401838104500ED29B5 /* LTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B453F1838104500ED29B5 /* LTViewController.m */; };
+		070B45421838104500ED29B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070B45411838104500ED29B5 /* Images.xcassets */; };
+		070B45491838104500ED29B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45481838104500ED29B5 /* XCTest.framework */; };
+		070B454A1838104500ED29B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B45291838104500ED29B5 /* Foundation.framework */; };
+		070B454B1838104500ED29B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B452D1838104500ED29B5 /* UIKit.framework */; };
+		070B45531838104500ED29B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 070B45511838104500ED29B5 /* InfoPlist.strings */; };
+		070B45551838104500ED29B5 /* LaserTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45541838104500ED29B5 /* LaserTagTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		070B454C1838104500ED29B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 070B451E1838104500ED29B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070B45251838104500ED29B5;
+			remoteInfo = LaserTag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070B45261838104500ED29B5 /* LaserTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaserTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		070B45291838104500ED29B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		070B452B1838104500ED29B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		070B452D1838104500ED29B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		070B45311838104500ED29B5 /* LaserTag-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaserTag-Info.plist"; sourceTree = "<group>"; };
+		070B45331838104500ED29B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		070B45351838104500ED29B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		070B45371838104500ED29B5 /* LaserTag-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaserTag-Prefix.pch"; sourceTree = "<group>"; };
+		070B45381838104500ED29B5 /* LTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
+		070B45391838104500ED29B5 /* LTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
+		070B453C1838104500ED29B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		070B453E1838104500ED29B5 /* LTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTViewController.h; sourceTree = "<group>"; };
+		070B453F1838104500ED29B5 /* LTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTViewController.m; sourceTree = "<group>"; };
+		070B45411838104500ED29B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		070B45471838104500ED29B5 /* LaserTagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaserTagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		070B45481838104500ED29B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		070B45501838104500ED29B5 /* LaserTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaserTagTests-Info.plist"; sourceTree = "<group>"; };
+		070B45521838104500ED29B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		070B45541838104500ED29B5 /* LaserTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaserTagTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		070B45231838104500ED29B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070B452C1838104500ED29B5 /* CoreGraphics.framework in Frameworks */,
+				070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */,
+				070B452A1838104500ED29B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070B45441838104500ED29B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070B45491838104500ED29B5 /* XCTest.framework in Frameworks */,
+				070B454B1838104500ED29B5 /* UIKit.framework in Frameworks */,
+				070B454A1838104500ED29B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070B451D1838104500ED29B5 = {
+			isa = PBXGroup;
+			children = (
+				070B452F1838104500ED29B5 /* LaserTag */,
+				070B454E1838104500ED29B5 /* LaserTagTests */,
+				070B45281838104500ED29B5 /* Frameworks */,
+				070B45271838104500ED29B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		070B45271838104500ED29B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				070B45261838104500ED29B5 /* LaserTag.app */,
+				070B45471838104500ED29B5 /* LaserTagTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		070B45281838104500ED29B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070B45291838104500ED29B5 /* Foundation.framework */,
+				070B452B1838104500ED29B5 /* CoreGraphics.framework */,
+				070B452D1838104500ED29B5 /* UIKit.framework */,
+				070B45481838104500ED29B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		070B452F1838104500ED29B5 /* LaserTag */ = {
+			isa = PBXGroup;
+			children = (
+				070B45381838104500ED29B5 /* LTAppDelegate.h */,
+				070B45391838104500ED29B5 /* LTAppDelegate.m */,
+				070B453B1838104500ED29B5 /* Main.storyboard */,
+				070B453E1838104500ED29B5 /* LTViewController.h */,
+				070B453F1838104500ED29B5 /* LTViewController.m */,
+				070B45411838104500ED29B5 /* Images.xcassets */,
+				070B45301838104500ED29B5 /* Supporting Files */,
+			);
+			path = LaserTag;
+			sourceTree = "<group>";
+		};
+		070B45301838104500ED29B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				070B45311838104500ED29B5 /* LaserTag-Info.plist */,
+				070B45321838104500ED29B5 /* InfoPlist.strings */,
+				070B45351838104500ED29B5 /* main.m */,
+				070B45371838104500ED29B5 /* LaserTag-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		070B454E1838104500ED29B5 /* LaserTagTests */ = {
+			isa = PBXGroup;
+			children = (
+				070B45541838104500ED29B5 /* LaserTagTests.m */,
+				070B454F1838104500ED29B5 /* Supporting Files */,
+			);
+			path = LaserTagTests;
+			sourceTree = "<group>";
+		};
+		070B454F1838104500ED29B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				070B45501838104500ED29B5 /* LaserTagTests-Info.plist */,
+				070B45511838104500ED29B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		070B45251838104500ED29B5 /* LaserTag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070B45581838104500ED29B5 /* Build configuration list for PBXNativeTarget "LaserTag" */;
+			buildPhases = (
+				070B45221838104500ED29B5 /* Sources */,
+				070B45231838104500ED29B5 /* Frameworks */,
+				070B45241838104500ED29B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaserTag;
+			productName = LaserTag;
+			productReference = 070B45261838104500ED29B5 /* LaserTag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		070B45461838104500ED29B5 /* LaserTagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070B455B1838104500ED29B5 /* Build configuration list for PBXNativeTarget "LaserTagTests" */;
+			buildPhases = (
+				070B45431838104500ED29B5 /* Sources */,
+				070B45441838104500ED29B5 /* Frameworks */,
+				070B45451838104500ED29B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				070B454D1838104500ED29B5 /* PBXTargetDependency */,
+			);
+			name = LaserTagTests;
+			productName = LaserTagTests;
+			productReference = 070B45471838104500ED29B5 /* LaserTagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		070B451E1838104500ED29B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Andrew Shim";
+				TargetAttributes = {
+					070B45461838104500ED29B5 = {
+						TestTargetID = 070B45251838104500ED29B5;
+					};
+				};
+			};
+			buildConfigurationList = 070B45211838104500ED29B5 /* Build configuration list for PBXProject "LaserTag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 070B451D1838104500ED29B5;
+			productRefGroup = 070B45271838104500ED29B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				070B45251838104500ED29B5 /* LaserTag */,
+				070B45461838104500ED29B5 /* LaserTagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		070B45241838104500ED29B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070B45421838104500ED29B5 /* Images.xcassets in Resources */,
+				070B45341838104500ED29B5 /* InfoPlist.strings in Resources */,
+				070B453D1838104500ED29B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070B45451838104500ED29B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070B45531838104500ED29B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		070B45221838104500ED29B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070B453A1838104500ED29B5 /* LTAppDelegate.m in Sources */,
+				070B45361838104500ED29B5 /* main.m in Sources */,
+				070B45401838104500ED29B5 /* LTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070B45431838104500ED29B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070B45551838104500ED29B5 /* LaserTagTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		070B454D1838104500ED29B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 070B45251838104500ED29B5 /* LaserTag */;
+			targetProxy = 070B454C1838104500ED29B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		070B45321838104500ED29B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				070B45331838104500ED29B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		070B453B1838104500ED29B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				070B453C1838104500ED29B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		070B45511838104500ED29B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				070B45521838104500ED29B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		070B45561838104500ED29B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		070B45571838104500ED29B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		070B45591838104500ED29B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
+				INFOPLIST_FILE = "LaserTag/LaserTag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		070B455A1838104500ED29B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
+				INFOPLIST_FILE = "LaserTag/LaserTag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		070B455C1838104500ED29B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LaserTag.app/LaserTag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LaserTagTests/LaserTagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		070B455D1838104500ED29B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LaserTag.app/LaserTag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
+				INFOPLIST_FILE = "LaserTagTests/LaserTagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		070B45211838104500ED29B5 /* Build configuration list for PBXProject "LaserTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070B45561838104500ED29B5 /* Debug */,
+				070B45571838104500ED29B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		070B45581838104500ED29B5 /* Build configuration list for PBXNativeTarget "LaserTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070B45591838104500ED29B5 /* Debug */,
+				070B455A1838104500ED29B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		070B455B1838104500ED29B5 /* Build configuration list for PBXNativeTarget "LaserTagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070B455C1838104500ED29B5 /* Debug */,
+				070B455D1838104500ED29B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 070B451E1838104500ED29B5 /* Project object */;
+}
