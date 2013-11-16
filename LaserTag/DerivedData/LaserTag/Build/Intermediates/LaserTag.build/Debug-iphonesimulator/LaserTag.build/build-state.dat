@@ -30,30 +30,195 @@ c000000005269523F00000000000001A0
 t1382634047
 s416
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000005269524000000000005838D0
+t1382634048
+s5781712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000005269524000000000005B82A0
+t1382634048
+s5997216
+
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 c00000000526952400000000000445870
 t1382634048
 s4479088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+c00000000526952400000000000355050
+t1382634048
+s3493968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c000000005269524000000000002F6810
+t1382634048
+s3106832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c0000000052695240000000000004B000
+t1382634048
+s307200
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
 c0000000052695240000000000088C680
 t1382634048
 s8963712
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000526952410000000000037620
+t1382634049
+s226848
+
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
 c000000005269524100000000004848F0
 t1382634049
 s4737264
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
+c000000005269524100000000001290B0
+t1382634049
+s1216688
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
 c00000000526952430000000001DB9910
 t1382634051
 s31168784
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c000000005269524400000000002B9F20
+t1382634052
+s2858784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+c00000000523A8EB30000000000002338
+t1379569331
+s9016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+c0000000052695245000000000008D300
+t1382634053
+s578304
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+c00000000523A8EB3000000000038ACB0
+t1379569331
+s3714224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+c00000000526B5BF700000000000141F0
+t1382767607
+s82416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+c00000000523A8EB30000000000013500
+t1379569331
+s79104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+c00000000523A8EB30000000000033BA0
+t1379569331
+s211872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+c00000000523A8EB3000000000001CFB0
+t1379569331
+s118704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+c00000000523A8EB3000000000001B2B0
+t1379569331
+s111280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+c000000005269524500000000000632B0
+t1382634053
+s406192
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+c00000000523A8EB30000000000008880
+t1379569331
+s34944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+c00000000526952450000000000015080
+t1382634053
+s86144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+c00000000523A8EB300000000000230E0
+t1379569331
+s143584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+c00000000523A8EB3000000000000E380
+t1379569331
+s58240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+c00000000523A8EB30000000000087200
+t1379569331
+s553472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+c00000000523A8EB300000000000171A0
+t1379569331
+s94624
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+c00000000523A8EB30000000000039C10
+t1379569331
+s236560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+c00000000523A8EB3000000000000B0B0
+t1379569331
+s45232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+c00000000523A8EB30000000000167FE0
+t1379569331
+s1474528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+c000000005269524500000000000106A0
+t1382634053
+s67232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+c0000000052695245000000000001CE40
+t1382634053
+s118336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+c00000000523A8EB30000000000071040
+t1379569331
+s462912
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+c00000000526952450000000000067A10
+t1382634053
+s424464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+c00000000523A8EB3000000000001BAD0
+t1379569331
+s113360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+c00000000526952450000000000088BA0
+t1382634053
+s560032
+
 N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
 c00000000523A8EB80000000000000AC9
 t1379569336
 s2761
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+c00000000526952510000000000005004
+t1382634065
+s20484
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o
 t1384634822
@@ -89,15 +254,15 @@ t1384634822
 s108220
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app
-t1384634831
+t1384634906
 s306
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM
-t2
-s0
+t1384634831
+s102
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Base.lproj/Main.storyboardc
-t1384634831
+t1384634905
 s170
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Info.plist
@@ -117,9 +282,9 @@ t1384634830
 s42
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard
-c000000005287D8C50000000000000632
-t1384634565
-s1586
+c000000005287DA190000000000000755
+t1384634905
+s1877
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/Images.xcassets
 c000000005287D8C50000000000000088
@@ -176,6 +341,136 @@ c000000005287D8C50000000000000157
 t1384634565
 s343
 
+N/usr/lib/libSystem.B.dylib
+c00000000526B5BEA000000000000E6D0
+t1382767594
+s59088
+
+N/usr/lib/system/libcache.dylib
+c00000000526B5BF70000000000012A00
+t1382767607
+s76288
+
+N/usr/lib/system/libcommonCrypto.dylib
+c00000000526B5BDE000000000002E320
+t1382767582
+s189216
+
+N/usr/lib/system/libcompiler_rt.dylib
+c00000000526B5BEA0000000000021860
+t1382767594
+s137312
+
+N/usr/lib/system/libcopyfile.dylib
+c00000000526B5BF6000000000001B620
+t1382767606
+s112160
+
+N/usr/lib/system/libcorecrypto.dylib
+c00000000526B5BF600000000000BD920
+t1382767606
+s776480
+
+N/usr/lib/system/libkeymgr.dylib
+c00000000526B5BF7000000000000A120
+t1382767607
+s41248
+
+N/usr/lib/system/liblaunch.dylib
+c00000000526B5BF7000000000001D550
+t1382767607
+s120144
+
+N/usr/lib/system/libmacho.dylib
+c00000000526B5BF60000000000014EE0
+t1382767606
+s85728
+
+N/usr/lib/system/libquarantine.dylib
+c00000000526B5BF80000000000010380
+t1382767608
+s66432
+
+N/usr/lib/system/libremovefile.dylib
+c00000000526B5BF8000000000000C4C0
+t1382767608
+s50368
+
+N/usr/lib/system/libsystem_asl.dylib
+c00000000526B5BF700000000000357A0
+t1382767607
+s219040
+
+N/usr/lib/system/libsystem_blocks.dylib
+c00000000526B5BF7000000000000C070
+t1382767607
+s49264
+
+N/usr/lib/system/libsystem_c.dylib
+c00000000526B5BEA0000000000168C00
+t1382767594
+s1477632
+
+N/usr/lib/system/libsystem_configuration.dylib
+c00000000526B5BF60000000000010630
+t1382767606
+s67120
+
+N/usr/lib/system/libsystem_dnssd.dylib
+c00000000526B5BF7000000000001DF10
+t1382767607
+s122640
+
+N/usr/lib/system/libsystem_info.dylib
+c00000000526B5BEA0000000000075B00
+t1382767594
+s482048
+
+N/usr/lib/system/libsystem_kernel.dylib
+c00000000526B5BEA000000000007CC70
+t1382767594
+s511088
+
+N/usr/lib/system/libsystem_m.dylib
+c00000000526B5BEA00000000000766C0
+t1382767594
+s485056
+
+N/usr/lib/system/libsystem_malloc.dylib
+c00000000526B5BF70000000000044DC0
+t1382767607
+s282048
+
+N/usr/lib/system/libsystem_notify.dylib
+c00000000526B5BEA0000000000021FA0
+t1382767594
+s139168
+
+N/usr/lib/system/libsystem_platform.dylib
+c00000000526B5BF7000000000002D900
+t1382767607
+s186624
+
+N/usr/lib/system/libsystem_pthread.dylib
+c00000000526B5BF7000000000001E570
+t1382767607
+s124272
+
+N/usr/lib/system/libsystem_sandbox.dylib
+c00000000526B5BF0000000000000CC70
+t1382767600
+s52336
+
+N/usr/lib/system/libunc.dylib
+c00000000526B5BF2000000000000C3F0
+t1382767602
+s50160
+
+N/usr/lib/system/libunwind.dylib
+c00000000526B5BF700000000000199F0
+t1382767607
+s104944
+
 CBuild AST from /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.m
 r0
 
@@ -190,7 +485,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa94a8b4e1138b841^5ea18b4e1138b841^---0#1#1#--18"Check dependencies36"26157A83-778C-477E-BC7C-6D14B90ED706-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb1882db71138b841^adf92db71138b841^---0#1#1#--18"Check dependencies36"2B71A818-E92E-4933-B681-9B8A3B41758F-
 
 CCompileAssetCatalog /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Images.xcassets
 s406327630.695307
@@ -272,13 +567,13 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile
 b82F7C616-218E-4E57-9D89-33E8C61A93A9
 
 CCompileStoryboard /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard
-s406327630.695036
-e406327631.977042
+s406327705.689136
+e406327706.003946
 r1
 xCompileStoryboard
 x/Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"CompileStoryboard LaserTag/Base.lproj/Main.storyboard53"CompileStoryboard LaserTag/Base.lproj/Main.storyboardadf9b14e1138b841^2520fa4f1138b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard0000000000000000^866"CompileStoryboard LaserTag/Base.lproj/Main.storyboard    cd /Users/ark5/projects/cameraTag/LaserTag    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Base.lproj/Main.storyboardc /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard36"B047A802-03CA-4DAD-8740-746ADDA9FF14-
-b76F07BA5-F15A-4E60-95A8-2740AEC6B175
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"CompileStoryboard LaserTag/Base.lproj/Main.storyboard53"CompileStoryboard LaserTag/Base.lproj/Main.storyboarda778b0991138b841^8e05019a1138b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard0000000000000000^866"CompileStoryboard LaserTag/Base.lproj/Main.storyboard    cd /Users/ark5/projects/cameraTag/LaserTag    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Base.lproj/Main.storyboardc /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard36"6CDAC563-58C9-4806-B123-CE93DD0743B8-
+b6A457303-D127-400F-8AB0-FC7FB1A40A45
 
 CCopyStringsFile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/en.lproj/InfoPlist.strings LaserTag/en.lproj/InfoPlist.strings
 s406327630.694906
@@ -408,5 +703,11 @@ CProcessPCH /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Index/P
 r0
 
 CTouch /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app
-r0
+s406327706.004731
+e406327706.008372
+r1
+xTouch
+x/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app76"Touch DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app5f42019a1138b841^8525029a1138b841^---0#0#1#--452"Touch DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app36"8779A595-E74C-465B-9060-3B28A3A6D307-
+b6A457303-D127-400F-8AB0-FC7FB1A40A45
 

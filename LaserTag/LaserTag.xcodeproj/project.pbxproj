@@ -23,6 +23,7 @@
 		070B45551838104500ED29B5 /* LaserTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B45541838104500ED29B5 /* LaserTagTests.m */; };
 		070B4560183810A900ED29B5 /* LaserParticleSystemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 070B455F183810A900ED29B5 /* LaserParticleSystemView.m */; };
 		070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B4561183810F400ED29B5 /* QuartzCore.framework */; };
+		070B4564183811C700ED29B5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 070B4563183811C700ED29B5 /* particle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		070B455E183810A900ED29B5 /* LaserParticleSystemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaserParticleSystemView.h; sourceTree = "<group>"; };
 		070B455F183810A900ED29B5 /* LaserParticleSystemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaserParticleSystemView.m; sourceTree = "<group>"; };
 		070B4561183810F400ED29B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		070B4563183811C700ED29B5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		070B452F1838104500ED29B5 /* LaserTag */ = {
 			isa = PBXGroup;
 			children = (
+				070B4563183811C700ED29B5 /* particle.png */,
 				070B45381838104500ED29B5 /* LTAppDelegate.h */,
 				070B45391838104500ED29B5 /* LTAppDelegate.m */,
 				070B453B1838104500ED29B5 /* Main.storyboard */,
@@ -241,6 +244,7 @@
 				070B45421838104500ED29B5 /* Images.xcassets in Resources */,
 				070B45341838104500ED29B5 /* InfoPlist.strings in Resources */,
 				070B453D1838104500ED29B5 /* Main.storyboard in Resources */,
+				070B4564183811C700ED29B5 /* particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
