@@ -29,7 +29,6 @@ Round:{
     {userName: String}
   ]
 ```
-- Users: { user, round, points, markerID }
 
 ## Future Features:
 - User Accounts
