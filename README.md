@@ -20,7 +20,7 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 2. Round will automatically start in 30 seconds
 
 ## Schema Database:
-- Round: { roundName, contestants[], timeLimit }
+- Round: { roundName, contestants[], timeLimit, startTime }
 - Users: { user, round, points, markerID }
 
 ## Future Features:
