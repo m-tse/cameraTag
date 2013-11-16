@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MetaioSDKViewController.h"
+#import "EAGLView.h"
 
-@interface LTViewController : UIViewController
+@interface LTViewController : MetaioSDKViewController
 
 @end
