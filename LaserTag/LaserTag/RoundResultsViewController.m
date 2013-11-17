@@ -7,6 +7,7 @@
 //
 
 #import "RoundResultsViewController.h"
+#import "LTAppDelegate.h"
 
 @interface RoundResultsViewController ()
 
@@ -32,6 +33,16 @@ NSMutableArray* usersArray;
 	// Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = NO;
     NSString *roundID = [roundJSON objectForKey:@"_id"];
+    NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundID];
+    NSLog(urlString);
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+    NSURLResponse *urlResponse = nil;
+    NSError *requestError;
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    roundJSON = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+    NSLog(@"%@", response1);
     usersArray = [roundJSON objectForKey:@"users"];
 
     

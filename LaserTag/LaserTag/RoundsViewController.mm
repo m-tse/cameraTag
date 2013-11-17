@@ -85,11 +85,7 @@ NSMutableArray* roundJSONArray;
     [socketIO connectToHost:urlWithoutHTTP onPort:LTAppDelegate.serverPort.intValue];
     self.title = @"Active Rounds";
     self.automaticallyAdjustsScrollViewInsets = NO;
-//    socketIO = [[SocketIO alloc] initWithDelegate:self];
-//    [socketIO connectToHost:@"http://localhost" onPort:3000];
-//    NSMutableDictionary *dirt = [NSMutableDictionary dictionary];
-//    [socketIO sendEvent:@"getActiveRounds" withData:dict];
-    
+
 
     
     //Get initial rounds

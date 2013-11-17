@@ -31,6 +31,7 @@ httpserver = http.createServer(app).listen(app.get('port'), ()->
 io = require('socket.io').listen(httpserver)
 
 app.get('/rounds', routes.rounds.all)
+app.get('/rounds/:id', routes.rounds.one)
 app.get('/activeRounds/:roundName', routes.activeRounds.one)
 app.get('/activeRounds', routes.activeRounds.all)
 app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
