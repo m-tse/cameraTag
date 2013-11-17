@@ -50,6 +50,7 @@
 		2353FB2A183843B90080D9D5 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB25183843B90080D9D5 /* NSData+SRB64Additions.m */; };
 		2353FB2B183843B90080D9D5 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB28183843B90080D9D5 /* SRWebSocket.m */; };
 		2353FB2D183845360080D9D5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353FB2C183845360080D9D5 /* libicucore.dylib */; };
+		2353FB30183871960080D9D5 /* RoundViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB2F183871960080D9D5 /* RoundViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		2353FB27183843B90080D9D5 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		2353FB28183843B90080D9D5 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		2353FB2C183845360080D9D5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		2353FB2E183871960080D9D5 /* RoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundViewController.h; sourceTree = "<group>"; };
+		2353FB2F183871960080D9D5 /* RoundViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RoundViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,8 @@
 				070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */,
 				2353FAF7183836F00080D9D5 /* RoundsViewController.h */,
 				2353FAF8183836F00080D9D5 /* RoundsViewController.mm */,
+				2353FB2E183871960080D9D5 /* RoundViewController.h */,
+				2353FB2F183871960080D9D5 /* RoundViewController.mm */,
 			);
 			path = LaserTag;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 				07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */,
 				2353FB0B183841A10080D9D5 /* SocketIOTransportXHR.m in Sources */,
 				07F1125E1838203500CF86CD /* EAGLView.mm in Sources */,
+				2353FB30183871960080D9D5 /* RoundViewController.mm in Sources */,
 				070B45401838104500ED29B5 /* LTViewController.mm in Sources */,
 				2353FB2A183843B90080D9D5 /* NSData+SRB64Additions.m in Sources */,
 				2353FB0A183841A10080D9D5 /* SocketIOTransportWebsocket.m in Sources */,
@@ -552,7 +558,7 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/ark5/projects/cameraTag/LaserTag,
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
@@ -573,7 +579,7 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/ark5/projects/cameraTag/LaserTag,
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";

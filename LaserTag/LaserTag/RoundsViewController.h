@@ -13,5 +13,6 @@
 @interface RoundsViewController : UIViewController <SocketIODelegate>
 + (NSString*) myName;
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
+@property (nonatomic, retain) UINavigationController *navController;
 
 @end
