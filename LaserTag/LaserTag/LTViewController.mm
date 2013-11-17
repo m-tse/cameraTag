@@ -221,15 +221,15 @@
 
 - (IBAction)shootButtonPressed:(id)sender {
     NSLog(@"shoot pressed");
-//    if (!canShoot) {
-//        return;
-//    }
+    if (!canShoot) {
+        shotTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(shotTime) userInfo:nil repeats:NO];
+        return;
+    }
     LaserParticleSystemView *laser = [[LaserParticleSystemView alloc] init];
     [laser setBirthrate:220.0f];
     [self.view addSubview:laser];
     
     canShoot = false;
-    shotTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(shotTime) userInfo:nil repeats:NO];
     
     
     std::vector<metaio::TrackingValues> poses = m_metaioSDK->getTrackingValues();
