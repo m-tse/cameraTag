@@ -18,7 +18,7 @@
     NSString *roundID;
 }
 
-NSString* roundDuration= @"300000";
+NSString* roundDuration= @"5000";
 NSString* roundName=@"";
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -92,7 +92,7 @@ NSString* roundName=@"";
                 [viewController setRoundJSON:json];
                 [viewController setMyName:userName];
                 [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
-                [self presentViewController:viewController animated:YES completion:nil];
+                [self.navigationController pushViewController:viewController animated:TRUE];
             } else {
                 UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
                                                                   message:@"Could not enter room"

@@ -66,7 +66,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     // TODO: Add Multiple References Tracking
     // load our tracking configuration
     trackingConfigFile = [[NSBundle mainBundle] pathForResource:@"TrackingData_Marker" ofType:@"xml" inDirectory:@"./"];
@@ -97,6 +97,11 @@
         minutes = (secondsLeft % 3600) / 60;
         seconds = (secondsLeft % 3600) % 60;
         myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+    else{
+        NSLog(@"Time's Up");
+        [theTimer invalidate];
+        [self roundOver];
     }
 }
 
@@ -222,17 +227,20 @@
 }
 
 - (void) roundOver {
+    
     NSString *roundID = [roundJSON objectForKey:@"_id"];
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     RoundResultsViewController * controller = (RoundResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundResultsViewController"];
     controller.roundJSON = roundJSON;
-    [self.navigationController pushViewController:controller animated:TRUE];
+//    [self.navigationController popViewControllerAnimated:FALSE];
+    [self.navigationController pushViewController:controller animated:FALSE];
     
 }
 
 - (IBAction)leaveButtonPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:TRUE];
+    [self.navigationController setNavigationBarHidden:FALSE animated:TRUE];
 }
 
 
