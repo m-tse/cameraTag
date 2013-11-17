@@ -49,6 +49,8 @@ io.sockets.on('connection', (socket) ->
   socket.on('shootSuccessful', (data) ->
     console.log("asdfasdfasdfasdfasdfas")
     json = JSON.parse(data)
+    console.log(data)
+    console.log(json)
     routes.rounds.highestScoringUser(json, socket)
   )
 )

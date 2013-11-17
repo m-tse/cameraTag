@@ -221,7 +221,9 @@
 
 - (IBAction)shootButtonPressed:(id)sender {
     NSLog(@"shoot pressed");
-
+//    if (!canShoot) {
+//        return;
+//    }
     LaserParticleSystemView *laser = [[LaserParticleSystemView alloc] init];
     [laser setBirthrate:220.0f];
     [self.view addSubview:laser];
@@ -246,6 +248,7 @@
        
             SocketIO *socket = [RoundsViewController socketIO];
             NSString *roundID = [roundJSON objectForKey:@"_id"];
+            NSLog(@"ROUND ID: %@", roundID);
             NSDictionary* sendData = [[NSDictionary alloc] initWithObjectsAndKeys:roundID, @"roundID", markerIdString, @"markerID", nil];
             NSError *error;
             NSData *jsonData = [NSJSONSerialization dataWithJSONObject:sendData
@@ -254,8 +257,6 @@
             NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
             NSLog(jsonString);
             [socket sendEvent:@"shootSuccessful" withData:jsonString];
-//            [socket ]
-            
         } else {
             NSLog(@"you missed");
         }
