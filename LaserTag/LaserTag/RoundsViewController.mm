@@ -61,7 +61,7 @@ NSMutableArray* roundJSONArray;
             NSDictionary *topUser = [users objectAtIndex:0];
             NSString *roundID = [topUser objectForKey:@"roundID"];
             NSString *markerID = [topUser objectForKey:@"markerID"];
-            
+            [self vibrate];
         }
     }
 }
