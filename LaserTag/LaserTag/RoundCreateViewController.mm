@@ -49,7 +49,6 @@ NSString* roundName=@"";
 
 - (IBAction)setRoundDuration:(UIDatePicker*)sender {
     NSInteger secondsToMili = sender.countDownDuration * 1000;
-    NSLog(@"%d", secondsToMili);
     roundDuration = [NSString stringWithFormat:@"%d",secondsToMili];
 }
 
@@ -57,7 +56,6 @@ NSString* roundName=@"";
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSInteger cancel = 0;
     NSInteger go = 1;
-    NSLog(@"%d", buttonIndex);
 
     if(buttonIndex==cancel){
         [alertView dismissWithClickedButtonIndex:buttonIndex animated:TRUE];
@@ -111,6 +109,7 @@ NSString* roundName=@"";
         [message show];
         
     }
+    NSLog(roundDuration);
     NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/create/%@/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundName, maxUsers, roundDuration];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

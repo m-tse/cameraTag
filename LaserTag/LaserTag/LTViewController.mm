@@ -98,6 +98,7 @@
 
 - (void)updateCounter:(NSTimer *)theTimer {
     NSString *timeStartString = [roundJSON objectForKey:@"timeStart"];
+//    NSLog(timeStartString);
     NSString *timeLimitString = [roundJSON objectForKey:@"duration"];
     NSDate *timeStart = [[NSDate alloc] initWithTimeIntervalSince1970:[timeStartString doubleValue]/1000];
     NSDate *timeNow = [NSDate date];
