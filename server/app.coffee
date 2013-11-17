@@ -8,6 +8,7 @@ path = require('path')
 
 app = express()
 
+
 # all environments
 app.set('port', process.env.PORT || 3000)
 app.set('views', __dirname + '/views')
@@ -32,6 +33,14 @@ app.get('/activeRounds', routes.activeRounds.all)
 app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
 app.post('/rounds/register/:userName/:roundName', routes.rounds.register)
 
-http.createServer(app).listen(app.get('port'), ()->
+httpserver = http.createServer(app).listen(app.get('port'), ()->
   console.log('Express server listening on port ' + app.get('port'))
 )
+io = require('socket.io').listen(httpserver)
+
+io.sockets.on('connection', (socket) ->
+  # socket.emit('news', { hello: 'world' });
+  socket.on('getActiveRounds', () ->
+    socket.emit('activeRounds', routes.activeRounds.all())
+  );
+);
