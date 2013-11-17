@@ -64,15 +64,27 @@ NSMutableArray* usersArray;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
 
-    NSURLResponse *urlResponse = nil;
+    NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
     NSError *requestError;
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-    
-    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
-    [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
-    [self presentViewController:viewController animated:YES completion:nil];
-    
+    if (response1 !=  nil) {
+        NSDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+        NSLog(@"response: %@\n", jsonArray);
+        if ([urlResponse statusCode] == 200) {
+            UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
+            [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
+            [self presentViewController:viewController animated:YES completion:nil];
+        } else {
+            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
+                                                              message:@"Could not enter room"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles:nil];
+            [message show];
+        }
+    }
+   
 
 }
 
