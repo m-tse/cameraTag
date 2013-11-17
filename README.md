@@ -15,7 +15,7 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 - GET /rounds -> returns JSON of all the rounds
 - GET /activeRounds/:roundName -> returns active rounds with roundName
 - GET /activeRounds/ -> returns all active rounds
-- POST /rounds/register/:userName/:roundID
+- POST /rounds/register/:userName/:roundID/:markerID
 - POST /rounds/leave/:userName/:roundID
 
 ## Game Logic:
@@ -30,8 +30,11 @@ Round:{
   timeStart: int,
   maxUsers: int,
   users [
-    {userName: String,
-     score: int}
+    {
+      userName: String,
+      markerID: int,
+      score: int
+    }
   ]
 ```
 
