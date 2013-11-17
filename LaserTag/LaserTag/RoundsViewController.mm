@@ -46,7 +46,7 @@ NSMutableArray* roundJSONArray;
     [super viewDidLoad];
     
     socketIO = [[SocketIO alloc] initWithDelegate:self];
-    [socketIO connectToHost:@"localhost" onPort:8080];
+    [socketIO connectToHost:@"10.190.72.149" onPort:8080];
 //    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 //    [socketIO sendEvent:@"getActiveRounds" withData:dict];
     
@@ -54,7 +54,7 @@ NSMutableArray* roundJSONArray;
 
     
     //Get initial rounds
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/activeRounds"];
+    NSURL *url = [NSURL URLWithString:@"http://10.190.72.149:8080/activeRounds"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
