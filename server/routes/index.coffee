@@ -58,7 +58,12 @@ exports.rounds.register = (req, res) ->
     else if (userNames.length == round.maxUsers)
       res.send(400, "This round is full.")
     else
-      db.rounds.update({"_id" : roundID }, { $push: { users: {name:params.userName, score:0}}})
+      db.rounds.update({"_id" : roundID }, {
+        $push: { users: {
+          name:params.userName, score:0,
+          $sort: { score: -1 }
+        }}
+      })
       db.rounds.findOne({"_id":roundID}, (err, json) ->
         res.send(json))
     )

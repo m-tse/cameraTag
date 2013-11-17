@@ -9,6 +9,8 @@
 #import "LTViewController.h"
 #import "LaserParticleSystemView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "RoundsViewController.h"
+#import "LTAppDelegate.h"
 
 @interface LTViewController ()
 
@@ -23,7 +25,9 @@
     int hours, minutes, seconds;
     int secondsLeft;
 }
+
 @synthesize myCounterLabel;
+@synthesize roundJSON;
 
 #pragma mark - UIViewController lifecycle
 
@@ -47,6 +51,15 @@
     [self.view.layer addSublayer:circle];
 }
 
+- (void)initScoreLabels {
+    NSArray *users = [roundJSON objectForKey:@"users"];
+    NSDictionary *topScoringUser = [users objectAtIndex:0];
+    NSString *topName = [topScoringUser objectForKey:@"name"];
+    NSString *topScore = [topScoringUser objectForKey:@"score"];
+    highScoreLabel.text = [[NSString alloc] initWithFormat:@"%@: %@", topName, topScore];
+    myScoreLabel.text = [[NSString alloc] initWithFormat:@"%@: %d", [RoundsViewController myName], 0];
+}
+
 - (void) viewDidLoad
 {
     [super viewDidLoad];
@@ -64,11 +77,26 @@
             NSLog(@"Loaded the tracking configuration");
         }
 	}
-    
     [self addTargetingCircle];
-    
-    
-   
+    [self initScoreLabels];
+}
+
+- (void)updateCounter:(NSTimer *)theTimer {
+    if(secondsLeft > 0 ) {
+        secondsLeft -- ;
+        hours = secondsLeft / 3600;
+        minutes = (secondsLeft % 3600) / 60;
+        seconds = (secondsLeft %3600) % 60;
+        myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+}
+
+-(void)countdownTimer{
+    hours = minutes = seconds = 0;
+    if([timer isValid]) {
+        [timer release];
+    }
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
 }
 
 - (void)startCountdown:(CGFloat)millisecondsRemaining {
@@ -79,30 +107,6 @@
         NSLog(@"Sorry the round ended");
     }
 }
-
-- (void)updateCounter:(NSTimer *)theTimer {
-    if(secondsLeft > 0 ){
-        secondsLeft -- ;
-        hours = secondsLeft / 3600;
-        minutes = (secondsLeft % 3600) / 60;
-        seconds = (secondsLeft %3600) % 60;
-        myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
-    }
-}
-
--(void)countdownTimer{
-    
-    hours = minutes = seconds = 0;
-    if([timer isValid])
-    {
-        [timer release];
-    }
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
-    [pool release];
-}
-
-
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -173,17 +177,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)increaseScore {
+    NSNumber *myScore = [[[NSNumberFormatter alloc] init] numberFromString:myScoreLabel.text];
+    myScoreLabel.text = [NSString stringWithFormat:@"%@: %d", [RoundsViewController myName], ([myScore intValue] + 100)];
+}
+
 - (void)sendShootRequest {
-    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
+    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/%@/%@/1", LTAppDelegate.serverIP, LTAppDelegate.serverPort, [roundJSON objectForKey:@"_id"], [RoundsViewController myName]];
     NSURL *url = [NSURL URLWithString:urlString];
+    NSLog(@"%@\n", urlString);
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
     if (response !=  nil) {
-        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
-        NSLog(@"%@\n", jsonArray);
+        // Not used for now
+//        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
+//        NSLog(@"%@\n", jsonArray);
     }
 }
 
@@ -204,6 +215,7 @@
         if (x > -dim && x < dim && y > -dim && y < dim) {
             NSLog(@"you hit it");
             [self sendShootRequest];
+            [self increaseScore];
         } else {
             NSLog(@"you missed");
         }

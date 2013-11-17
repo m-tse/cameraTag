@@ -86,6 +86,7 @@ NSMutableArray* usersArray;
             UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
             [viewController startCountdown:timeRemaining];
+            [viewController setRoundJSON:json];
             [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
             [self presentViewController:viewController animated:YES completion:nil];
             

@@ -15,9 +15,12 @@
     NSString *trackingConfigFile;
     NSTimer *timer;
     IBOutlet UILabel *myCounterLabel;
+    __weak IBOutlet UILabel *highScoreLabel;
+    __weak IBOutlet UILabel *myScoreLabel;
 }
 
 @property (nonatomic, retain) UILabel *myCounterLabel;
+@property (nonatomic, retain) NSDictionary *roundJSON;
 
 - (IBAction)shootButtonPressed:(id)sender;
 
