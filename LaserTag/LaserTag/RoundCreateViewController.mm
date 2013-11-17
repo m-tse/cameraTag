@@ -88,6 +88,7 @@ NSString* roundName=@"";
                 
                 UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
+                viewController.userName = userName;
                 [viewController countdownTimer];
                 [viewController setRoundJSON:json];
                 [viewController setMyName:userName];

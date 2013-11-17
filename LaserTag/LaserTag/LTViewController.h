@@ -20,6 +20,7 @@
     __weak IBOutlet UILabel *topNameLabel;
     __weak IBOutlet UILabel *myNameLabel;
 }
+@property (nonatomic, copy) NSString *userName;
 
 @property (nonatomic, retain) UILabel *myCounterLabel;
 @property (nonatomic, retain) NSDictionary *roundJSON;

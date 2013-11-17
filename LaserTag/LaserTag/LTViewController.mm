@@ -27,6 +27,7 @@
     int secondsLeft;
 }
 
+@synthesize userName;
 @synthesize myCounterLabel;
 @synthesize roundJSON;
 
@@ -239,6 +240,18 @@
 }
 
 - (IBAction)leaveButtonPressed:(id)sender {
+    NSString *roundID = [roundJSON objectForKey:@"_id"];
+
+    NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/leave/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
+    NSLog(urlString);
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    
+    NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
+    NSError *requestError;
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    
     [self.navigationController popViewControllerAnimated:TRUE];
     [self.navigationController setNavigationBarHidden:FALSE animated:TRUE];
 }
