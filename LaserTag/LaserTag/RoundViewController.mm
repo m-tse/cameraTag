@@ -44,6 +44,7 @@ NSMutableArray* usersArray;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSInteger cancel = 0;
     NSInteger go = 1;
