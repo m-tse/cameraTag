@@ -11,5 +11,6 @@
 @interface RoundCreateViewController : UIViewController
 - (IBAction)setRoundDuration:(UIDatePicker*)sender;
 - (IBAction)createRound:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *numberContestantsField;
 @property (nonatomic, retain) IBOutlet UITextField* roundNameField;
 @end
