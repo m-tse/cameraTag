@@ -51,7 +51,6 @@
 		2353FB2A183843B90080D9D5 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB25183843B90080D9D5 /* NSData+SRB64Additions.m */; };
 		2353FB2B183843B90080D9D5 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB28183843B90080D9D5 /* SRWebSocket.m */; };
 		2353FB2D183845360080D9D5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353FB2C183845360080D9D5 /* libicucore.dylib */; };
->>>>>>> 82bee1fb09c698369fe20ec12782c7d3c2a9620f
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,7 +127,6 @@
 		2353FB27183843B90080D9D5 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		2353FB28183843B90080D9D5 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		2353FB2C183845360080D9D5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
->>>>>>> 82bee1fb09c698369fe20ec12782c7d3c2a9620f
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
