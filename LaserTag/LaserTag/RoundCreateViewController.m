@@ -14,7 +14,7 @@
 @end
 
 @implementation RoundCreateViewController
-NSString* roundDuration= @"300";
+NSString* roundDuration= @"300000";
 NSString* roundName=@"";
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +41,9 @@ NSString* roundName=@"";
 }
 
 - (IBAction)setRoundDuration:(UIDatePicker*)sender {
-    roundDuration = [NSString stringWithFormat:@"%f",sender.countDownDuration];
+    NSInteger secondsToMili = sender.countDownDuration * 1000;
+    NSLog(@"%d", secondsToMili);
+    roundDuration = [NSString stringWithFormat:@"%d",secondsToMili];
 }
 
 - (IBAction)createRound:(id)sender {
