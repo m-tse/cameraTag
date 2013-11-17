@@ -220,9 +220,9 @@
 
 - (IBAction)shootButtonPressed:(id)sender {
     NSLog(@"shoot pressed");
-    if (!canShoot) {
-        return;
-    }
+//    if (!canShoot) {
+//        return;
+//    }
     LaserParticleSystemView *laser = [[LaserParticleSystemView alloc] init];
     [laser setBirthrate:220.0f];
     [self.view addSubview:laser];
