@@ -52,4 +52,9 @@ io.sockets.on('connection', (socket) ->
     console.log(json)
     routes.rounds.highestScoringUser(json, socket)
   )
+
+  socket.on('createRound', (data) ->
+    console.log("allo")
+    routes.rounds.newRoundCreated(socket)
+  )
 )

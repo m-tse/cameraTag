@@ -12,7 +12,7 @@
 #import "LTViewController.h"
 
 @interface RoundsViewController : UIViewController <SocketIODelegate, UINavigationControllerDelegate>
-//+ (SocketIO*) socketIO;
++ (SocketIO*) socketIO;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) LTViewController *ltViewController;
 - (IBAction)createPressed:(id)sender;

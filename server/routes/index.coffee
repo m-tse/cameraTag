@@ -71,6 +71,11 @@ exports.rounds.highestScoringUser = (json, socket) ->
     socket.broadcast.emit('rumble', newJSON)
   )
 
+exports.rounds.newRoundCreated = (socket) ->
+  db.rounds.find( (err,rounds) ->
+    socket.broadcast.emit('allRounds', rounds)
+  )
+
 
 exports.rounds.register = (req, res) ->
   params = req.params

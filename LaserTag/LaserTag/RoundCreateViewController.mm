@@ -86,6 +86,13 @@ NSString* roundName=@"";
                 [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
                 [roundsViewController setLtViewController:viewController];
                 [self.navigationController pushViewController:viewController animated:TRUE];
+                
+                SocketIO *socket = [RoundsViewController socketIO];
+                NSString* sendData = @"data";
+                [socket sendEvent:@"createRound" withData:sendData];
+                
+                
+                
             } else {
                 UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
                                                                   message:@"Could not enter room"
