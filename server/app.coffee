@@ -42,8 +42,12 @@ io = require('socket.io').listen(httpserver)
 io.sockets.on('connection', (socket) ->
   routes.activeRounds.alljson( (res) ->
     socket.emit('resetActiveRounds', res[0])
-    )
+  )
 
+  socket.on('shootSuccessful', (data) ->
+    # data 
+    console.log(data)
+  )
     # socket.emit('activeRounds', routes.activeRounds.all())
   
 )
