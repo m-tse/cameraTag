@@ -118,8 +118,6 @@ NSMutableArray* roundJSONArray;
     NSString* currentUsersInfo = [NSString stringWithFormat:@"%@/%@", currentNumUsers, maxUsers];
     cell.detailTextLabel.text = currentUsersInfo;
 
-//    cell.
-//    cell.imageView.image = [UIImage imageNamed:@"flower.png"];
     
     // set the accessory view:
     cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;

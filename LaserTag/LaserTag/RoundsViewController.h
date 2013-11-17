@@ -11,7 +11,6 @@
 #import "SocketIOPacket.h"
 
 @interface RoundsViewController : UIViewController <SocketIODelegate>
-- (BOOL)textFieldShouldReturn:(UITextField *)textField;
 @property (nonatomic, retain) UINavigationController *navController;
 
 @end
