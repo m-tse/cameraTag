@@ -47,7 +47,7 @@ NSMutableArray* usersArray;
     NSString *userName = RoundsViewController.myName;
     NSLog(userName);
     NSString *roundID = [roundJSON objectForKey:@"_id"];
-    NSString * urlString = [NSString stringWithFormat:@"http://localhost:3000/rounds/register/%@/%@", userName, roundID];
+    NSString * urlString = [NSString stringWithFormat:@"http://localhost:8080/rounds/register/%@/%@", userName, roundID];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
