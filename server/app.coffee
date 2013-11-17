@@ -40,8 +40,10 @@ httpserver = http.createServer(app).listen(app.get('port'), ()->
 io = require('socket.io').listen(httpserver)
 
 io.sockets.on('connection', (socket) ->
-  # socket.emit('news', { hello: 'world' });
-  socket.on('getActiveRounds', () ->
-    socket.emit('activeRounds', routes.activeRounds.all())
-  )
+  routes.activeRounds.alljson( (res) ->
+    socket.emit('resetActiveRounds', res[0])
+    )
+
+    # socket.emit('activeRounds', routes.activeRounds.all())
+  
 )

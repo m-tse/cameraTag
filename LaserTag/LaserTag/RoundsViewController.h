@@ -11,6 +11,8 @@
 #import "SocketIOPacket.h"
 
 @interface RoundsViewController : UIViewController <SocketIODelegate>
++ (SocketIO*) socketIO;
+
 @property (nonatomic, retain) UINavigationController *navController;
 
 @end

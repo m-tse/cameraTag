@@ -77,10 +77,14 @@ exports.activeRounds.one = (req, res) ->
     res.send("Active round with name #{params.roundName} not found")
     )
 exports.activeRounds.all = (req, res) ->
-  params = req.params
   db.rounds.find( (err, rounds) ->
     rounds = (round for round in rounds when roundIsActive(round))
     res.json(rounds)
+    )
+exports.activeRounds.alljson = (callback) ->
+  db.rounds.find( (err, rounds) ->
+    rounds = (round for round in rounds when roundIsActive(round))
+    callback(rounds)
     )
 
 roundIsActive = (round) ->
