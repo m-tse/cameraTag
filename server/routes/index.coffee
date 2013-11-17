@@ -54,9 +54,9 @@ exports.rounds.register = (req, res) ->
       return
     userNames = (user.name for user in round.users)
     if _.contains(userNames, params.userName)
-      res.send("The username #{params.userName} is already taken for this round.")
+      res.send(400, "The username #{params.userName} is already taken for this round.")
     if (userNames.length == round.maxUsers)
-      res.send("This round is full.")
+      res.send(400, "This round is full.")
     else
       db.rounds.update({"_id" : roundID }, { $push: { users: {name:params.userName, score:0}}})
       db.rounds.findOne({"_id":roundID}, (err, json) ->
