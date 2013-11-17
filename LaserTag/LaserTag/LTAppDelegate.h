@@ -14,6 +14,9 @@
 {
     UINavigationController *navigationController;
 }
++ (NSString*) serverIP;
++ (NSString*) serverPort;
+
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) UIWindow *window;
 @end

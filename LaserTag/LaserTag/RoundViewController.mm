@@ -9,6 +9,7 @@
 #import "RoundViewController.h"
 #import "RoundsViewController.h"
 #import "LTViewController.h"
+#import "LTAppDelegate.h"
 
 @interface RoundViewController ()
 
@@ -43,13 +44,22 @@ NSMutableArray* usersArray;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSInteger cancel = 0;
+    NSInteger go = 1;
+    NSLog(@"%d", buttonIndex);
+    NSLog(@"Entered: %@",[[alertView textFieldAtIndex:0] text]);
+}
 - (IBAction)enterRound:(id)sender {
+    NSLog(LTAppDelegate.serverIP);
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Enter Username" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go", nil];
+
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
 
     NSString *userName = RoundsViewController.myName;
-    NSLog(@"Username: %@\n", userName);
     NSString *roundID = [roundJSON objectForKey:@"_id"];
-    NSString * urlString = [NSString stringWithFormat:@"http://10.190.72.149:8080/rounds/register/%@/%@", userName, roundID];
+    NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];

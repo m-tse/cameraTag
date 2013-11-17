@@ -11,7 +11,11 @@
 
 @implementation LTAppDelegate
 @synthesize navigationController;
+static NSString* serverIP = @"http://localhost";
+static NSString* serverPort = @"8080";
 
++ (NSString*) serverIP { return serverIP; }
++ (NSString*) serverPort { return serverPort; }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

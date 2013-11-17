@@ -174,7 +174,8 @@
 }
 
 - (void)sendShootRequest {
-    NSURL *url = [NSURL URLWithString:@"http://10.190.72.149:8080/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
+    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
+    NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     NSURLResponse *urlResponse = nil;
