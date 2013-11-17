@@ -85,31 +85,24 @@
 }
 
 - (void)updateCounter:(NSTimer *)theTimer {
+    NSString *timeStartString = [roundJSON objectForKey:@"timeStart"];
+    NSString *timeLimitString = [roundJSON objectForKey:@"duration"];
+    NSDate *timeStart = [[NSDate alloc] initWithTimeIntervalSince1970:[timeStartString doubleValue]/1000];
+    NSDate *timeNow = [NSDate date];
+    NSTimeInterval diff = [timeNow timeIntervalSinceDate:timeStart]-500;
+    
+    secondsLeft = [timeLimitString intValue]/1000 - diff;
     if(secondsLeft > 0 ) {
-        secondsLeft -- ;
         hours = secondsLeft / 3600;
         minutes = (secondsLeft % 3600) / 60;
-        seconds = (secondsLeft %3600) % 60;
+        seconds = (secondsLeft % 3600) % 60;
         myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
     }
 }
 
 -(void)countdownTimer{
     hours = minutes = seconds = 0;
-    if([timer isValid]) {
-        [timer release];
-    }
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
-}
-
-- (void)startCountdown:(CGFloat)millisecondsRemaining {
-    if (millisecondsRemaining > 0) {
-        secondsLeft = millisecondsRemaining;
-        [self countdownTimer];
-    } else {
-        NSLog(@"Sorry the round ended");
-        [self roundOver];
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
