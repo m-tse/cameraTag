@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RoundResultsViewController : UIViewController
+@property (nonatomic, copy) NSDictionary *roundJSON;
 
 @end

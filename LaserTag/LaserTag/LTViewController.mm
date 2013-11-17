@@ -233,6 +233,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     RoundResultsViewController * controller = (RoundResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundResultsViewController"];
+    controller.roundJSON = roundJSON;
     [self.navigationController pushViewController:controller animated:TRUE];
     
 }

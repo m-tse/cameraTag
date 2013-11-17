@@ -13,6 +13,7 @@
 @end
 
 @implementation RoundResultsViewController
+@synthesize roundJSON;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,6 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = NO;
+    NSString *roundID = [roundJSON objectForKey:@"_id"];
 
     
 }
