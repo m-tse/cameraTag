@@ -10,8 +10,9 @@
 #import "MetaioSDKViewController.h"
 #import "EAGLView.h"
 #import <GLKit/GLKit.h>
+#import "SocketIO.h"
 
-@interface LTViewController : MetaioSDKViewController {
+@interface LTViewController : MetaioSDKViewController <SocketIODelegate> {
     NSString *trackingConfigFile;
     NSTimer *timer;
     IBOutlet UILabel *myCounterLabel;

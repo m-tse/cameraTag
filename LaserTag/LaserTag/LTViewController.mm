@@ -12,6 +12,7 @@
 #import "RoundsViewController.h"
 #import "LTAppDelegate.h"
 #import "RoundResultsViewController.h"
+#import "SocketIO.h"
 
 @interface LTViewController ()
 
@@ -213,6 +214,11 @@
             NSLog(@"you hit it");
             [self sendShootRequest];
             [self increaseScore];
+       
+            SocketIO *socket = [RoundsViewController socketIO];
+            NSString *roundID = [roundJSON objectForKey:@"_id"];
+            [socket sendEvent:@"shootSuccessful" withData:roundID];
+            
         } else {
             NSLog(@"you missed");
         }
@@ -232,6 +238,10 @@
 
 - (IBAction)leaveButtonPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) socketIO:(SocketIO *)socket didReceiveJSON:(SocketIOPacket *)packet {
+    NSLog(@"HERERE: %@\n", [packet data]);
 }
 
 
