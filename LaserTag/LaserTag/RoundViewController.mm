@@ -46,7 +46,7 @@ NSMutableArray* usersArray;
 - (IBAction)enterRound:(id)sender {
 
     NSString *userName = RoundsViewController.myName;
-    NSLog(userName);
+    NSLog(@"Username: %@\n", userName);
     NSString *roundID = [roundJSON objectForKey:@"_id"];
     NSString * urlString = [NSString stringWithFormat:@"http://10.190.72.149:8080/rounds/register/%@/%@", userName, roundID];
     NSURL *url = [NSURL URLWithString:urlString];
@@ -56,6 +56,10 @@ NSMutableArray* usersArray;
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    if (response1 !=  nil) {
+        NSDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+        NSLog(@"response: %@\n", jsonArray);
+    }
     
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];

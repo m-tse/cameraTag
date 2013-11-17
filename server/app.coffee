@@ -44,5 +44,5 @@ io.sockets.on('connection', (socket) ->
   # socket.emit('news', { hello: 'world' });
   socket.on('getActiveRounds', () ->
     socket.emit('activeRounds', routes.activeRounds.all())
-  );
-);
+  )
+)
