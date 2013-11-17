@@ -55,6 +55,16 @@ NSMutableArray* roundJSONArray;
             NSString *topScore = [NSString stringWithFormat:@"%@",[topUser objectForKey:@"score"]];
             [ltViewController setTopInfo:topName score:topScore];
         }
+    } else if ([eventType isEqualToString:@"rumble"]) {
+        if (ltViewController != nil) {
+            NSArray *users = [JSON objectForKey:@"args"];
+            NSDictionary *topUser = [users objectAtIndex:0];
+            NSString *roundID = [topUser objectForKey:@"roundID"];
+            NSString *username = [topUser objectForKey:@"username"];
+            if ([username isEqualToString:[ltViewController myName]]) {
+                [self vibrate];
+            }
+        }
     }
 }
 - (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
@@ -66,7 +76,7 @@ NSMutableArray* roundJSONArray;
     [super viewDidLoad];
     socketIO = [[SocketIO alloc] initWithDelegate:self];
     NSString* urlWithoutHTTP = [LTAppDelegate.serverIP substringFromIndex:7];
-    [socketIO connectToHost:urlWithoutHTTP onPort:LTAppDelegate.serverPort.intValue];
+    [socketIO connectToHost:@"10.190.72.149" onPort:LTAppDelegate.serverPort.intValue];
     self.title = @"Active Rounds";
     self.automaticallyAdjustsScrollViewInsets = NO;
 //    socketIO = [[SocketIO alloc] initWithDelegate:self];

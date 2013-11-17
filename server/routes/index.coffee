@@ -52,12 +52,23 @@ exports.rounds.create = (req, res) ->
           )
     )
 
-exports.rounds.highestScoringUser = (roundID, socket) ->
-  console.log(roundID)
+exports.rounds.highestScoringUser = (json, socket) ->
+
+  roundID = json.roundID
+  markerID = json.markerID
   db.rounds.findOne({"_id": db.ObjectId(roundID)}, (err, round) ->
     user = null
+    console.log(round)
     user = u for u in round.users when user is null or u.score > user.score
-    socket.emit('sendHighestScoringUser', user)
+    socket.broadcast.emit('sendHighestScoringUser', user)
+    username = null
+    username = u.name for u in round.users when parseInt(u.markerID) is parseInt(markerID)
+    newJSON =
+      {
+        roundID: roundID,
+        username: username
+      }
+    socket.broadcast.emit('rumble', newJSON)
   )
 
 
@@ -75,8 +86,8 @@ exports.rounds.register = (req, res) ->
     else
       db.rounds.update({"_id" : roundID }, {
         $push: { users: {
-          name:params.userName, 
-          score:0, 
+          name:params.userName,
+          score:0,
           markerID: parseInt(params.markerID)
           $sort: { score: -1 }
         }}
@@ -134,7 +145,6 @@ exports.shoot = (req, res) ->
   unless (roundId and username)
     res.send("Need roundId and Username")
   else
-    io.sockets.emit('this', { will: 'be received by everyone'});
     db.rounds.findOne({ "_id": db.ObjectId(roundId) }, (err, round) ->
       if (err)
         return
