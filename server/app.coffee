@@ -30,10 +30,6 @@ httpserver = http.createServer(app).listen(app.get('port'), ()->
 )
 io = require('socket.io').listen(httpserver)
 
-app.get('/', (req, res)->
-  io.sockets.emit('this', { will: 'be received by everyone'});
-
-  )
 app.get('/rounds', routes.rounds.all)
 app.get('/activeRounds/:roundName', routes.activeRounds.one)
 app.get('/activeRounds', routes.activeRounds.all)
@@ -49,10 +45,8 @@ io.sockets.on('connection', (socket) ->
     socket.emit('resetActiveRounds', res[0])
   )
 
-  console.log('connected')
   socket.on('shootSuccessful', (data) ->
-    # data 
-    console.log(data)
-    routes.rounds.highestScoringUser(data, socket)
+    json = JSON.parse(data)
+    routes.rounds.highestScoringUser(json, socket)
   )
 )

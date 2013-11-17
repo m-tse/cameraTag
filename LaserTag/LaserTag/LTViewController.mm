@@ -223,6 +223,7 @@
         float y = targetPosition.translation.y;
         float dim = 50.0f;
         int markerId = targetPosition.coordinateSystemID;
+        NSString *markerIdString = [NSString stringWithFormat:@"%d", markerId];
         NSLog(@"%d\n", markerId);
         if (x > -dim && x < dim && y > -dim && y < dim) {
             NSLog(@"you hit it");
@@ -231,7 +232,14 @@
        
             SocketIO *socket = [RoundsViewController socketIO];
             NSString *roundID = [roundJSON objectForKey:@"_id"];
-            [socket sendEvent:@"shootSuccessful" withData:roundID];
+            NSDictionary* sendData = [[NSDictionary alloc] initWithObjectsAndKeys:roundID, @"roundID", markerIdString, @"markerID", nil];
+            NSError *error;
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:sendData
+                                                               options:NSJSONWritingPrettyPrinted
+                                                                 error:&error];
+            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            NSLog(jsonString);
+            [socket sendEvent:@"shootSuccessful" withData:jsonString];
 //            [socket ]
             
         } else {
