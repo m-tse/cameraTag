@@ -40,8 +40,10 @@ exports.rounds.create = (req, res) ->
               return
               
         db.rounds.save(round)
-        
-        res.json(round)
+        db.rounds.findOne({roundName: round.roundName, duration: round.duration}, (err, returnedRound) ->
+          
+          res.json(returnedRound)
+          )
     )
 
 exports.rounds.register = (req, res) ->

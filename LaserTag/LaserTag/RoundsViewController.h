@@ -11,5 +11,6 @@
 @interface RoundsViewController : UIViewController
 + (NSString*) myName;
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
+@property (nonatomic, retain) UINavigationController *navController;
 
 @end

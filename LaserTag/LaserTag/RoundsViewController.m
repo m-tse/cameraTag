@@ -7,6 +7,7 @@
 //
 
 #import "RoundsViewController.h"
+#import "RoundViewController.h"
 #import "SocketIO.h"
 #import "SocketIOPacket.h"
 @interface RoundsViewController ()
@@ -19,6 +20,8 @@
 static NSString* myName;
 SocketIO * socketIO;
 NSMutableArray* roundJSONArray;
+//UINavigationController *navigationController;
+
 + (NSString*)myName { return myName; }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,7 +49,8 @@ NSMutableArray* roundJSONArray;
 //    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 //    [socketIO sendEvent:@"getActiveRounds" withData:dict];
     
-    
+//    navigationController = [[UINavigationController alloc]initWithRootViewController:self];
+
     
     //Get initial rounds
     NSURL *url = [NSURL URLWithString:@"http://localhost:3000/activeRounds"];
@@ -70,6 +74,7 @@ NSMutableArray* roundJSONArray;
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     NSString* name = [textField text];
     myName = name;
+//    NSLog(myName);
     return NO;
 }
 
@@ -78,13 +83,23 @@ NSMutableArray* roundJSONArray;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSDictionary* roundJSON = [roundJSONArray objectAtIndex:indexPath.row];
-    
-    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/activeRounds"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLResponse *urlResponse = nil;
-    NSError *requestError;
-    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-    
+//    NSString* [roundJSON objectForKey:@"]
+//    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/activeRounds"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    NSURLResponse *urlResponse = nil;
+//    NSError *requestError;
+//    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RoundViewController * controller = (RoundViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundViewController"];
+//    [self presentViewController:controller animated:YES completion:nil];
+//    RoundViewController * roundView =[[RoundViewController alloc] init];
+//    RoundViewController * roundView = [[RoundViewController alloc] initWithNibName:@"Round View Controller" bundle:nil];
+    controller.roundJSON = roundJSON;
+//    [self.nav pushViewController:roundView animated:YES];
+//    [roundView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    [self presentViewController:controller animated:YES completion:nil];
+
 
 }
 
@@ -105,7 +120,7 @@ NSMutableArray* roundJSONArray;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier];
     }
     
     // Set the data for this cell:
@@ -116,8 +131,14 @@ NSMutableArray* roundJSONArray;
     NSLog(@"%@", roundObject);
     
     cell.textLabel.text = roundName;
-    cell.detailTextLabel.text = @"More text";
-    cell.imageView.image = [UIImage imageNamed:@"flower.png"];
+    NSString* maxUsers = [roundObject objectForKey:@"maxUsers"];
+    NSArray* usersArray = [roundObject objectForKey:@"users"];
+    NSString* currentNumUsers = [NSString stringWithFormat:@"%d", [usersArray count]];
+    NSString* currentUsersInfo = [NSString stringWithFormat:@"%@/%@", currentNumUsers, maxUsers];
+    cell.detailTextLabel.text = currentUsersInfo;
+
+//    cell.
+//    cell.imageView.image = [UIImage imageNamed:@"flower.png"];
     
     // set the accessory view:
     cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
