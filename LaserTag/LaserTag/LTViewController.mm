@@ -224,7 +224,10 @@
     } else {
         NSLog(@"you missed");
     }
+}
 
+- (IBAction)leaveButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
