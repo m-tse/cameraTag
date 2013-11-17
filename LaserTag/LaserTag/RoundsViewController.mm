@@ -69,6 +69,8 @@ NSMutableArray* roundJSONArray;
                 }
             }
         }
+    } else if ([eventType isEqualToString:@"allRounds"]) {
+        [_tableView reloadData];
     }
 }
 - (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
