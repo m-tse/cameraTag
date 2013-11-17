@@ -20,7 +20,7 @@
 @synthesize roundsViewController;
 
 
-NSString* roundDuration= @"300000";
+NSString* roundDuration= @"20000";
 NSString* roundName=@"";
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

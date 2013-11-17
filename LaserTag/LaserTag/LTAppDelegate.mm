@@ -13,9 +13,11 @@
 
 @implementation LTAppDelegate
 @synthesize navigationController;
-static NSString* serverIP = @"http://localhost";
+
+
+static NSString* serverIP = @"http://colab-sbx-13.oit.duke.edu";
+
 static NSString* serverPort = @"3000";
-//SocketIO* socketIO;
 
 + (NSString*) serverIP { return serverIP; }
 + (NSString*) serverPort { return serverPort; }
