@@ -26,6 +26,8 @@
     NSArray *laserShots;
     int hours, minutes, seconds;
     int secondsLeft;
+    bool canShoot;
+    NSTimer *shotTimer;
 }
 
 @synthesize userName;
@@ -90,8 +92,8 @@
             NSLog(@"Loaded the tracking configuration");
         }
 	}
-    [self addTargetingCircle];
     [self initScoreLabels];
+    
 }
 
 - (void)updateCounter:(NSTimer *)theTimer {
@@ -149,6 +151,7 @@
 - (void)onSDKReady
 {
 	[super onSDKReady];
+    [self addTargetingCircle];
 }
 
 - (void)drawFrame
@@ -210,11 +213,23 @@
     }
 }
 
+- (void)shotTime {
+    canShoot = true;
+    NSLog(@"shot recharged");
+}
+
 - (IBAction)shootButtonPressed:(id)sender {
     NSLog(@"shoot pressed");
+    if (!canShoot) {
+        return;
+    }
     LaserParticleSystemView *laser = [[LaserParticleSystemView alloc] init];
     [laser setBirthrate:220.0f];
     [self.view addSubview:laser];
+    
+    canShoot = false;
+    shotTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(shotTime) userInfo:nil repeats:NO];
+    
     
     std::vector<metaio::TrackingValues> poses = m_metaioSDK->getTrackingValues();
     if (!poses.empty()) {
@@ -282,7 +297,6 @@
 - (void)socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet {
     NSLog(@"HERERE: %@\n", [packet data]);
 }
-
 
 
 @end

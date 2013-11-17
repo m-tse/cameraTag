@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketIO.h"
 #import "RoundsViewController.h"
 
 @interface RoundCreateViewController : UIViewController
