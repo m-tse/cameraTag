@@ -11,11 +11,12 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 
 ## Node.js REST api:
 - POST /rounds/create/:roundName/:maxUsers/:duration -> create a round with a name and number of users
-- POST /shoot/:roundName/:ownName/:targetMarkerID -> shoot a target
+- POST /shoot/:roundID/:ownName/:targetMarkerID -> shoot a target
 - GET /rounds -> returns JSON of all the rounds
 - GET /activeRounds/:roundName -> returns active rounds with roundName
 - GET /activeRounds/ -> returns all active rounds
-- POST /rounds/register/:userName/:roundName
+- POST /rounds/register/:userName/:roundID
+- 
 
 ## Game Logic:
 1. Create a round
@@ -29,7 +30,8 @@ Round:{
   timeStart: int,
   maxUsers: int,
   users [
-    {userName: String}
+    {userName: String,
+     score: int}
   ]
 ```
 
