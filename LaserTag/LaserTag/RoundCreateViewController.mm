@@ -18,7 +18,7 @@
     NSString *roundID;
 }
 
-NSString* roundDuration= @"5000";
+NSString* roundDuration= @"300000";
 NSString* roundName=@"";
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
