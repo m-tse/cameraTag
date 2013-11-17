@@ -8,6 +8,7 @@
 
 #import "RoundViewController.h"
 #import "RoundsViewController.h"
+#import "LTViewController.h"
 
 @interface RoundViewController ()
 
@@ -48,7 +49,7 @@ NSMutableArray* usersArray;
     NSString *userName = RoundsViewController.myName;
     NSLog(userName);
     NSString *roundID = [roundJSON objectForKey:@"_id"];
-    NSString * urlString = [NSString stringWithFormat:@"http://localhost:8080/rounds/register/%@/%@", userName, roundID];
+    NSString * urlString = [NSString stringWithFormat:@"http://10.190.72.149:8080/rounds/register/%@/%@", userName, roundID];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
@@ -56,6 +57,12 @@ NSMutableArray* usersArray;
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
+    [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
+    [self presentViewController:viewController animated:YES completion:nil];
+    
 
 }
 

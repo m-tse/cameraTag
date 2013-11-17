@@ -137,14 +137,16 @@
 }
 
 - (void)sendShootRequest {
-    NSURL *url = [NSURL URLWithString:@"http://10.190.72.149:3000/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
+    NSURL *url = [NSURL URLWithString:@"http://10.190.72.149:8080/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
-    NSLog(@"%@\n", jsonArray);
+    if (response !=  nil) {
+        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
+        NSLog(@"%@\n", jsonArray);
+    }
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
