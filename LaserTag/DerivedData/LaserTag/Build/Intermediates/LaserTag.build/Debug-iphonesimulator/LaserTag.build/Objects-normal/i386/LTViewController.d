@@ -19,4 +19,8 @@ dependencies: \
   /Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/SensorValues.h \
   /Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IVisualSearchCallback.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/EAGLView.h \
-  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LaserParticleSystemView.h
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LaserParticleSystemView.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h

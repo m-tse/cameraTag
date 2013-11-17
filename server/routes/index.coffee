@@ -15,10 +15,14 @@ exports.rounds.all = (req, res) ->
 exports.rounds.create = (req, res) ->
   params = req.params
   if params.duration < 1
-    res.send("Cannot have a negative or 0 round duration.")
+    res.json(400, {
+      "error": "Cannot have a negative or 0 round duration."
+    })
     return
   if params.maxUsers < 2
-    res.send("Round must have at least two users")
+    res.json(400, {
+      "error": "Round must have at least two users"
+    })
     return
   else
     round = {
@@ -42,7 +46,7 @@ exports.rounds.create = (req, res) ->
         db.rounds.save(round)
         db.rounds.findOne({roundName: round.roundName, duration: round.duration}, (err, returnedRound) ->
           
-          res.json(returnedRound)
+          res.json(200, returnedRound)
           )
     )
 
@@ -58,7 +62,12 @@ exports.rounds.register = (req, res) ->
     else if (userNames.length == round.maxUsers)
       res.send(400, "This round is full.")
     else
-      db.rounds.update({"_id" : roundID }, { $push: { users: {name:params.userName, score:0}}})
+      db.rounds.update({"_id" : roundID }, {
+        $push: { users: {
+          name:params.userName, score:0,
+          $sort: { score: -1 }
+        }}
+      })
       db.rounds.findOne({"_id":roundID}, (err, json) ->
         res.send(json))
     )

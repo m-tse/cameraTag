@@ -13,6 +13,7 @@ cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesi
 cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/MetaioSDKViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/MetaioSDKViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/SocketIOTransportXHR.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransportXHR.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/EAGLView.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/EAGLView.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/NSData+SRB64Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/SocketIOTransportWebsocket.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransportWebsocket.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -311,21 +312,21 @@ t1384657839
 s54100
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o
-t1384638686
-s58616
+t1384673448
+s65860
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o
-t1384664925
-s153884
+t1384673448
+s164536
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserParticleSystemView.o
 t1384664168
 s49760
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserTag.LinkFileList
-c00000000528833AE0000000000000A12
-t1384657838
-s2578
+c00000000528868160000000000000AC1
+t1384671254
+s2753
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/MetaioSDKViewController.o
 t1384657839
@@ -335,9 +336,13 @@ N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediate
 t1384657839
 s6536
 
+N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o
+t1384672882
+s125464
+
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o
-t1384664864
-s63904
+t1384671254
+s69356
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/SRWebSocket.o
 t1384657839
@@ -368,7 +373,7 @@ t1384657839
 s5872
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o
-t1384638675
+t1384671254
 s3656
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/x86_64/EAGLView.o
@@ -521,32 +526,32 @@ t1384638674
 s114472
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app
-t1384664926
+t1384673449
 s374
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM
-t1384664926
+t1384673371
 s102
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Base.lproj/Main.storyboardc
-t1384664938
-s170
+t1384672885
+s306
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Info.plist
 t1384638729
 s1081
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag
-t1384664925
-s13215628
+t1384673449
+s13243164
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/PkgInfo
 t1384638729
 s8
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml
-t1384642622
-s8711
+t1384671256
+s19369
 
 N/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/en.lproj/InfoPlist.strings
 t1384638372
@@ -557,9 +562,9 @@ t1384638372
 s425
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard
-c0000000052884F6A0000000000001D7D
-t1384664938
-s7549
+c0000000052886E7100000000000045EB
+t1384672881
+s17899
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/CrossHairView.h
 c00000000000000000000000000000000
@@ -587,9 +592,9 @@ t1384638328
 s136
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h
-c000000005287E778000000000000011B
-t1384638328
-s283
+c00000000528867A000000000000001D0
+t1384671136
+s464
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.m
 c000000005287E77800000000000007DF
@@ -597,14 +602,14 @@ t1384638328
 s2015
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm
-c000000005287E77800000000000007DF
-t1384638328
-s2015
+c00000000528870A20000000000000B0B
+t1384673442
+s2827
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.h
-c0000000052882B1E0000000000000186
-t1384655646
-s390
+c0000000052886D170000000000000304
+t1384672535
+s772
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.m
 c000000005287E77800000000000001F7
@@ -612,9 +617,9 @@ t1384638328
 s503
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm
-c0000000052884F5C000000000000125D
-t1384664924
-s4701
+c000000005288707C0000000000001822
+t1384673404
+s6178
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LaserParticleSystemView.h
 c0000000052881C730000000000000109
@@ -661,10 +666,20 @@ c0000000052882E7E0000000000000484
 t1384656510
 s1156
 
+N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.h
+c00000000528857980000000000000136
+t1384667032
+s310
+
+N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm
+c0000000052886D41000000000000157B
+t1384672577
+s5499
+
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h
-c00000000528832B40000000000000172
-t1384657588
-s370
+c000000005288579800000000000001B7
+t1384667032
+s439
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.m
 c0000000052882E7E0000000000000F69
@@ -672,9 +687,9 @@ t1384656510
 s3945
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm
-c0000000052884F090000000000000F3A
-t1384664841
-s3898
+c00000000528867A000000000000011EA
+t1384671136
+s4586
 
 N/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SRWebSocket.h
 c0000000052882E7E0000000000000D87
@@ -767,9 +782,9 @@ t1384638328
 s425
 
 N/Users/ark5/projects/cameraTag/LaserTag/TrackingData_Marker.xml
-c00000000527CC2D10000000000002207
-t1383908049
-s8711
+c000000005288572D0000000000004BA9
+t1384666925
+s19369
 
 N/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/BackwardCompatibility.h
 c00000000527CC2D00000000000000771
@@ -1026,6 +1041,9 @@ r0
 CBuild AST from /Users/ark5/projects/cameraTag/LaserTag/LaserTag/NSData+SRB64Additions.m
 r0
 
+CBuild AST from /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm
+r0
+
 CBuild AST from /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.m
 r0
 
@@ -1058,7 +1076,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd4d7c3ea8638b841^3a40c4ea8638b841^---0#1#1#--18"Check dependencies36"2B1F9E43-EA96-445C-BB75-12BC1CD233CD-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies20792f28a838b841^7fdd3128a838b841^---0#1#1#--18"Check dependencies36"5A4461FF-B856-4FF1-A77D-90FE64DD0A92-
 
 CCompileAssetCatalog /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Images.xcassets
 s406331172.510159
@@ -1140,8 +1158,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile
 bB982DE6E-B7D3-4EE3-8309-9CD431C924AD
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s406331486.495801
-e406331486.553144
+s406366248.189832
+e406366248.539425
 r1
 xCompileC
 xDerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o
@@ -1152,8 +1170,12 @@ xobjective-c++
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm233"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o LaserTag/LTAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler71027f5e2038b841^a29b8d5e2038b841^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm0000000000000000^4151"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o LaserTag/LTAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-afqrxbjpyoodoqdwjbopfpnqmwnp/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o36"04988005-2FF7-4CAD-AC10-71DEBAE999E2-
-b72F1DFC8-A2C6-412B-8B50-DA5599B153A7
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm233"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o LaserTag/LTAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler4eb33028a838b841^98198a28a838b841^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm0000000000000000^4151"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o LaserTag/LTAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-afqrxbjpyoodoqdwjbopfpnqmwnp/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTAppDelegate.o36"213C2785-0F3C-4397-9660-239A2573908E-
+b01F51F47-6F91-4E45-AECC-623A7A1BEA31
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s406331172.394100
@@ -1172,8 +1194,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile
 bB982DE6E-B7D3-4EE3-8309-9CD431C924AD
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s406357725.113148
-e406357725.443791
+s406366248.191162
+e406366248.736777
 r1
 xCompileC
 xDerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o
@@ -1203,8 +1225,16 @@ d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/SensorValue
 d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IVisualSearchCallback.h
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/EAGLView.h
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LaserParticleSystemView.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm239"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o LaserTag/LTViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler66121ddd8638b841^ac7374dd8638b841^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm0000000000000000^4183"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o LaserTag/LTViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -fno-objc-arc -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-dgbdkqvczcsztyaalrsaxqobkyqn/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o36"38F457C5-0C9C-4292-A555-7B902A349366-
-bC5BDB796-B939-4D30-BAA5-5801F8EAAC6D
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h
+o/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm:180:57: warning: more '%' conversions than data arguments [-Wformat]
+o    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
+o                                                       ~^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm239"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o LaserTag/LTViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler0f0f3128a838b841^7c9dbc28a838b841^-322"/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm:180:57: warning: more '%' conversions than data arguments [-Wformat]    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/52883ec72afe5b79a3000001/Andrew2/1"];                                                       ~^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@40"More '%' conversions than data arguments-406366248#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@75"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm0000000000000000^179#56#179#56#4727#0#19"Format String Issue1(3@75"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm0000000000000000^179#55#179#57#4726#2#-0#0#1#-19%DVTDocumentLocation4@75"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm0000000000000000^4183"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o LaserTag/LTViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -fno-objc-arc -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-dgbdkqvczcsztyaalrsaxqobkyqn/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o36"72DC3A4F-503E-4B85-ADC7-03CA884447F4-
+b01F51F47-6F91-4E45-AECC-623A7A1BEA31
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserParticleSystemView.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LaserParticleSystemView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s406331172.394443
@@ -1288,9 +1318,59 @@ d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/base64.h
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/NSData+SRB64Additions.m246"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.o LaserTag/NSData+SRB64Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler42e9372f6b38b841^1f4c622f6b38b841^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/NSData+SRB64Additions.m0000000000000000^4059"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.o LaserTag/NSData+SRB64Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-gpfivkkmdqiqnvakztbfmusnqcvz/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/NSData+SRB64Additions.m -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.o36"9F2745DF-1263-4A4E-9FB2-3DFFA9A77249-
 bB62C12B4-6965-42FB-97C1-40E0368FD595
 
+CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s406365681.950795
+e406365682.626284
+r1
+xCompileC
+xDerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o
+x/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/MetaioSDKViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IMetaioSDKIOS.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IMetaioSDK.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/MobileStructs.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/ColorFormat.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/STLCompatibility.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/BackwardCompatibility.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IGeometry.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/Rotation.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/ILight.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IBillboardGroup.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IRadar.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IMetaioSDKCallback.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/TrackingValues.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/ISensorsComponent.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/SensorValues.h
+d/Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IVisualSearchCallback.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/EAGLView.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h
+o/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm:48:15: warning: unused variable 'cancel' [-Wunused-variable]
+o    NSInteger cancel = 0;
+o              ^
+o/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm:49:15: warning: unused variable 'go' [-Wunused-variable]
+o    NSInteger go = 1;
+o              ^
+o/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm:54:11: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o    NSLog(LTAppDelegate.serverIP);
+o          ^~~~~~~~~~~~~~~~~~~~~~
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm245"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o LaserTag/RoundViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler228cf3f1a538b841^2255a0f2a538b841^-601"/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm:48:15: warning: unused variable 'cancel' [-Wunused-variable]    NSInteger cancel = 0;              ^/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm:49:15: warning: unused variable 'go' [-Wunused-variable]    NSInteger go = 1;              ^/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm:54:11: warning: format string is not a string literal (potentially insecure) [-Wformat-security]    NSLog(LTAppDelegate.serverIP);          ^~~~~~~~~~~~~~~~~~~~~~3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@24"Unused variable 'cancel'-406365682#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@78"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm0000000000000000^47#14#47#14#1105#0#19"Unused Entity Issue--2@20"Unused variable 'go'-406365682#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm0000000000000000^48#14#48#14#1131#0#19"Unused Entity Issue--2@60"Format string is not a string literal (potentially insecure)-406365682#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@78"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm0000000000000000^53#10#53#10#1283#0#19"Format String Issue1(3@78"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm0000000000000000^53#10#53#32#1283#14#-0#0#1#-19%DVTDocumentLocation4@78"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm0000000000000000^4187"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o LaserTag/RoundViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-afqrxbjpyoodoqdwjbopfpnqmwnp/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o36"00D85538-D69E-4F28-BAD8-95C9AD7DD62B-
+b2C3D6810-49AE-4C7A-8A5F-7AE70C36F479
+
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s406357664.649011
-e406357664.716609
+s406364054.730055
+e406364054.908986
 r1
 xCompileC
 xDerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o
@@ -1304,15 +1384,10 @@ d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h
-o/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm:79:19: warning: unused variable 'roundJSON' [-Wunused-variable]
-o    NSDictionary* roundJSON = [roundJSONArray objectAtIndex:indexPath.row];
-o                  ^
-o/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm:85:13: warning: unused variable 'response1' [-Wunused-variable]
-o    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-o            ^
-o2 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm247"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o LaserTag/RoundsViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler3b3aa6a08638b841^3b73b7a08638b841^-531"/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm:79:19: warning: unused variable 'roundJSON' [-Wunused-variable]    NSDictionary* roundJSON = [roundJSONArray objectAtIndex:indexPath.row];                  ^/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm:85:13: warning: unused variable 'response1' [-Wunused-variable]    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];            ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@27"Unused variable 'roundJSON'-406357664#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@79"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm0000000000000000^78#18#78#18#2094#0#19"Unused Entity Issue--2@27"Unused variable 'response1'-406357664#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@79"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm0000000000000000^84#12#84#12#2375#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@79"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm0000000000000000^4193"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o LaserTag/RoundsViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-afqrxbjpyoodoqdwjbopfpnqmwnp/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o36"17E359F9-DAA0-4B04-A7D5-EF100B3162C6-
-bE2D8B5AE-D8F0-4747-BF0B-29A085A0DBC1
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundViewController.h
+d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm247"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o LaserTag/RoundsViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler2009bb969f38b841^14d1ef969f38b841^---0#0#1#-19%DVTDocumentLocation2@79"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm0000000000000000^4193"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o LaserTag/RoundsViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -stdlib=libstdc++ -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-afqrxbjpyoodoqdwjbopfpnqmwnp/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.mm -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundsViewController.o36"48A96792-2FEE-490D-96CB-9B492D803487-
+b454783F2-AD77-4128-B4B2-138C21FA33E5
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/SRWebSocket.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SRWebSocket.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s406350639.401824
@@ -1453,8 +1528,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile
 bB62C12B4-6965-42FB-97C1-40E0368FD595
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s406331475.263244
-e406331475.296522
+s406364054.729497
+e406364054.885920
 r1
 xCompileC
 xDerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o
@@ -1465,8 +1540,8 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m
 d/Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m212"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o LaserTag/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler187743532038b841^64e94b532038b841^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m0000000000000000^3957"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o LaserTag/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-gpfivkkmdqiqnvakztbfmusnqcvz/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o36"3DC9921B-FF9F-44FC-B5D1-06998842E48C-
-b42AB0BEE-7AA7-4B37-9745-A7B78B98E6B9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m212"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o LaserTag/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbeddba969f38b841^8e21e8969f38b841^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m0000000000000000^3957"CompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o LaserTag/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/ark5/projects/cameraTag/LaserTag    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/ark5/projects/cameraTag/LaserTag/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-generated-files.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-own-target-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-all-target-headers.hmap -iquote /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/LaserTag-project-headers.hmap -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources/i386 -I/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/DerivedSources -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -include /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/PrecompiledHeaders/LaserTag-Prefix-gpfivkkmdqiqnvakztbfmusnqcvz/LaserTag-Prefix.pch -MMD -MT dependencies -MF /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.dia -c /Users/ark5/projects/cameraTag/LaserTag/LaserTag/main.m -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/main.o36"57D363EF-CDD8-4EC8-AEC2-0877C8A436EC-
+b454783F2-AD77-4128-B4B2-138C21FA33E5
 
 CCompileC DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/x86_64/EAGLView.o /Users/ark5/projects/cameraTag/LaserTag/LaserTag/EAGLView.mm normal x86_64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
 s406350332.583529
@@ -1859,13 +1934,13 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile
 bB8011FF9-948B-440B-811F-87D4B63982BE
 
 CCompileStoryboard /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard
-s406357738.770705
-e406357738.908708
+s406365683.697327
+e406365685.075576
 r1
 xCompileStoryboard
 x/Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"CompileStoryboard LaserTag/Base.lproj/Main.storyboard53"CompileStoryboard LaserTag/Base.lproj/Main.storyboardd15ac5ea8638b841^62a3e8ea8638b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard0000000000000000^866"CompileStoryboard LaserTag/Base.lproj/Main.storyboard    cd /Users/ark5/projects/cameraTag/LaserTag    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Base.lproj/Main.storyboardc /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard36"1E4C5158-0441-4AA7-8BEC-6FBBD01AFC43-
-b87D3E021-EC03-4B9A-9EA9-43D8F59722A8
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"CompileStoryboard LaserTag/Base.lproj/Main.storyboard53"CompileStoryboard LaserTag/Base.lproj/Main.storyboard2191b2f3a538b841^cd5913f5a538b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard0000000000000000^866"CompileStoryboard LaserTag/Base.lproj/Main.storyboard    cd /Users/ark5/projects/cameraTag/LaserTag    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.0 --output-format human-readable-text --compile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/Base.lproj/Main.storyboardc /Users/ark5/projects/cameraTag/LaserTag/LaserTag/Base.lproj/Main.storyboard36"2AC3C355-2F20-4A8F-95E0-14999DE6B334-
+b2C3D6810-49AE-4C7A-8A5F-7AE70C36F479
 
 CCopyStringsFile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/en.lproj/InfoPlist.strings LaserTag/en.lproj/InfoPlist.strings
 s406331172.509603
@@ -1888,28 +1963,28 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Copy De
 bB982DE6E-B7D3-4EE3-8309-9CD431C924AD
 
 CCpResource TrackingData_Marker.xml DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml
-s406335422.084259
-e406335422.085059
+s406364056.243102
+e406364056.244097
 r1
 xCpResource
 xTrackingData_Marker.xml
 xDerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml129"CpResource TrackingData_Marker.xml DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml90a315be2f38b841^58c715be2f38b841^---0#0#1#-19%DVTDocumentLocation2@141"file:///Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml0034701adfffdf42^659"CpResource TrackingData_Marker.xml DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/ark5/projects/cameraTag/LaserTag/TrackingData_Marker.xml /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app36"8E679528-9D84-42E9-9D95-73F0EDEF9879-
-b35BD7F07-4C50-40B3-954B-376CF2513D68
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml129"CpResource TrackingData_Marker.xml DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xmlbb473e989f38b841^9a7d3e989f38b841^---0#0#1#-19%DVTDocumentLocation2@141"file:///Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml0000000000000000^659"CpResource TrackingData_Marker.xml DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/TrackingData_Marker.xml    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/ark5/projects/cameraTag/LaserTag/TrackingData_Marker.xml /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app36"50F02B29-854D-44C1-BC2E-CEB21BF2A81B-
+b454783F2-AD77-4128-B4B2-138C21FA33E5
 
 CGenerateDSYMFile /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag
-s406357726.052202
-e406357726.429836
+s406366249.619303
+e406366249.998489
 r1
 xGenerateDSYMFile
 x/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM
 x/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Generate /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM172"GenerateDSYMFile DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTagd7680dde8638b841^fa0a6ede8638b841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM/0000000000000000^754"GenerateDSYMFile DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM36"F76ECA77-1D68-4921-81D8-5E3D51276646-
-bC5BDB796-B939-4D30-BAA5-5801F8EAAC6D
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Generate /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM172"GenerateDSYMFile DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTage6969e29a838b841^499eff29a838b841^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM/0000000000000000^754"GenerateDSYMFile DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app.dSYM36"725F3B52-2F6C-4342-A131-70A8970B34D5-
+b01F51F47-6F91-4E45-AECC-623A7A1BEA31
 
 CLd /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag normal i386
-s406357725.446109
-e406357726.050365
+s406366248.739092
+e406366249.617153
 r1
 xLd
 x/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag
@@ -1924,6 +1999,7 @@ d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediate
 d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/MetaioSDKViewController.o
 d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/SocketIOTransportXHR.o
 d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/EAGLView.o
+d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/RoundViewController.o
 d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LTViewController.o
 d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/NSData+SRB64Additions.o
 d/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/SocketIOTransportWebsocket.o
@@ -1957,9 +2033,8 @@ d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libc++abi.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
@@ -1981,12 +2056,13 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
 d/usr/lib/libSystem.B.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libc++abi.dylib
 d/usr/lib/system/libcache.dylib
 d/usr/lib/system/libcommonCrypto.dylib
 d/usr/lib/system/libcompiler_rt.dylib
 d/usr/lib/system/libcopyfile.dylib
 d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libdyld.dylib
 d/usr/lib/system/libkeymgr.dylib
 d/usr/lib/system/liblaunch.dylib
 d/usr/lib/system/libmacho.dylib
@@ -2007,8 +2083,9 @@ d/usr/lib/system/libsystem_pthread.dylib
 d/usr/lib/system/libsystem_sandbox.dylib
 d/usr/lib/system/libunc.dylib
 d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag94"Ld DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag normal i386a64472dd8638b841^71e50cde8638b841^---0#0#1#--1871"Ld DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag normal i386    cd /Users/ark5/projects/cameraTag/LaserTag    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -filelist /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserTag.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -stdlib=libstdc++ -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework metaioSDK -framework GLKit -framework CFNetwork -licucore -framework CoreVideo -framework CoreMotion -framework CoreLocation -framework CoreMedia -framework Security -framework AVFoundation -framework OpenGLES -framework AudioToolbox -lxml2 -lz -framework QuartzCore -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserTag_dependency_info.dat -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag36"67897BDE-1982-4358-A163-D66E51B7314F-
-bC5BDB796-B939-4D30-BAA5-5801F8EAAC6D
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag94"Ld DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag normal i386dd44bd28a838b841^fcfe9d29a838b841^---0#0#1#--1871"Ld DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag normal i386    cd /Users/ark5/projects/cameraTag/LaserTag    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator -F/Users/ark5/projects/cameraTag/LaserTag -filelist /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserTag.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -stdlib=libstdc++ -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework metaioSDK -framework GLKit -framework CFNetwork -licucore -framework CoreVideo -framework CoreMotion -framework CoreLocation -framework CoreMedia -framework Security -framework AVFoundation -framework OpenGLES -framework AudioToolbox -lxml2 -lz -framework QuartzCore -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Intermediates/LaserTag.build/Debug-iphonesimulator/LaserTag.build/Objects-normal/i386/LaserTag_dependency_info.dat -o /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag36"FB1A1D69-2AB7-4E23-819D-0C61FD8BD9FC-
+b01F51F47-6F91-4E45-AECC-623A7A1BEA31
 
 CLd /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app/LaserTag normal x86_64
 s406350580.302505
@@ -2488,11 +2565,11 @@ CProcessPCH++ /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Index
 r0
 
 CTouch /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app
-s406357738.909457
-e406357738.912850
+s406365685.465866
+e406365685.472779
 r1
 xTouch
 x/Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app76"Touch DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app3cdee8ea8638b841^53b1e9ea8638b841^---0#0#1#--452"Touch DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app36"059832CF-6E99-4BE5-A1FC-4A31D3240BA9-
-b87D3E021-EC03-4B9A-9EA9-43D8F59722A8
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Touch /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app76"Touch DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app874e77f5a538b841^9e0979f5a538b841^---0#0#1#--452"Touch DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app    cd /Users/ark5/projects/cameraTag/LaserTag    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ark5/projects/cameraTag/LaserTag/DerivedData/LaserTag/Build/Products/Debug-iphonesimulator/LaserTag.app36"BCC6ED44-B0D4-4E50-9955-E741E2D019BD-
+b2C3D6810-49AE-4C7A-8A5F-7AE70C36F479
 

@@ -20,6 +20,7 @@
 + (SocketIO*) socketIO { return socketIO; }
 
 static SocketIO * socketIO;
+
 NSMutableArray* roundJSONArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

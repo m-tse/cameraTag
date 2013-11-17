@@ -40,7 +40,7 @@
 		07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07F112611838220B00CF86CD /* TrackingData_Marker.xml */; };
 		07F1127418383CD400CF86CD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1127318383CD400CF86CD /* GLKit.framework */; };
-		233A1E4D18389E7800610F2D /* RoundCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233A1E4C18389E7800610F2D /* RoundCreateViewController.m */; };
+		233A1E4D18389E7800610F2D /* RoundCreateViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 233A1E4C18389E7800610F2D /* RoundCreateViewController.mm */; };
 		233A1E501838C8E300610F2D /* RoundResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233A1E4F1838C8E300610F2D /* RoundResultsViewController.m */; };
 		2353FAF9183836F00080D9D5 /* RoundsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAF8183836F00080D9D5 /* RoundsViewController.mm */; };
 		2353FB07183841A10080D9D5 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAFD183841A10080D9D5 /* SocketIO.m */; };
@@ -108,7 +108,7 @@
 		07F112611838220B00CF86CD /* TrackingData_Marker.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrackingData_Marker.xml; sourceTree = "<group>"; };
 		07F1127318383CD400CF86CD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		233A1E4B18389E7800610F2D /* RoundCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCreateViewController.h; sourceTree = "<group>"; };
-		233A1E4C18389E7800610F2D /* RoundCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundCreateViewController.m; sourceTree = "<group>"; };
+		233A1E4C18389E7800610F2D /* RoundCreateViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RoundCreateViewController.mm; sourceTree = "<group>"; };
 		233A1E4E1838C8E300610F2D /* RoundResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundResultsViewController.h; sourceTree = "<group>"; };
 		233A1E4F1838C8E300610F2D /* RoundResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundResultsViewController.m; sourceTree = "<group>"; };
 		2353FAF7183836F00080D9D5 /* RoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundsViewController.h; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 				2353FB2E183871960080D9D5 /* RoundViewController.h */,
 				2353FB2F183871960080D9D5 /* RoundViewController.mm */,
 				233A1E4B18389E7800610F2D /* RoundCreateViewController.h */,
-				233A1E4C18389E7800610F2D /* RoundCreateViewController.m */,
+				233A1E4C18389E7800610F2D /* RoundCreateViewController.mm */,
 				233A1E4E1838C8E300610F2D /* RoundResultsViewController.h */,
 				233A1E4F1838C8E300610F2D /* RoundResultsViewController.m */,
 			);
@@ -422,7 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070B453A1838104500ED29B5 /* LTAppDelegate.mm in Sources */,
-				233A1E4D18389E7800610F2D /* RoundCreateViewController.m in Sources */,
+				233A1E4D18389E7800610F2D /* RoundCreateViewController.mm in Sources */,
 				070B45361838104500ED29B5 /* main.m in Sources */,
 				2353FB09183841A10080D9D5 /* SocketIOPacket.m in Sources */,
 				2353FAF9183836F00080D9D5 /* RoundsViewController.mm in Sources */,
