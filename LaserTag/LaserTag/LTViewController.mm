@@ -8,16 +8,41 @@
 
 #import "LTViewController.h"
 #import "LaserParticleSystemView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface LTViewController ()
 
 @end
 
 @implementation LTViewController {
-    LaserParticleSystemView *laser;
+    float _curRed;
+    BOOL _increasing;
+    GLKView *gView;
+    GLfloat _zTranslate;
+    NSArray *laserShots;
 }
 
 #pragma mark - UIViewController lifecycle
+
+- (void)addTargetingCircle {
+    // Set up the shape of the circle
+    int radius = 10;
+    CAShapeLayer *circle = [CAShapeLayer layer];
+    // Make a circular shape
+    circle.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 2.0*radius, 2.0*radius)
+                                             cornerRadius:radius].CGPath;
+    // Center the shape in self.view
+    circle.position = CGPointMake(CGRectGetMidX(self.view.frame)-radius,
+                                  CGRectGetMidY(self.view.frame)-radius);
+    
+    // Configure the apperence of the circle
+    circle.fillColor = [UIColor clearColor].CGColor;
+    circle.strokeColor = [UIColor redColor].CGColor;
+    circle.lineWidth = 5;
+    
+    // Add to parent layer
+    [self.view.layer addSublayer:circle];
+}
 
 - (void) viewDidLoad
 {
@@ -36,8 +61,10 @@
             NSLog(@"Loaded the tracking configuration");
         }
 	}
-    laser = [[LaserParticleSystemView alloc] init];
-    [[self view] addSubview:laser];
+    
+    [self addTargetingCircle];
+    
+   
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -82,15 +109,17 @@
     // get all the detected poses/targets
     std::vector<metaio::TrackingValues> poses = m_metaioSDK->getTrackingValues();
     
-    if (poses.empty()) {
-        [laser setBirthrate:0.0f];
-    } else {
-        [laser setBirthrate:220.0f];
-    }
+//    if (poses.empty()) {
+//        [laser setBirthrate:0.0f];
+//    } else {
+//        [laser setBirthrate:220.0f];
+//    }
     for( std::vector<metaio::TrackingValues>::const_iterator i = poses.begin(); i != poses.end(); ++i) {
-        printf("Position: %f %f %f\n", i->translation.x, i->translation.y, i->translation.z);
+//        printf("Position: %f %f %f\n", i->translation.x, i->translation.y, i->translation.z);
     }
 }
+
+
 
 #pragma mark - Rotation handling
 
@@ -106,5 +135,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)shootButtonPressed:(id)sender {
+    NSLog(@"shoot pressed");
+    LaserParticleSystemView *laser = [[LaserParticleSystemView alloc] init];
+    [laser setBirthrate:220.0f];
+    [self.view addSubview:laser];
+    
+    std::vector<metaio::TrackingValues> poses = m_metaioSDK->getTrackingValues();
+    if (!poses.empty()) {
+        metaio::TrackingValues targetPosition = poses.front();
+        float x = targetPosition.translation.x;
+        float y = targetPosition.translation.y;
+        float dim = 50.0f;
+        if (x > -dim && x < dim && y > -dim && y < dim) {
+            NSLog(@"you hit it");
+        } else {
+            NSLog(@"you missed");
+        }
+    } else {
+        NSLog(@"you missed");
+    }
+
+}
+
 
 @end
