@@ -56,13 +56,14 @@ NSString* roundName=@"";
     NSInteger cancel = 0;
     NSInteger go = 1;
     NSLog(@"%d", buttonIndex);
-    NSLog(@"Entered: %@",[[alertView textFieldAtIndex:0] text]);
+
     if(buttonIndex==cancel){
         [alertView dismissWithClickedButtonIndex:buttonIndex animated:TRUE];
     }
     else if(buttonIndex==go){
         NSString *userName = [[alertView textFieldAtIndex:0] text];
-        NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
+        NSString *markerID = [[alertView textFieldAtIndex:1] text];
+        NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID, markerID];
         NSURL *url = [NSURL URLWithString:urlString];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         [request setHTTPMethod:@"POST"];
@@ -130,9 +131,11 @@ NSString* roundName=@"";
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
     if ([urlResponse statusCode] == 200) {
         roundID = [json objectForKey:@"_id"];
-        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Enter Username" message:@"Room created" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go", nil];
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Enter User Info" message:@"Room created" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go", nil];
         
-        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+        [[alert textFieldAtIndex:0] setPlaceholder:@"Username"];
+        [[alert textFieldAtIndex:1] setPlaceholder:@"QR Marker ID"];
         [alert show];
         
         

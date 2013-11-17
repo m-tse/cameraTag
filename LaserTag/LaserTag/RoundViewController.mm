@@ -80,8 +80,9 @@ NSMutableArray* usersArray;
     }
     else if(buttonIndex==go){
         NSString *userName = [[alertView textFieldAtIndex:0] text];
+        NSString *markerID = [[alertView textFieldAtIndex:1] text];
         NSString *roundID = [roundJSON objectForKey:@"_id"];
-        NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
+        NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID, markerID];
         NSURL *url = [NSURL URLWithString:urlString];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         [request setHTTPMethod:@"POST"];
@@ -116,9 +117,11 @@ NSMutableArray* usersArray;
 
 
 - (IBAction)enterRound:(id)sender {
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Enter Username" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Enter User Info" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go", nil];
 
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+    [[alert textFieldAtIndex:0] setPlaceholder:@"Username"];
+    [[alert textFieldAtIndex:1] setPlaceholder:@"QR Marker ID"];
     [alert show];
 }
 

@@ -13,7 +13,7 @@
 
 @implementation LTAppDelegate
 @synthesize navigationController;
-static NSString* serverIP = @"http:localhost";
+static NSString* serverIP = @"http://10.190.73.2";
 static NSString* serverPort = @"3000";
 //SocketIO* socketIO;
 

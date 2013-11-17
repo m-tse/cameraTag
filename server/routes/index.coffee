@@ -6,6 +6,7 @@ exports.index = (req, res) ->
 
 exports.rounds = {}
 exports.rounds.all = (req, res) -> 
+
   db.rounds.find( (err, rounds) ->
     if(err)
       return
@@ -64,7 +65,9 @@ exports.rounds.register = (req, res) ->
     else
       db.rounds.update({"_id" : roundID }, {
         $push: { users: {
-          name:params.userName, score:0,
+          name:params.userName, 
+          score:0, 
+          markerID: parseInt(params.markerID)
           $sort: { score: -1 }
         }}
       })
@@ -121,6 +124,7 @@ exports.shoot = (req, res) ->
   unless (roundId and username)
     res.send("Need roundId and Username")
   else
+    io.sockets.emit('this', { will: 'be received by everyone'});
     db.rounds.findOne({ "_id": db.ObjectId(roundId) }, (err, round) ->
       if (err)
         return

@@ -25,26 +25,28 @@ app.use(express.static(path.join(__dirname, 'public')))
 # if ('development' == app.get('env')) 
   # app.use(express.errorHandler())
 
-
-app.get('/', routes.index)
-app.get('/rounds', routes.rounds.all)
-app.get('/activeRounds/:roundName', routes.activeRounds.one)
-app.get('/activeRounds', routes.activeRounds.all)
-app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
-app.post('/rounds/register/:userName/:roundID', routes.rounds.register)
-app.post('/shoot/:roundId/:userName/:targetMarkerId', routes.shoot)
-app.post('/rounds/leave/:userName/:roundID', routes.rounds.leave)
-
 httpserver = http.createServer(app).listen(app.get('port'), ()->
   console.log('Express server listening on port ' + app.get('port'))
 )
 io = require('socket.io').listen(httpserver)
 
+app.get('/', (req, res)->
+  io.sockets.emit('this', { will: 'be received by everyone'});
+
+  )
+app.get('/rounds', routes.rounds.all)
+app.get('/activeRounds/:roundName', routes.activeRounds.one)
+app.get('/activeRounds', routes.activeRounds.all)
+app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
+app.post('/rounds/register/:userName/:roundID/:markerID', routes.rounds.register)
+app.post('/shoot/:roundId/:userName/:targetMarkerId', routes.shoot)
+app.post('/rounds/leave/:userName/:roundID', routes.rounds.leave)
+
+
 io.sockets.on('connection', (socket) ->
-  routes.activeRounds.alljson( (res) ->
-    socket.emit('resetActiveRounds', res[0])
-    )
+  # routes.activeRounds.alljson( (res) ->
+    # socket.emit('resetActiveRounds', res[0])
+    # )
 
     # socket.emit('activeRounds', routes.activeRounds.all())
-  
 )
