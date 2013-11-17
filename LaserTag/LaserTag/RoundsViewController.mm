@@ -11,6 +11,7 @@
 #import "SocketIO.h"
 #import "LTAppDelegate.h"
 #import "RoundCreateViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface RoundsViewController ()
 
@@ -25,6 +26,10 @@
 static SocketIO * socketIO;
 
 NSMutableArray* roundJSONArray;
+
+- (void) vibrate {
+    AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,7 +48,6 @@ NSMutableArray* roundJSONArray;
     if([eventType  isEqual: @"resetActiveRounds"]){
         [self reRender];
     } else if ([eventType isEqualToString:@"sendHighestScoringUser"]) {
-        NSLog(@"ELEKRJELSKRJLEKR");
         if (ltViewController != nil) {
             NSArray *users = [JSON objectForKey:@"args"];
             NSDictionary *topUser = [users objectAtIndex:0];
@@ -160,8 +164,6 @@ NSMutableArray* roundJSONArray;
     RoundCreateViewController *viewController = (RoundCreateViewController *)[storyboard instantiateViewControllerWithIdentifier:@"RoundCreateViewController"];
     [viewController setRoundsViewController:self];
     [self.navigationController pushViewController:viewController animated:TRUE];
- 
-    
-    
 }
+
 @end
