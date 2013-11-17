@@ -11,6 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "RoundsViewController.h"
 #import "LTAppDelegate.h"
+#import "RoundResultsViewController.h"
 
 @interface LTViewController ()
 
@@ -218,6 +219,15 @@
     } else {
         NSLog(@"you missed");
     }
+}
+
+- (void) roundOver {
+    NSString *roundID = [roundJSON objectForKey:@"_id"];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RoundResultsViewController * controller = (RoundResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundResultsViewController"];
+    [self.navigationController pushViewController:controller animated:TRUE];
+    
 }
 
 - (IBAction)leaveButtonPressed:(id)sender {

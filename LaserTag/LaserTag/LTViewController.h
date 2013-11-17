@@ -28,7 +28,6 @@
 - (IBAction)shootButtonPressed:(id)sender;
 - (IBAction)leaveButtonPressed:(id)sender;
 
-- (void)startCountdown:(CGFloat)millisecondsRemaining;
 - (void)updateCounter:(NSTimer *)theTimer;
 - (void)countdownTimer;
 

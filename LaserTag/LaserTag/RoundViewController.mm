@@ -39,6 +39,8 @@ NSMutableArray* usersArray;
 	// Do any additional setup after loading the view.
     NSString * roundName = [roundJSON objectForKey:@"roundName"];
     self.title = roundName;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
     usersArray = [roundJSON objectForKey:@"users"];
     [self countdownTimer];
 

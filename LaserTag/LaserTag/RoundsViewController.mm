@@ -9,7 +9,6 @@
 #import "RoundsViewController.h"
 #import "RoundViewController.h"
 #import "SocketIO.h"
-#import "SocketIOPacket.h"
 #import "LTAppDelegate.h"
 
 @interface RoundsViewController ()
@@ -18,7 +17,10 @@
 
 @implementation RoundsViewController
 
-SocketIO * socketIO;
++ (SocketIO*) socketIO { return socketIO; }
+
+static SocketIO * socketIO;
+
 NSMutableArray* roundJSONArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,7 +33,13 @@ NSMutableArray* roundJSONArray;
 }
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet{
     
-    NSLog(@"did receive event, data: %@", packet.data);
+    NSData* roundsJSONString = [packet.data dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *requestError;
+    NSDictionary* JSON = [NSJSONSerialization JSONObjectWithData:roundsJSONString options:kNilOptions error:&requestError];
+    NSString *eventType = [JSON objectForKey:@"name"];
+    if([eventType  isEqual: @"resetActiveRounds"]){
+        [self reRender];
+    }
 }
 - (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
 {
@@ -40,15 +48,23 @@ NSMutableArray* roundJSONArray;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Active Rounds";
     socketIO = [[SocketIO alloc] initWithDelegate:self];
-    [socketIO connectToHost:LTAppDelegate.serverIP onPort:8080];
-//    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    NSString* urlWithoutHTTP = [LTAppDelegate.serverIP substringFromIndex:7];
+    [socketIO connectToHost:urlWithoutHTTP onPort:LTAppDelegate.serverPort.intValue];
+    self.title = @"Active Rounds";
+    self.automaticallyAdjustsScrollViewInsets = NO;
+//    socketIO = [[SocketIO alloc] initWithDelegate:self];
+//    [socketIO connectToHost:@"http://localhost" onPort:3000];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 //    [socketIO sendEvent:@"getActiveRounds" withData:dict];
     
-//    navigationController = [[UINavigationController alloc]initWithRootViewController:self];
 
     
+    //Get initial rounds
+    [self reRender];
+}
+- (void) reRender
+{
     //Get initial rounds
     NSString *urlString = [NSString stringWithFormat:@"%@:%@/activeRounds", LTAppDelegate.serverIP, LTAppDelegate.serverPort];
     NSURL *url = [NSURL URLWithString:urlString];
@@ -57,9 +73,7 @@ NSMutableArray* roundJSONArray;
     NSError *requestError;
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
     roundJSONArray = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
-
 }
-
 
 
 - (void)didReceiveMemoryWarning
@@ -101,14 +115,12 @@ NSMutableArray* roundJSONArray;
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier];
     }
-    
+
     // Set the data for this cell:
     
-//    cell.textLabel.text = [roundJSONArray objectAtIndex:indexPath.row];
     NSDictionary* roundObject = [roundJSONArray objectAtIndex:indexPath.row];
     NSString* roundName = [roundObject objectForKey:@"roundName"];
-    NSLog(@"%@", roundObject);
-    
+
     cell.textLabel.text = roundName;
     NSString* maxUsers = [roundObject objectForKey:@"maxUsers"];
     NSArray* usersArray = [roundObject objectForKey:@"users"];

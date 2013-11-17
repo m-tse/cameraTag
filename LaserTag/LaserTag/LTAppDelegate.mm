@@ -8,14 +8,18 @@
 
 #import "LTAppDelegate.h"
 #import "RoundsViewController.h"
+#import "SocketIOPacket.h"
+
 
 @implementation LTAppDelegate
 @synthesize navigationController;
 static NSString* serverIP = @"http://colab-sbx-13.oit.duke.edu";
 static NSString* serverPort = @"3000";
+//SocketIO* socketIO;
 
 + (NSString*) serverIP { return serverIP; }
 + (NSString*) serverPort { return serverPort; }
+//+ (SocketIO*) socketIO { return socketIO; }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -29,6 +33,9 @@ static NSString* serverPort = @"3000";
                    initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
+    
+
+    
     return YES;
 
 }

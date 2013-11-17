@@ -2,6 +2,7 @@ dependencies: \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundCreateViewController.mm \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundCreateViewController.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/MetaioSDKViewController.h \
   /Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IMetaioSDKIOS.h \
