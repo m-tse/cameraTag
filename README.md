@@ -13,6 +13,7 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 - POST /rounds/create/:roundName/:maxUsers/:duration -> create a round with a name and number of users
 - POST /shoot/:roundID/:ownName/:targetMarkerID -> shoot a target
 - GET /rounds -> returns JSON of all the rounds
+- GET /rounds/:id -> returns single round based on ID
 - GET /activeRounds/:roundName -> returns active rounds with roundName
 - GET /activeRounds/ -> returns all active rounds
 - POST /rounds/register/:userName/:roundID/:markerID
