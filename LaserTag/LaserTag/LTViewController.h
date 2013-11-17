@@ -23,7 +23,6 @@
 }
 @property (nonatomic, copy) NSString *userName;
 
-@property (nonatomic, retain) UILabel *myCounterLabel;
 @property (nonatomic, retain) NSDictionary *roundJSON;
 @property (nonatomic, retain) NSString *myName;
 
@@ -32,6 +31,7 @@
 
 - (void)updateCounter:(NSTimer *)theTimer;
 - (void)countdownTimer;
+- (void)setTopInfo:(NSString *)name score:(NSString *)score;
 
 
 @end

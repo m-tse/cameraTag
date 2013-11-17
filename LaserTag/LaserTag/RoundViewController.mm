@@ -22,6 +22,7 @@
 
 @synthesize roundJSON;
 @synthesize myCounterLabel;
+@synthesize roundsViewController;
 NSMutableArray* usersArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -99,8 +100,10 @@ NSMutableArray* usersArray;
                 viewController.userName = userName;
                 [viewController countdownTimer];
                 [viewController setRoundJSON:json];
+                NSLog(@"%@\n", json);
                 [viewController setMyName:userName];
                 [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
+                [roundsViewController setLtViewController:viewController];
                 [self.navigationController pushViewController:viewController animated:YES];
             } else {
                 UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"

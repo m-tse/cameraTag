@@ -1,7 +1,9 @@
 dependencies: \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundCreateViewController.mm \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundCreateViewController.h \
-  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/RoundsViewController.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h \
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOPacket.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTViewController.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/MetaioSDKViewController.h \
@@ -22,5 +24,4 @@ dependencies: \
   /Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/SensorValues.h \
   /Users/ark5/projects/cameraTag/LaserTag/metaioSDK.framework/Headers/IVisualSearchCallback.h \
   /Users/ark5/projects/cameraTag/LaserTag/LaserTag/EAGLView.h \
-  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIO.h \
-  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/SocketIOTransport.h
+  /Users/ark5/projects/cameraTag/LaserTag/LaserTag/LTAppDelegate.h

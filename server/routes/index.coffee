@@ -51,10 +51,12 @@ exports.rounds.create = (req, res) ->
           )
     )
 
-exports.rounds.highestScoringUser = (roundID) ->
-  db.rounds.findOne({"_id": roundID}, (err, round) ->
+exports.rounds.highestScoringUser = (roundID, socket) ->
+  console.log(roundID)
+  db.rounds.findOne({"_id": db.ObjectId(roundID)}, (err, round) ->
     user = null
-    user = u for u in rounds.users when user is null or u.score > user.score
+    user = u for u in round.users when user is null or u.score > user.score
+    socket.emit('sendHighestScoringUser', user)
   )
 
 

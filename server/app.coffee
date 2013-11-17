@@ -45,11 +45,11 @@ io.sockets.on('connection', (socket) ->
     socket.emit('resetActiveRounds', res[0])
   )
 
+  console.log('connected')
   socket.on('shootSuccessful', (data) ->
     # data 
     console.log(data)
-    highestUser = routes.rounds.highestScoringUser(data)
-    socket.emit('sendHighestScoringUser', highestUser)
+    routes.rounds.highestScoringUser(data, socket)
   )
     # socket.emit('activeRounds', routes.activeRounds.all())
   
