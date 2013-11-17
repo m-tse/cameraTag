@@ -45,6 +45,7 @@ exports.rounds.create = (req, res) ->
     )
 
 exports.rounds.register = (req, res) ->
+  params = req.params
   roundID = db.ObjectId(params.roundID)
   db.rounds.findOne({"_id" : roundID }, (err, round) ->
     if (err)
@@ -90,14 +91,13 @@ exports.shoot = (req, res) ->
   roundId = params.roundId
   username = params.userName
 
-  db.rounds.findOne({ "_id": roundId }, (err, round) ->
-    if (err)
-      return
-    round.findOne({ "userName": username }, (err, user) ->
+  unless (roundId and username)
+    res.send("Need roundId and Username")
+  else
+    db.rounds.findOne({ "_id": db.ObjectId(roundId) }, (err, round) ->
       if (err)
         return
-      user.score += 100
-      db.users.save(user)
-      res.send(200)
+      res.send(round)
+      user.score += 100 for user in round.users when user.name is username
+      db.rounds.save(round)
     )
-  )
