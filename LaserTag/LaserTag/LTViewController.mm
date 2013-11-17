@@ -56,8 +56,10 @@
     NSDictionary *topScoringUser = [users objectAtIndex:0];
     NSString *topName = [topScoringUser objectForKey:@"name"];
     NSString *topScore = [topScoringUser objectForKey:@"score"];
-    highScoreLabel.text = [[NSString alloc] initWithFormat:@"%@: %@", topName, topScore];
-    myScoreLabel.text = [[NSString alloc] initWithFormat:@"%@: %d", [RoundsViewController myName], 0];
+    highScoreLabel.text = [[NSString alloc] initWithFormat:@"%@", topScore];
+    myScoreLabel.text = [[NSString alloc] initWithFormat:@"%d", 0];
+    topNameLabel.text = [[NSString alloc] initWithFormat:@"%@", topName];
+    myNameLabel.text = [[NSString alloc] initWithFormat:@"%@", _myName];
 }
 
 - (void) viewDidLoad
@@ -179,11 +181,11 @@
 
 - (void)increaseScore {
     NSNumber *myScore = [[[NSNumberFormatter alloc] init] numberFromString:myScoreLabel.text];
-    myScoreLabel.text = [NSString stringWithFormat:@"%@: %d", [RoundsViewController myName], ([myScore intValue] + 100)];
+    myScoreLabel.text = [NSString stringWithFormat:@"%d", ([myScore intValue] + 100)];
 }
 
 - (void)sendShootRequest {
-    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/%@/%@/1", LTAppDelegate.serverIP, LTAppDelegate.serverPort, [roundJSON objectForKey:@"_id"], [RoundsViewController myName]];
+    NSString *urlString = [NSString stringWithFormat:@"%@:%@/shoot/%@/%@/1", LTAppDelegate.serverIP, LTAppDelegate.serverPort, [roundJSON objectForKey:@"_id"], _myName];
     NSURL *url = [NSURL URLWithString:urlString];
     NSLog(@"%@\n", urlString);
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

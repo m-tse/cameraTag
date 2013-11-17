@@ -40,6 +40,7 @@
 		07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07F112611838220B00CF86CD /* TrackingData_Marker.xml */; };
 		07F1127418383CD400CF86CD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1127318383CD400CF86CD /* GLKit.framework */; };
+		233A1E4D18389E7800610F2D /* RoundCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233A1E4C18389E7800610F2D /* RoundCreateViewController.m */; };
 		2353FAF9183836F00080D9D5 /* RoundsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAF8183836F00080D9D5 /* RoundsViewController.mm */; };
 		2353FB07183841A10080D9D5 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAFD183841A10080D9D5 /* SocketIO.m */; };
 		2353FB08183841A10080D9D5 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAFF183841A10080D9D5 /* SocketIOJSONSerialization.m */; };
@@ -105,6 +106,8 @@
 		07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetaioSDKViewController.mm; sourceTree = "<group>"; };
 		07F112611838220B00CF86CD /* TrackingData_Marker.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrackingData_Marker.xml; sourceTree = "<group>"; };
 		07F1127318383CD400CF86CD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		233A1E4B18389E7800610F2D /* RoundCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCreateViewController.h; sourceTree = "<group>"; };
+		233A1E4C18389E7800610F2D /* RoundCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundCreateViewController.m; sourceTree = "<group>"; };
 		2353FAF7183836F00080D9D5 /* RoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundsViewController.h; sourceTree = "<group>"; };
 		2353FAF8183836F00080D9D5 /* RoundsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RoundsViewController.mm; sourceTree = "<group>"; };
 		2353FAFC183841A10080D9D5 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
@@ -221,23 +224,25 @@
 				2353FB21183843A90080D9D5 /* SocketRocket */,
 				2353FB0C183841A90080D9D5 /* SocketIO */,
 				07F1125A1838203500CF86CD /* EAGLView.h */,
+				070B453B1838104500ED29B5 /* Main.storyboard */,
 				07F1125B1838203500CF86CD /* EAGLView.mm */,
 				07F1125C1838203500CF86CD /* MetaioSDKViewController.h */,
 				07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */,
 				070B4563183811C700ED29B5 /* particle.png */,
+				070B455E183810A900ED29B5 /* LaserParticleSystemView.h */,
+				070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */,
 				070B45381838104500ED29B5 /* LTAppDelegate.h */,
 				070B45391838104500ED29B5 /* LTAppDelegate.mm */,
-				070B453B1838104500ED29B5 /* Main.storyboard */,
 				070B453E1838104500ED29B5 /* LTViewController.h */,
 				070B453F1838104500ED29B5 /* LTViewController.mm */,
 				070B45411838104500ED29B5 /* Images.xcassets */,
 				070B45301838104500ED29B5 /* Supporting Files */,
-				070B455E183810A900ED29B5 /* LaserParticleSystemView.h */,
-				070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */,
 				2353FAF7183836F00080D9D5 /* RoundsViewController.h */,
 				2353FAF8183836F00080D9D5 /* RoundsViewController.mm */,
 				2353FB2E183871960080D9D5 /* RoundViewController.h */,
 				2353FB2F183871960080D9D5 /* RoundViewController.mm */,
+				233A1E4B18389E7800610F2D /* RoundCreateViewController.h */,
+				233A1E4C18389E7800610F2D /* RoundCreateViewController.m */,
 			);
 			path = LaserTag;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070B453A1838104500ED29B5 /* LTAppDelegate.mm in Sources */,
+				233A1E4D18389E7800610F2D /* RoundCreateViewController.m in Sources */,
 				070B45361838104500ED29B5 /* main.m in Sources */,
 				2353FB09183841A10080D9D5 /* SocketIOPacket.m in Sources */,
 				2353FAF9183836F00080D9D5 /* RoundsViewController.mm in Sources */,

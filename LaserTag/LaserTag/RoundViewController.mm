@@ -49,59 +49,61 @@ NSMutableArray* usersArray;
     NSInteger go = 1;
     NSLog(@"%d", buttonIndex);
     NSLog(@"Entered: %@",[[alertView textFieldAtIndex:0] text]);
+    if(buttonIndex==cancel){
+        [alertView dismissWithClickedButtonIndex:buttonIndex animated:TRUE];
+    }
+    else if(buttonIndex==go){
+        NSString *userName = [[alertView textFieldAtIndex:0] text];
+        NSString *roundID = [roundJSON objectForKey:@"_id"];
+        NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
+        NSURL *url = [NSURL URLWithString:urlString];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+        [request setHTTPMethod:@"POST"];
+        
+        NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
+        NSError *requestError;
+        NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+        if (response1 !=  nil) {
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+            NSLog(@"response: %@\n", json);
+            if ([urlResponse statusCode] == 200) {
+                NSDate *now = [[NSDate alloc] init];
+                NSTimeInterval timeInterval = [now timeIntervalSince1970] ;
+                NSString *timeStartString = [json objectForKey:@"timeStart"];
+                NSString *timeLimitString = [json objectForKey:@"duration"];
+                CGFloat timeNow = [[NSNumber numberWithDouble:timeInterval] floatValue];
+                CGFloat timeStart = (CGFloat)[timeStartString floatValue];
+                CGFloat timeElapsed = timeNow - timeStart;
+                CGFloat timeLimit = (CGFloat)[timeLimitString floatValue];
+                CGFloat timeRemaining = timeLimit - timeElapsed;
+                
+                NSLog(@"Time remaining %f\n", timeRemaining);
+                
+                UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
+                [viewController startCountdown:timeRemaining];
+                [viewController setRoundJSON:json];
+                [viewController setMyName:userName];
+                [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
+                [self presentViewController:viewController animated:YES completion:nil];
+            } else {
+                UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
+                                                                  message:@"Could not enter room"
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles:nil];
+                [message show];
+            }
+        }
+    }
 }
+
+
 - (IBAction)enterRound:(id)sender {
-    NSLog(LTAppDelegate.serverIP);
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Enter Username" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go", nil];
 
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [alert show];
-
-    NSString *userName = RoundsViewController.myName;
-    NSString *roundID = [roundJSON objectForKey:@"_id"];
-    NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/register/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:@"POST"];
-
-    NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
-    NSError *requestError;
-    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-    if (response1 !=  nil) {
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
-        NSLog(@"response: %@\n", json);
-        if ([urlResponse statusCode] == 200) {
-            NSDate *now = [[NSDate alloc] init];
-            NSTimeInterval timeInterval = [now timeIntervalSince1970] ;
-            NSString *timeStartString = [json objectForKey:@"timeStart"];
-            NSString *timeLimitString = [json objectForKey:@"duration"];
-            CGFloat timeNow = [[NSNumber numberWithDouble:timeInterval] floatValue];
-            CGFloat timeStart = (CGFloat)[timeStartString floatValue];
-            CGFloat timeElapsed = timeNow - timeStart;
-            CGFloat timeLimit = (CGFloat)[timeLimitString floatValue];
-            CGFloat timeRemaining = timeLimit - timeElapsed;
-            
-            NSLog(@"Time remaining %f\n", timeRemaining);
-            
-            UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
-            [viewController startCountdown:timeRemaining];
-            [viewController setRoundJSON:json];
-            [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
-            [self presentViewController:viewController animated:YES completion:nil];
-            
-            
-        } else {
-            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
-                                                              message:@"Could not enter room"
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"OK"
-                                                    otherButtonTitles:nil];
-            [message show];
-        }
-    }
-   
-
 }
 
 

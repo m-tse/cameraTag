@@ -17,10 +17,13 @@
     IBOutlet UILabel *myCounterLabel;
     __weak IBOutlet UILabel *highScoreLabel;
     __weak IBOutlet UILabel *myScoreLabel;
+    __weak IBOutlet UILabel *topNameLabel;
+    __weak IBOutlet UILabel *myNameLabel;
 }
 
 @property (nonatomic, retain) UILabel *myCounterLabel;
 @property (nonatomic, retain) NSDictionary *roundJSON;
+@property (nonatomic, retain) NSString *myName;
 
 - (IBAction)shootButtonPressed:(id)sender;
 
