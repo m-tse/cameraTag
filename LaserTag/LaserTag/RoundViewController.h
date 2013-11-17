@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RoundViewController : UIViewController
-- (IBAction)enterRound:(id)sender;
+@interface RoundViewController : UIViewController <UINavigationControllerDelegate> {
+    NSTimer *timer;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet UILabel *myCounterLabel;
 @property (nonatomic, copy) NSDictionary *roundJSON;
+
+- (IBAction)enterRound:(id)sender;
+
 @end

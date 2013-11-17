@@ -6,6 +6,7 @@
 *#
 .\#*
 *.xcuserstate
+*.swp
 
 # Ignore logs
 *.log

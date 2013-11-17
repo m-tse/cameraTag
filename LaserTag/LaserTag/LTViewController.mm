@@ -11,6 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "RoundsViewController.h"
 #import "LTAppDelegate.h"
+#import "RoundResultsViewController.h"
 
 @interface LTViewController ()
 
@@ -26,6 +27,7 @@
     int secondsLeft;
 }
 
+@synthesize userName;
 @synthesize myCounterLabel;
 @synthesize roundJSON;
 
@@ -65,7 +67,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     // TODO: Add Multiple References Tracking
     // load our tracking configuration
     trackingConfigFile = [[NSBundle mainBundle] pathForResource:@"TrackingData_Marker" ofType:@"xml" inDirectory:@"./"];
@@ -84,30 +86,29 @@
 }
 
 - (void)updateCounter:(NSTimer *)theTimer {
+    NSString *timeStartString = [roundJSON objectForKey:@"timeStart"];
+    NSString *timeLimitString = [roundJSON objectForKey:@"duration"];
+    NSDate *timeStart = [[NSDate alloc] initWithTimeIntervalSince1970:[timeStartString doubleValue]/1000];
+    NSDate *timeNow = [NSDate date];
+    NSTimeInterval diff = [timeNow timeIntervalSinceDate:timeStart]-500;
+    
+    secondsLeft = [timeLimitString intValue]/1000 - diff;
     if(secondsLeft > 0 ) {
-        secondsLeft -- ;
         hours = secondsLeft / 3600;
         minutes = (secondsLeft % 3600) / 60;
-        seconds = (secondsLeft %3600) % 60;
+        seconds = (secondsLeft % 3600) % 60;
         myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+    else{
+        NSLog(@"Time's Up");
+        [theTimer invalidate];
+        [self roundOver];
     }
 }
 
 -(void)countdownTimer{
     hours = minutes = seconds = 0;
-    if([timer isValid]) {
-        [timer release];
-    }
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
-}
-
-- (void)startCountdown:(CGFloat)millisecondsRemaining {
-    if (millisecondsRemaining > 0) {
-        secondsLeft = millisecondsRemaining;
-        [self countdownTimer];
-    } else {
-        NSLog(@"Sorry the round ended");
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -224,7 +225,35 @@
     } else {
         NSLog(@"you missed");
     }
+}
 
+- (void) roundOver {
+    
+    NSString *roundID = [roundJSON objectForKey:@"_id"];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RoundResultsViewController * controller = (RoundResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundResultsViewController"];
+    controller.roundJSON = roundJSON;
+//    [self.navigationController popViewControllerAnimated:FALSE];
+    [self.navigationController pushViewController:controller animated:FALSE];
+    
+}
+
+- (IBAction)leaveButtonPressed:(id)sender {
+    NSString *roundID = [roundJSON objectForKey:@"_id"];
+
+    NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/leave/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
+    NSLog(urlString);
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    
+    NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
+    NSError *requestError;
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    
+    [self.navigationController popViewControllerAnimated:TRUE];
+    [self.navigationController setNavigationBarHidden:FALSE animated:TRUE];
 }
 
 

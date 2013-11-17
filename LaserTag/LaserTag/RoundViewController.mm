@@ -15,8 +15,13 @@
 
 @end
 
-@implementation RoundViewController
+@implementation RoundViewController {
+    int hours, minutes, seconds;
+    int secondsLeft;
+}
+
 @synthesize roundJSON;
+@synthesize myCounterLabel;
 NSMutableArray* usersArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,14 +33,34 @@ NSMutableArray* usersArray;
     return self;
 }
 
+- (void)render {
+    //Get initial rounds
+    NSString *roundName = [roundJSON objectForKey:@"roundName"];
+    NSString *urlString = [NSString stringWithFormat:@"%@:%@/activeRounds/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundName];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLResponse *urlResponse = nil;
+    NSError *requestError;
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    roundJSON = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+    usersArray = [roundJSON objectForKey:@"users"];
+    [_tableView reloadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self render];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     NSString * roundName = [roundJSON objectForKey:@"roundName"];
     self.title = roundName;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
     usersArray = [roundJSON objectForKey:@"users"];
-    
+    [self countdownTimer];
 
 }
 
@@ -44,6 +69,7 @@ NSMutableArray* usersArray;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     NSInteger cancel = 0;
     NSInteger go = 1;
@@ -67,25 +93,15 @@ NSMutableArray* usersArray;
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
             NSLog(@"response: %@\n", json);
             if ([urlResponse statusCode] == 200) {
-                NSDate *now = [[NSDate alloc] init];
-                NSTimeInterval timeInterval = [now timeIntervalSince1970] ;
-                NSString *timeStartString = [json objectForKey:@"timeStart"];
-                NSString *timeLimitString = [json objectForKey:@"duration"];
-                CGFloat timeNow = [[NSNumber numberWithDouble:timeInterval] floatValue];
-                CGFloat timeStart = (CGFloat)[timeStartString floatValue];
-                CGFloat timeElapsed = timeNow - timeStart;
-                CGFloat timeLimit = (CGFloat)[timeLimitString floatValue];
-                CGFloat timeRemaining = timeLimit - timeElapsed;
-                
-                NSLog(@"Time remaining %f\n", timeRemaining);
                 
                 UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
-                [viewController startCountdown:timeRemaining];
+                viewController.userName = userName;
+                [viewController countdownTimer];
                 [viewController setRoundJSON:json];
                 [viewController setMyName:userName];
                 [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
-                [self presentViewController:viewController animated:YES completion:nil];
+                [self.navigationController pushViewController:viewController animated:YES];
             } else {
                 UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
                                                                   message:@"Could not enter room"
@@ -136,11 +152,42 @@ NSMutableArray* usersArray;
     cell.textLabel.text = userName;
     cell.detailTextLabel.text = scoreString;
     
-
     // set the accessory view:
     cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
+
+
+- (void)updateCounter:(NSTimer *)theTimer {
+    NSString *timeStartString = [roundJSON objectForKey:@"timeStart"];
+    NSString *timeLimitString = [roundJSON objectForKey:@"duration"];
+    NSDate *timeStart = [[NSDate alloc] initWithTimeIntervalSince1970:[timeStartString doubleValue]/1000];
+    NSDate *timeNow = [NSDate date];
+    NSTimeInterval diff = [timeNow timeIntervalSinceDate:timeStart]-500;
+    
+    secondsLeft = [timeLimitString intValue]/1000 - diff;
+    if(secondsLeft > 0 ) {
+        hours = secondsLeft / 3600;
+        minutes = (secondsLeft % 3600) / 60;
+        seconds = (secondsLeft % 3600) % 60;
+        myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+}
+
+-(void)countdownTimer{
+    hours = minutes = seconds = 0;
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+}
+
+- (void)startCountdown:(CGFloat)millisecondsRemaining {
+    if (millisecondsRemaining > 0) {
+        secondsLeft = millisecondsRemaining;
+        [self countdownTimer];
+    } else {
+        NSLog(@"Sorry the round ended");
+    }
+}
+
 
 @end

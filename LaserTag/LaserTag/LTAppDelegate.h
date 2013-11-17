@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketIOPacket.h"
 
 @interface LTAppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,6 +17,7 @@
 }
 + (NSString*) serverIP;
 + (NSString*) serverPort;
+//+ (SocketIO*) socketIO;
 
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) UIWindow *window;

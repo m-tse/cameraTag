@@ -20,14 +20,15 @@
     __weak IBOutlet UILabel *topNameLabel;
     __weak IBOutlet UILabel *myNameLabel;
 }
+@property (nonatomic, copy) NSString *userName;
 
 @property (nonatomic, retain) UILabel *myCounterLabel;
 @property (nonatomic, retain) NSDictionary *roundJSON;
 @property (nonatomic, retain) NSString *myName;
 
 - (IBAction)shootButtonPressed:(id)sender;
+- (IBAction)leaveButtonPressed:(id)sender;
 
-- (void)startCountdown:(CGFloat)millisecondsRemaining;
 - (void)updateCounter:(NSTimer *)theTimer;
 - (void)countdownTimer;
 

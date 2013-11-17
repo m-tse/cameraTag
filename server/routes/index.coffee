@@ -80,6 +80,18 @@ exports.rounds.register = (req, res) ->
         res.send(json))
     )
 
+exports.rounds.leave = (req, res) ->
+  params = req.params
+  roundID = db.ObjectId(params.roundID)
+  db.rounds.update({"_id":roundID},
+    {
+      $pull: {
+        users: { name: params.userName }
+      }
+    }
+    )
+  res.send('ok?')
+
 exports.activeRounds = {}
 exports.activeRounds.one = (req, res) ->
   params = req.params

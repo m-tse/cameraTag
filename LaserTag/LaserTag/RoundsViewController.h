@@ -10,7 +10,10 @@
 #import "SocketIO.h"
 #import "SocketIOPacket.h"
 
-@interface RoundsViewController : UIViewController <SocketIODelegate>
+@interface RoundsViewController : UIViewController <SocketIODelegate, UINavigationControllerDelegate>
++ (SocketIO*) socketIO;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (nonatomic, retain) UINavigationController *navController;
 
 @end
