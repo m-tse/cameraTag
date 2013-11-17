@@ -10,6 +10,7 @@
 #import "RoundViewController.h"
 #import "SocketIO.h"
 #import "SocketIOPacket.h"
+#import "LTAppDelegate.h"
 
 @interface RoundsViewController ()
 
@@ -21,7 +22,6 @@
 static NSString* myName;
 SocketIO * socketIO;
 NSMutableArray* roundJSONArray;
-//UINavigationController *navigationController;
 
 + (NSString*)myName { return myName; }
 
@@ -46,7 +46,7 @@ NSMutableArray* roundJSONArray;
     [super viewDidLoad];
     self.title = @"Active Rounds";
     socketIO = [[SocketIO alloc] initWithDelegate:self];
-    [socketIO connectToHost:@"10.190.72.149" onPort:8080];
+    [socketIO connectToHost:LTAppDelegate.serverIP onPort:8080];
 //    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 //    [socketIO sendEvent:@"getActiveRounds" withData:dict];
     
@@ -54,7 +54,8 @@ NSMutableArray* roundJSONArray;
 
     
     //Get initial rounds
-    NSURL *url = [NSURL URLWithString:@"http://10.190.72.149:8080/activeRounds"];
+    NSString *urlString = [NSString stringWithFormat:@"%@:%@/activeRounds", LTAppDelegate.serverIP, LTAppDelegate.serverPort];
+    NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
