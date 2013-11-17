@@ -1,4 +1,5 @@
 db = require("../database.coffee")
+_ = require('underscore')
 
 exports.index = (req, res) -> 
   res.render('index', { title: 'Express' })
@@ -22,7 +23,7 @@ exports.rounds.create = (req, res) ->
   else
     round = {
       roundName: params.roundName,
-      maxUsers: params.maxUsers,
+      maxUsers: parseInt(params.maxUsers),
       duration: parseInt(params.duration),
       timeStart: (new Date()).valueOf()
       users: []
@@ -38,13 +39,28 @@ exports.rounds.create = (req, res) ->
               res.send("Active round exists with name #{roundItr.roundName}")
               return
               
-        res.json(round)
         db.rounds.save(round)
+        
+        res.json(round)
     )
 
 exports.rounds.register = (req, res) ->
   params = req.params
-  
+  roundID = db.ObjectId(params.roundID)
+  db.rounds.findOne({"_id" : roundID }, (err, round) ->
+    if (err)
+      return
+    userNames = (user.name for user in round.users)
+    if _.contains(userNames, params.userName)
+      res.send("The username #{params.userName} is already taken for this round.")
+    if (userNames.length == round.maxUsers)
+      res.send("This round is full.")
+    else
+      db.rounds.update({"_id" : roundID }, { $push: { users: {name:params.userName, score:0}}})
+      db.rounds.findOne({"_id":roundID}, (err, json) ->
+        res.send(json))
+    )
+
 
 exports.activeRounds = {}
 exports.activeRounds.one = (req, res) ->

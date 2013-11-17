@@ -5,6 +5,7 @@ routes = require('./routes')
 # user = require('./routes/user')
 http = require('http')
 path = require('path')
+_ = require('underscore')
 
 app = express()
 
@@ -31,7 +32,7 @@ app.get('/rounds', routes.rounds.all)
 app.get('/activeRounds/:roundName', routes.activeRounds.one)
 app.get('/activeRounds', routes.activeRounds.all)
 app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
-app.post('/rounds/register/:userName/:roundName', routes.rounds.register)
+app.post('/rounds/register/:userName/:roundID', routes.rounds.register)
 
 httpserver = http.createServer(app).listen(app.get('port'), ()->
   console.log('Express server listening on port ' + app.get('port'))
