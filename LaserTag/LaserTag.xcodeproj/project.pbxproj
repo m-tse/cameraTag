@@ -24,7 +24,7 @@
 		070B4560183810A900ED29B5 /* LaserParticleSystemView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */; };
 		070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B4561183810F400ED29B5 /* QuartzCore.framework */; };
 		070B4564183811C700ED29B5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 070B4563183811C700ED29B5 /* particle.png */; };
-		07F1124318381F4F00CF86CD /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124218381F4F00CF86CD /* metaioSDK.framework */; };
+		0720D010183869D50003DB7F /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0720D00F183869D50003DB7F /* metaioSDK.framework */; };
 		07F1124518381FC700CF86CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124418381FC700CF86CD /* libz.dylib */; };
 		07F1124718381FCD00CF86CD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124618381FCD00CF86CD /* libxml2.dylib */; };
 		07F1124918381FD300CF86CD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1124818381FD300CF86CD /* CFNetwork.framework */; };
@@ -40,8 +40,7 @@
 		07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07F1125D1838203500CF86CD /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F112621838220B00CF86CD /* TrackingData_Marker.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07F112611838220B00CF86CD /* TrackingData_Marker.xml */; };
 		07F1127418383CD400CF86CD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1127318383CD400CF86CD /* GLKit.framework */; };
-		2353FAF9183836F00080D9D5 /* RoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAF8183836F00080D9D5 /* RoundsViewController.m */; };
-		2353FAFB18383A860080D9D5 /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353FAFA18383A850080D9D5 /* metaioSDK.framework */; };
+		2353FAF9183836F00080D9D5 /* RoundsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAF8183836F00080D9D5 /* RoundsViewController.mm */; };
 		2353FB07183841A10080D9D5 /* SocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAFD183841A10080D9D5 /* SocketIO.m */; };
 		2353FB08183841A10080D9D5 /* SocketIOJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FAFF183841A10080D9D5 /* SocketIOJSONSerialization.m */; };
 		2353FB09183841A10080D9D5 /* SocketIOPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB01183841A10080D9D5 /* SocketIOPacket.m */; };
@@ -51,7 +50,7 @@
 		2353FB2A183843B90080D9D5 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB25183843B90080D9D5 /* NSData+SRB64Additions.m */; };
 		2353FB2B183843B90080D9D5 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB28183843B90080D9D5 /* SRWebSocket.m */; };
 		2353FB2D183845360080D9D5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2353FB2C183845360080D9D5 /* libicucore.dylib */; };
-		2353FB30183871960080D9D5 /* RoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB2F183871960080D9D5 /* RoundViewController.m */; };
+		2353FB30183871960080D9D5 /* RoundViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2353FB2F183871960080D9D5 /* RoundViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +87,7 @@
 		070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LaserParticleSystemView.mm; sourceTree = "<group>"; };
 		070B4561183810F400ED29B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		070B4563183811C700ED29B5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
-		07F1124218381F4F00CF86CD /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = metaioSDK.framework; sourceTree = "<group>"; };
+		0720D00F183869D50003DB7F /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = metaioSDK.framework; sourceTree = "<group>"; };
 		07F1124418381FC700CF86CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		07F1124618381FCD00CF86CD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		07F1124818381FD300CF86CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -107,8 +106,7 @@
 		07F112611838220B00CF86CD /* TrackingData_Marker.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TrackingData_Marker.xml; sourceTree = "<group>"; };
 		07F1127318383CD400CF86CD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		2353FAF7183836F00080D9D5 /* RoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundsViewController.h; sourceTree = "<group>"; };
-		2353FAF8183836F00080D9D5 /* RoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundsViewController.m; sourceTree = "<group>"; };
-		2353FAFA18383A850080D9D5 /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = metaioSDK.framework; sourceTree = "<group>"; };
+		2353FAF8183836F00080D9D5 /* RoundsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RoundsViewController.mm; sourceTree = "<group>"; };
 		2353FAFC183841A10080D9D5 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
 		2353FAFD183841A10080D9D5 /* SocketIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIO.m; sourceTree = "<group>"; };
 		2353FAFE183841A10080D9D5 /* SocketIOJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOJSONSerialization.h; sourceTree = "<group>"; };
@@ -129,7 +127,7 @@
 		2353FB28183843B90080D9D5 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		2353FB2C183845360080D9D5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		2353FB2E183871960080D9D5 /* RoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundViewController.h; sourceTree = "<group>"; };
-		2353FB2F183871960080D9D5 /* RoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundViewController.m; sourceTree = "<group>"; };
+		2353FB2F183871960080D9D5 /* RoundViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RoundViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0720D010183869D50003DB7F /* metaioSDK.framework in Frameworks */,
 				07F1127418383CD400CF86CD /* GLKit.framework in Frameworks */,
 				07F1124918381FD300CF86CD /* CFNetwork.framework in Frameworks */,
 				2353FB2D183845360080D9D5 /* libicucore.dylib in Frameworks */,
@@ -148,13 +147,11 @@
 				07F1124F18381FE300CF86CD /* AVFoundation.framework in Frameworks */,
 				07F1124D18381FDE00CF86CD /* OpenGLES.framework in Frameworks */,
 				07F1124B18381FD900CF86CD /* AudioToolbox.framework in Frameworks */,
-				2353FAFB18383A860080D9D5 /* metaioSDK.framework in Frameworks */,
 				07F1124718381FCD00CF86CD /* libxml2.dylib in Frameworks */,
 				07F1124518381FC700CF86CD /* libz.dylib in Frameworks */,
 				070B4562183810F400ED29B5 /* QuartzCore.framework in Frameworks */,
 				070B452C1838104500ED29B5 /* CoreGraphics.framework in Frameworks */,
 				070B452E1838104500ED29B5 /* UIKit.framework in Frameworks */,
-				07F1124318381F4F00CF86CD /* metaioSDK.framework in Frameworks */,
 				070B452A1838104500ED29B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +192,7 @@
 		070B45281838104500ED29B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0720D00F183869D50003DB7F /* metaioSDK.framework */,
 				07F1127318383CD400CF86CD /* GLKit.framework */,
 				2353FB2C183845360080D9D5 /* libicucore.dylib */,
 				07F1125818381FFF00CF86CD /* CoreVideo.framework */,
@@ -208,8 +206,6 @@
 				07F1124818381FD300CF86CD /* CFNetwork.framework */,
 				07F1124618381FCD00CF86CD /* libxml2.dylib */,
 				07F1124418381FC700CF86CD /* libz.dylib */,
-				2353FAFA18383A850080D9D5 /* metaioSDK.framework */,
-				07F1124218381F4F00CF86CD /* metaioSDK.framework */,
 				070B4561183810F400ED29B5 /* QuartzCore.framework */,
 				070B45291838104500ED29B5 /* Foundation.framework */,
 				070B452B1838104500ED29B5 /* CoreGraphics.framework */,
@@ -239,9 +235,9 @@
 				070B455E183810A900ED29B5 /* LaserParticleSystemView.h */,
 				070B455F183810A900ED29B5 /* LaserParticleSystemView.mm */,
 				2353FAF7183836F00080D9D5 /* RoundsViewController.h */,
-				2353FAF8183836F00080D9D5 /* RoundsViewController.m */,
+				2353FAF8183836F00080D9D5 /* RoundsViewController.mm */,
 				2353FB2E183871960080D9D5 /* RoundViewController.h */,
-				2353FB2F183871960080D9D5 /* RoundViewController.m */,
+				2353FB2F183871960080D9D5 /* RoundViewController.mm */,
 			);
 			path = LaserTag;
 			sourceTree = "<group>";
@@ -418,11 +414,11 @@
 				070B453A1838104500ED29B5 /* LTAppDelegate.mm in Sources */,
 				070B45361838104500ED29B5 /* main.m in Sources */,
 				2353FB09183841A10080D9D5 /* SocketIOPacket.m in Sources */,
-				2353FAF9183836F00080D9D5 /* RoundsViewController.m in Sources */,
+				2353FAF9183836F00080D9D5 /* RoundsViewController.mm in Sources */,
 				07F1125F1838203500CF86CD /* MetaioSDKViewController.mm in Sources */,
 				2353FB0B183841A10080D9D5 /* SocketIOTransportXHR.m in Sources */,
 				07F1125E1838203500CF86CD /* EAGLView.mm in Sources */,
-				2353FB30183871960080D9D5 /* RoundViewController.m in Sources */,
+				2353FB30183871960080D9D5 /* RoundViewController.mm in Sources */,
 				070B45401838104500ED29B5 /* LTViewController.mm in Sources */,
 				2353FB2A183843B90080D9D5 /* NSData+SRB64Additions.m in Sources */,
 				2353FB0A183841A10080D9D5 /* SocketIOTransportWebsocket.m in Sources */,
@@ -555,18 +551,19 @@
 		070B45591838104500ED29B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/ark5/projects/cameraTag/LaserTag,
-					/Users/tS3m/Development/cameraTag/LaserTag,
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
 				INFOPLIST_FILE = "LaserTag/LaserTag-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -575,18 +572,19 @@
 		070B455A1838104500ED29B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libstdc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/ark5/projects/cameraTag/LaserTag,
-					/Users/tS3m/Development/cameraTag/LaserTag,
+					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LaserTag/LaserTag-Prefix.pch";
 				INFOPLIST_FILE = "LaserTag/LaserTag-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

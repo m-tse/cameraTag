@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketIO.h"
+#import "SocketIOPacket.h"
 
-@interface RoundsViewController : UIViewController
+@interface RoundsViewController : UIViewController <SocketIODelegate>
 + (NSString*) myName;
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 @property (nonatomic, retain) UINavigationController *navController;

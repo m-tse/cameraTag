@@ -63,7 +63,6 @@ exports.rounds.register = (req, res) ->
         res.send(json))
     )
 
-
 exports.activeRounds = {}
 exports.activeRounds.one = (req, res) ->
   params = req.params
@@ -87,3 +86,22 @@ exports.activeRounds.all = (req, res) ->
 roundIsActive = (round) ->
   now = new Date()
   return round.timeStart < now.valueOf() and round.timeStart + round.duration > now.valueOf()
+
+
+exports.shoot = (req, res) ->
+  params = req.params
+  roundId = params.roundId
+  username = params.userName
+
+  console.log("hello")
+  unless (roundId and username)
+    res.send("Need roundId and Username")
+  else
+    console.log("hello again")
+    db.rounds.findOne({ "_id": db.ObjectId(roundId) }, (err, round) ->
+      if (err)
+        return
+      res.send(200)
+      user.score += 100 for user in round.users when user.name is username
+      db.rounds.save(round)
+    )
