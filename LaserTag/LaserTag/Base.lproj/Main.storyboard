@@ -7,7 +7,7 @@
         <!--Rounds View Controller-->
         <scene sceneID="WBq-Pm-QSH">
             <objects>
-                <viewController id="TQA-we-yMe" customClass="RoundsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="roundsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TQA-we-yMe" customClass="RoundsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uGf-6P-a8Q"/>
                         <viewControllerLayoutGuide type="bottom" id="9rS-pS-2pE"/>
@@ -60,13 +60,6 @@
                                     <outlet property="delegate" destination="TQA-we-yMe" id="9nS-6w-Wjf"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Tg-gP-Jq3">
-                                <rect key="frame" x="0.0" y="23" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Active Rounds" id="CKv-tp-tPs"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -116,13 +109,6 @@
                                     <action selector="enterRound:" destination="H1E-Qb-Del" eventType="touchUpInside" id="Nne-84-A5L"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqg-Nk-nTX">
-                                <rect key="frame" x="0.0" y="25" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="0A5-ok-due"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

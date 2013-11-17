@@ -7,13 +7,26 @@
 //
 
 #import "LTAppDelegate.h"
+#import "RoundsViewController.h"
 
 @implementation LTAppDelegate
+@synthesize navigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    RoundsViewController * controller = (RoundsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundsViewController"];
+    
+    navigationController = [[UINavigationController alloc]
+                            initWithRootViewController:controller];
+    
+    self.window = [[UIWindow alloc]
+                   initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window addSubview:navigationController.view];
+    [self.window makeKeyAndVisible];
     return YES;
+
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -32,6 +32,7 @@ NSMutableArray* usersArray;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     NSString * roundName = [roundJSON objectForKey:@"roundName"];
+    self.title = roundName;
     usersArray = [roundJSON objectForKey:@"users"];
     
 
