@@ -76,7 +76,7 @@ NSMutableArray* roundJSONArray;
     [super viewDidLoad];
     socketIO = [[SocketIO alloc] initWithDelegate:self];
     NSString* urlWithoutHTTP = [LTAppDelegate.serverIP substringFromIndex:7];
-    [socketIO connectToHost:@"10.190.72.149" onPort:LTAppDelegate.serverPort.intValue];
+    [socketIO connectToHost:urlWithoutHTTP onPort:LTAppDelegate.serverPort.intValue];
     self.title = @"Active Rounds";
     self.automaticallyAdjustsScrollViewInsets = NO;
 //    socketIO = [[SocketIO alloc] initWithDelegate:self];
