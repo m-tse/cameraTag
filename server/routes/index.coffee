@@ -4,6 +4,7 @@ _ = require('underscore')
 exports.index = (req, res) -> 
   res.render('index', { title: 'Express' })
 
+
 exports.rounds = {}
 exports.rounds.all = (req, res) -> 
   db.rounds.find( (err, rounds) ->
@@ -15,10 +16,14 @@ exports.rounds.all = (req, res) ->
 exports.rounds.create = (req, res) ->
   params = req.params
   if params.duration < 1
-    res.send("Cannot have a negative or 0 round duration.")
+    res.json(400, {
+      "error": "Cannot have a negative or 0 round duration."
+    })
     return
   if params.maxUsers < 2
-    res.send("Round must have at least two users")
+    res.json(400, {
+      "error": "Round must have at least two users"
+    })
     return
   else
     round = {
@@ -42,9 +47,16 @@ exports.rounds.create = (req, res) ->
         db.rounds.save(round)
         db.rounds.findOne({roundName: round.roundName, duration: round.duration}, (err, returnedRound) ->
           
-          res.json(returnedRound)
+          res.json(200, returnedRound)
           )
     )
+
+exports.rounds.highestScoringUser = (roundID) ->
+  db.rounds.findOne({"_id": roundID}, (err, round) ->
+    user = null
+    user = u for u in rounds.users when user is null or u.score > user.score
+  )
+
 
 exports.rounds.register = (req, res) ->
   params = req.params
@@ -82,10 +94,14 @@ exports.activeRounds.one = (req, res) ->
     res.send("Active round with name #{params.roundName} not found")
     )
 exports.activeRounds.all = (req, res) ->
-  params = req.params
   db.rounds.find( (err, rounds) ->
     rounds = (round for round in rounds when roundIsActive(round))
     res.json(rounds)
+    )
+exports.activeRounds.alljson = (callback) ->
+  db.rounds.find( (err, rounds) ->
+    rounds = (round for round in rounds when roundIsActive(round))
+    callback(rounds)
     )
 
 roundIsActive = (round) ->

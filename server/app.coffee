@@ -40,8 +40,16 @@ httpserver = http.createServer(app).listen(app.get('port'), ()->
 io = require('socket.io').listen(httpserver)
 
 io.sockets.on('connection', (socket) ->
-  # socket.emit('news', { hello: 'world' });
-  socket.on('getActiveRounds', () ->
-    socket.emit('activeRounds', routes.activeRounds.all())
+  routes.activeRounds.alljson( (res) ->
+    socket.emit('resetActiveRounds', res[0])
   )
+
+  socket.on('shootSuccessful', (data) ->
+    # data 
+    console.log(data)
+    highestUser = routes.rounds.highestScoringUser(data)
+    socket.emit('sendHighestScoringUser', highestUser)
+  )
+    # socket.emit('activeRounds', routes.activeRounds.all())
+  
 )
