@@ -61,6 +61,8 @@ NSMutableArray* roundJSONArray;
             NSDictionary *topUser = [users objectAtIndex:0];
             NSString *roundID = [topUser objectForKey:@"roundID"];
             NSString *username = [topUser objectForKey:@"username"];
+            NSLog(@"%@",topUser);
+            NSLog(@"1: %@ - 2: %@", username, [ltViewController myName]);
             if ([username isEqualToString:[ltViewController myName]]) {
                 [self vibrate];
             }

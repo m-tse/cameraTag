@@ -63,11 +63,11 @@ exports.rounds.highestScoringUser = (json, socket) ->
     socket.broadcast.emit('sendHighestScoringUser', user)
     username = null
     username = u.name for u in round.users when parseInt(u.markerID) is parseInt(markerID)
-    newJSON =
-      {
-        roundID: roundID,
+    newJSON = {
+        roundID: roundID
         username: username
       }
+      console.log(newJSON)
     socket.broadcast.emit('rumble', newJSON)
   )
 
