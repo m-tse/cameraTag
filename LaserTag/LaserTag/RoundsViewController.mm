@@ -44,7 +44,7 @@ NSMutableArray* roundJSONArray;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.title = @"Active Rounds";
     socketIO = [[SocketIO alloc] initWithDelegate:self];
     [socketIO connectToHost:@"localhost" onPort:8080];
 //    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
@@ -84,22 +84,10 @@ NSMutableArray* roundJSONArray;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSDictionary* roundJSON = [roundJSONArray objectAtIndex:indexPath.row];
-//    NSString* [roundJSON objectForKey:@"]
-//    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/activeRounds"];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//    NSURLResponse *urlResponse = nil;
-//    NSError *requestError;
-//    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     RoundViewController * controller = (RoundViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundViewController"];
-//    [self presentViewController:controller animated:YES completion:nil];
-//    RoundViewController * roundView =[[RoundViewController alloc] init];
-//    RoundViewController * roundView = [[RoundViewController alloc] initWithNibName:@"Round View Controller" bundle:nil];
     controller.roundJSON = roundJSON;
-//    [self.nav pushViewController:roundView animated:YES];
-//    [roundView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
-    [self presentViewController:controller animated:YES completion:nil];
+    [self.navigationController pushViewController:controller animated:TRUE];
 
 
 }
