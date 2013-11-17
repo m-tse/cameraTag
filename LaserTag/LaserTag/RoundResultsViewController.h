@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RoundResultsViewController : UIViewController
+- (IBAction)backToHomeScreen:(id)sender;
+@property (nonatomic, copy) NSDictionary *roundJSON;
 
 @end

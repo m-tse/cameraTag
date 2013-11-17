@@ -4,6 +4,7 @@ _ = require('underscore')
 exports.index = (req, res) -> 
   res.render('index', { title: 'Express' })
 
+
 exports.rounds = {}
 exports.rounds.all = (req, res) -> 
   db.rounds.find( (err, rounds) ->
@@ -50,6 +51,13 @@ exports.rounds.create = (req, res) ->
           )
     )
 
+exports.rounds.highestScoringUser = (roundID) ->
+  db.rounds.findOne({"_id": roundID}, (err, round) ->
+    user = null
+    user = u for u in rounds.users when user is null or u.score > user.score
+  )
+
+
 exports.rounds.register = (req, res) ->
   params = req.params
   roundID = db.ObjectId(params.roundID)
@@ -71,6 +79,18 @@ exports.rounds.register = (req, res) ->
       db.rounds.findOne({"_id":roundID}, (err, json) ->
         res.send(json))
     )
+
+exports.rounds.leave = (req, res) ->
+  params = req.params
+  roundID = db.ObjectId(params.roundID)
+  db.rounds.update({"_id":roundID},
+    {
+      $pull: {
+        users: { name: params.userName }
+      }
+    }
+    )
+  res.send('ok?')
 
 exports.activeRounds = {}
 exports.activeRounds.one = (req, res) ->

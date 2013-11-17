@@ -16,7 +16,7 @@ Laser Tag with your iPhone.  Install the app, register as a user.  Someone creat
 - GET /activeRounds/:roundName -> returns active rounds with roundName
 - GET /activeRounds/ -> returns all active rounds
 - POST /rounds/register/:userName/:roundID
-- 
+- POST /rounds/leave/:userName/:roundID
 
 ## Game Logic:
 1. Create a round

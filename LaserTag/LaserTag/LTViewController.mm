@@ -28,6 +28,7 @@
     int secondsLeft;
 }
 
+@synthesize userName;
 @synthesize myCounterLabel;
 @synthesize roundJSON;
 
@@ -67,7 +68,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     // TODO: Add Multiple References Tracking
     // load our tracking configuration
     trackingConfigFile = [[NSBundle mainBundle] pathForResource:@"TrackingData_Marker" ofType:@"xml" inDirectory:@"./"];
@@ -98,6 +99,11 @@
         minutes = (secondsLeft % 3600) / 60;
         seconds = (secondsLeft % 3600) % 60;
         myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+    else{
+        NSLog(@"Time's Up");
+        [theTimer invalidate];
+        [self roundOver];
     }
 }
 
@@ -228,16 +234,32 @@
 }
 
 - (void) roundOver {
+    
     NSString *roundID = [roundJSON objectForKey:@"_id"];
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     RoundResultsViewController * controller = (RoundResultsViewController *)[storyboard instantiateViewControllerWithIdentifier:@"roundResultsViewController"];
-    [self.navigationController pushViewController:controller animated:TRUE];
+    controller.roundJSON = roundJSON;
+//    [self.navigationController popViewControllerAnimated:FALSE];
+    [self.navigationController pushViewController:controller animated:FALSE];
     
 }
 
 - (IBAction)leaveButtonPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSString *roundID = [roundJSON objectForKey:@"_id"];
+
+    NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/leave/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, userName, roundID];
+    NSLog(urlString);
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    
+    NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
+    NSError *requestError;
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    
+    [self.navigationController popViewControllerAnimated:TRUE];
+    [self.navigationController setNavigationBarHidden:FALSE animated:TRUE];
 }
 
 - (void) socketIO:(SocketIO *)socket didReceiveJSON:(SocketIOPacket *)packet {

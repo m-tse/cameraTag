@@ -88,11 +88,12 @@ NSString* roundName=@"";
                 
                 UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
+                viewController.userName = userName;
                 [viewController countdownTimer];
                 [viewController setRoundJSON:json];
                 [viewController setMyName:userName];
                 [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
-                [self presentViewController:viewController animated:YES completion:nil];
+                [self.navigationController pushViewController:viewController animated:TRUE];
             } else {
                 UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
                                                                   message:@"Could not enter room"
