@@ -32,6 +32,7 @@ app.get('/activeRounds/:roundName', routes.activeRounds.one)
 app.get('/activeRounds', routes.activeRounds.all)
 app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)
 app.post('/rounds/register/:userName/:roundName', routes.rounds.register)
+app.post('/shoot/:roundId/:userName/:targetMarkerId', routes.shoot)
 
 httpserver = http.createServer(app).listen(app.get('port'), ()->
   console.log('Express server listening on port ' + app.get('port'))

@@ -44,6 +44,14 @@ exports.rounds.create = (req, res) ->
 
 exports.rounds.register = (req, res) ->
   params = req.params
+  db.users.insert({ "userName": params.userName })
+  db.rounds.update({ "roundName": params.roundName}, {
+    $push: { users: params.userName }
+  }, (err, rounds) ->
+    if (err)
+      return
+    res.send(200)
+  )
   
 
 exports.activeRounds = {}
@@ -69,3 +77,21 @@ exports.activeRounds.all = (req, res) ->
 roundIsActive = (round) ->
   now = new Date()
   return round.timeStart < now.valueOf() and round.timeStart + round.duration > now.valueOf()
+
+
+exports.shoot = (req, res) ->
+  params = req.params
+  roundId = params.roundId
+  username = params.userName
+
+  db.rounds.findOne({ "_id": roundId }, (err, round) ->
+    if (err)
+      return
+    round.findOne({ "userName": username }, (err, user) ->
+      if (err)
+        return
+      user.score += 100
+      db.users.save(user)
+      res.send(200)
+    )
+  )
