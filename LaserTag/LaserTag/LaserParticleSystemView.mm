@@ -16,22 +16,9 @@
     NSTimer *timer;
     NSTimer *positionTimer;
     NSDate *startTime;
-    bool isDead;
     dispatch_queue_t backgroundQueue;
 }
 
-- (void)reportPosition {
-    while (!isDead) {
-        CAEmitterLayer *presentation = [laserEmitter presentationLayer];
-        NSLog(@"X: %f Y: %f Z: %f\n",
-              presentation.bounds.origin.x,
-              presentation.bounds.origin.y,
-              presentation.emitterZPosition);
-        NSDate *timeNow = [[NSDate alloc] init];
-        NSTimeInterval timeInterval = [timeNow timeIntervalSinceDate:startTime];
-        NSLog(@"%f\n", timeInterval);
-    }
-}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -72,33 +59,6 @@
         laser.spin = 0.5;
         
         timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(laserDied) userInfo:nil repeats:NO];
-//        
-//        startTime = [[NSDate alloc] init];
-//        
-//        CABasicAnimation* ba = [CABasicAnimation animationWithKeyPath:@"emitterPosition"];
-//        ba.fromValue = [NSValue valueWithCGPoint:CGPointMake(150, 400)];
-//        ba.toValue = [NSValue valueWithCGPoint:CGPointMake(300,0)];
-//        ba.duration = 3;
-//        ba.autoreverses = NO;
-//        ba.delegate = self;
-//        laserEmitter.emitterPosition = CGPointMake(300,0);
-//        
-//        [laserEmitter addAnimation:ba forKey:nil];
-//        
-//        CGFloat startZ = 0.0f;
-//        CGFloat endZ = 100.0f;
-//        
-//        CABasicAnimation* ba2 = [CABasicAnimation animationWithKeyPath:@"emitterZPosition"];
-//        ba2.fromValue = [NSValue valueWithBytes:&startZ objCType:@encode(CGFloat)];
-//        ba2.toValue = [NSValue valueWithBytes:&endZ objCType:@encode(CGFloat)];
-//        ba2.duration = 6;
-//        ba2.autoreverses = NO;
-//        
-//        [laserEmitter addAnimation:ba2 forKey:nil];
-//        dispatch_async(backgroundQueue, ^(void) {
-//            [self reportPosition];
-//        });
-//        
     }
     return self;
 }
@@ -107,18 +67,12 @@
     return [CAEmitterLayer class];
 }
 
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    NSLog(@"finished");
-    isDead = true;
-}
-
 - (void)setBirthrate:(float)birthrate {
     [laserEmitter setValue:[NSNumber numberWithInt:birthrate]
                forKeyPath:@"emitterCells.laser.birthRate"];
 }
 
 - (void)laserDied {
-    NSLog(@"Removed");
     [self removeFromSuperview];
 }
 

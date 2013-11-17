@@ -91,13 +91,15 @@ exports.shoot = (req, res) ->
   roundId = params.roundId
   username = params.userName
 
+  console.log("hello")
   unless (roundId and username)
     res.send("Need roundId and Username")
   else
+    console.log("hello again")
     db.rounds.findOne({ "_id": db.ObjectId(roundId) }, (err, round) ->
       if (err)
         return
-      res.send(round)
+      res.send(200)
       user.score += 100 for user in round.users when user.name is username
       db.rounds.save(round)
     )

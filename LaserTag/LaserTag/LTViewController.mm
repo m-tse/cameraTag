@@ -136,6 +136,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)sendShootRequest {
+    NSURL *url = [NSURL URLWithString:@"http://10.190.72.149:3000/shoot/52883ec72afe5b79a3000001/Andrew2/1"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    NSURLResponse *urlResponse = nil;
+    NSError *requestError;
+    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
+    NSLog(@"%@\n", jsonArray);
+}
+
 - (IBAction)shootButtonPressed:(id)sender {
     NSLog(@"shoot pressed");
     LaserParticleSystemView *laser = [[LaserParticleSystemView alloc] init];
@@ -148,8 +159,11 @@
         float x = targetPosition.translation.x;
         float y = targetPosition.translation.y;
         float dim = 50.0f;
+        int markerId = targetPosition.coordinateSystemID;
+        NSLog(@"%d\n", markerId);
         if (x > -dim && x < dim && y > -dim && y < dim) {
             NSLog(@"you hit it");
+            [self sendShootRequest];
         } else {
             NSLog(@"you missed");
         }
