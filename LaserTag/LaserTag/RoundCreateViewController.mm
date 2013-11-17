@@ -109,6 +109,7 @@ NSString* roundName=@"";
         [message show];
         
     }
+    NSLog(@"HELLO HERE");
     NSLog(roundDuration);
     NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/create/%@/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundName, maxUsers, roundDuration];
     NSURL *url = [NSURL URLWithString:urlString];

@@ -36,12 +36,12 @@ NSMutableArray* usersArray;
     NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundID];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:@"POST"];
+    [request setHTTPMethod:@"GET"];
     NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] init];
     NSError *requestError;
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
     roundJSON = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
-
+    
     usersArray = [roundJSON objectForKey:@"users"];
 
     
