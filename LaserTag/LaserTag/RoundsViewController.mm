@@ -75,6 +75,12 @@ NSMutableArray* roundJSONArray;
     roundJSONArray = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self reRender];
+    [_tableView reloadData];
+    NSLog(@"rerendering");
+}
+
 
 - (void)didReceiveMemoryWarning
 {

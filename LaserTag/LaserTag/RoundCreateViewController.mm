@@ -108,7 +108,16 @@ NSString* roundName=@"";
 
 
 - (IBAction)createRound:(id)sender {
-    NSString* maxUsers = @"5";
+    NSString* maxUsers = _numberContestantsField.text;
+    if (maxUsers == nil) {
+         UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Unable to create room"
+                                                          message:@"Specify number of contestants"
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+        [message show];
+        
+    }
     NSString * urlString = [NSString stringWithFormat:@"%@:%@/rounds/create/%@/%@/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundName, maxUsers, roundDuration];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

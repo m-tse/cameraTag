@@ -33,6 +33,24 @@ NSMutableArray* usersArray;
     return self;
 }
 
+- (void)render {
+    //Get initial rounds
+    NSString *roundName = [roundJSON objectForKey:@"roundName"];
+    NSString *urlString = [NSString stringWithFormat:@"%@:%@/activeRounds/%@", LTAppDelegate.serverIP, LTAppDelegate.serverPort, roundName];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLResponse *urlResponse = nil;
+    NSError *requestError;
+    NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    roundJSON = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+    usersArray = [roundJSON objectForKey:@"users"];
+    [_tableView reloadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self render];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -50,23 +68,6 @@ NSMutableArray* usersArray;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (CGFloat)timeRemaining {
-    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
-    NSString *timeStartString = [roundJSON objectForKey:@"timeStart"];
-    NSString *timeLimitString = [roundJSON objectForKey:@"duration"];
-    CGFloat timeNow = [[NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]] floatValue];
-    CGFloat timeStart = (CGFloat)[timeStartString floatValue]/1000;
-    CGFloat timeElapsed = timeNow - timeStart;
-    CGFloat timeLimit = (CGFloat)[timeLimitString floatValue]/1000;
-    CGFloat timeRemaining = timeLimit - timeElapsed/1000;
-    NSLog(@"Time now: %f\n", timeNow);
-    NSLog(@"Time start: %f\n", timeStart);
-    NSLog(@"Time limit: %f\n", timeLimit);
-    NSLog(@"Time elapsed: %f\n", timeElapsed/1000);
-    NSLog(@"Time remaining: %f\n", timeRemaining);
-    return timeRemaining;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -92,8 +93,6 @@ NSMutableArray* usersArray;
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
             NSLog(@"response: %@\n", json);
             if ([urlResponse statusCode] == 200) {
-                CGFloat timeRemaining = [self timeRemaining];
-                NSLog(@"Time remaining %f\n", timeRemaining);
                 
                 UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
