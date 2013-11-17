@@ -28,7 +28,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', routes.index)
 app.get('/rounds', routes.rounds.all)
-# app.get('/activeRounds', routes.activeRounds.all)
 app.get('/activeRounds/:roundName', routes.activeRounds.one)
 app.get('/activeRounds', routes.activeRounds.all)
 app.post('/rounds/create/:roundName/:maxUsers/:duration', routes.rounds.create)

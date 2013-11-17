@@ -19,11 +19,9 @@
 @implementation RoundsViewController
 
 
-static NSString* myName;
+
 SocketIO * socketIO;
 NSMutableArray* roundJSONArray;
-
-+ (NSString*)myName { return myName; }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -72,13 +70,6 @@ NSMutableArray* roundJSONArray;
     // Dispose of any resources that can be recreated.
 }
 
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    NSString* name = [textField text];
-    myName = name;
-//    NSLog(myName);
-    return NO;
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
