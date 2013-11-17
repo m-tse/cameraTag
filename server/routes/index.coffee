@@ -14,6 +14,15 @@ exports.rounds.all = (req, res) ->
     res.json(rounds)
     )
 
+exports.rounds.one = (req, res) -> 
+  roundID = db.ObjectId(req.params.id)
+
+  db.rounds.findOne({"_id": roundID }, (err, round) ->
+    if(err)
+      return
+    res.json(round)
+    )
+
 exports.rounds.create = (req, res) ->
   params = req.params
   if params.duration < 1
@@ -60,6 +69,7 @@ exports.rounds.highestScoringUser = (json, socket) ->
     user = null
     user = u for u in round.users when user is null or u.score > user.score
     socket.broadcast.emit('sendHighestScoringUser', user)
+    round.users
     newJSON = 
       {
         roundID: roundID,
