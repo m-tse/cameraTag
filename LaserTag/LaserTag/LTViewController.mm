@@ -143,8 +143,10 @@
     NSURLResponse *urlResponse = nil;
     NSError *requestError;
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
-    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
-    NSLog(@"%@\n", jsonArray);
+    if (response !=  nil) {
+        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:response options:kNilOptions error:&requestError];
+        NSLog(@"%@\n", jsonArray);
+    }
 }
 
 - (IBAction)shootButtonPressed:(id)sender {
