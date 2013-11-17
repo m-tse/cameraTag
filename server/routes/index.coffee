@@ -4,6 +4,7 @@ _ = require('underscore')
 exports.index = (req, res) -> 
   res.render('index', { title: 'Express' })
 
+
 exports.rounds = {}
 exports.rounds.all = (req, res) -> 
 
@@ -50,6 +51,15 @@ exports.rounds.create = (req, res) ->
           res.json(200, returnedRound)
           )
     )
+
+exports.rounds.highestScoringUser = (roundID, socket) ->
+  console.log(roundID)
+  db.rounds.findOne({"_id": db.ObjectId(roundID)}, (err, round) ->
+    user = null
+    user = u for u in round.users when user is null or u.score > user.score
+    socket.emit('sendHighestScoringUser', user)
+  )
+
 
 exports.rounds.register = (req, res) ->
   params = req.params

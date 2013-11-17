@@ -12,6 +12,7 @@
 #import "RoundsViewController.h"
 #import "LTAppDelegate.h"
 #import "RoundResultsViewController.h"
+#import "SocketIO.h"
 
 @interface LTViewController ()
 
@@ -28,8 +29,15 @@
 }
 
 @synthesize userName;
-@synthesize myCounterLabel;
 @synthesize roundJSON;
+
+- (void)setTopInfo:(NSString *)name score:(NSString *)score {
+    NSLog(@"setting top");
+    NSLog(@"Name: %@, SCORE: %@\n", name, score);
+    topNameLabel.text = name;
+    highScoreLabel.text = score;
+}
+
 
 #pragma mark - UIViewController lifecycle
 
@@ -56,6 +64,7 @@
 - (void)initScoreLabels {
     NSArray *users = [roundJSON objectForKey:@"users"];
     NSDictionary *topScoringUser = [users objectAtIndex:0];
+    
     NSString *topName = [topScoringUser objectForKey:@"name"];
     NSString *topScore = [topScoringUser objectForKey:@"score"];
     highScoreLabel.text = [[NSString alloc] initWithFormat:@"%@", topScore];
@@ -219,6 +228,12 @@
             NSLog(@"you hit it");
             [self sendShootRequest];
             [self increaseScore];
+       
+            SocketIO *socket = [RoundsViewController socketIO];
+            NSString *roundID = [roundJSON objectForKey:@"_id"];
+            [socket sendEvent:@"shootSuccessful" withData:roundID];
+//            [socket ]
+            
         } else {
             NSLog(@"you missed");
         }
@@ -255,6 +270,11 @@
     [self.navigationController popViewControllerAnimated:TRUE];
     [self.navigationController setNavigationBarHidden:FALSE animated:TRUE];
 }
+
+- (void)socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet {
+    NSLog(@"HERERE: %@\n", [packet data]);
+}
+
 
 
 @end

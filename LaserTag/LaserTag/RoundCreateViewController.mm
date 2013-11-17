@@ -17,6 +17,8 @@
 @implementation RoundCreateViewController {
     NSString *roundID;
 }
+@synthesize roundsViewController;
+
 
 NSString* roundDuration= @"300000";
 NSString* roundName=@"";
@@ -75,18 +77,6 @@ NSString* roundName=@"";
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
             NSLog(@"response: %@\n", json);
             if ([urlResponse statusCode] == 200) {
-                NSDate *now = [[NSDate alloc] init];
-                NSTimeInterval timeInterval = [now timeIntervalSince1970] ;
-                NSString *timeStartString = [json objectForKey:@"timeStart"];
-                NSString *timeLimitString = [json objectForKey:@"duration"];
-                CGFloat timeNow = [[NSNumber numberWithDouble:timeInterval] floatValue];
-                CGFloat timeStart = (CGFloat)[timeStartString floatValue];
-                CGFloat timeElapsed = timeNow - timeStart;
-                CGFloat timeLimit = (CGFloat)[timeLimitString floatValue];
-                CGFloat timeRemaining = timeLimit - timeElapsed;
-                
-                NSLog(@"Time remaining %f\n", timeRemaining);
-                
                 UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
                 viewController.userName = userName;
@@ -94,6 +84,7 @@ NSString* roundName=@"";
                 [viewController setRoundJSON:json];
                 [viewController setMyName:userName];
                 [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
+                [roundsViewController setLtViewController:viewController];
                 [self.navigationController pushViewController:viewController animated:TRUE];
             } else {
                 UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"

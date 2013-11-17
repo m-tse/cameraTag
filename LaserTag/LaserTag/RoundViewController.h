@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RoundsViewController.h"
 
 @interface RoundViewController : UIViewController <UINavigationControllerDelegate> {
     NSTimer *timer;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, retain) RoundsViewController *roundsViewController;
 @property (weak, nonatomic) IBOutlet UILabel *myCounterLabel;
 @property (nonatomic, copy) NSDictionary *roundJSON;
 

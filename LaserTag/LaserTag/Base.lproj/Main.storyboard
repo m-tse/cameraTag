@@ -7,7 +7,7 @@
         <!--Round Create View Controller-->
         <scene sceneID="TbD-iT-g2W">
             <objects>
-                <viewController id="bXZ-Be-NAV" customClass="RoundCreateViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RoundCreateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bXZ-Be-NAV" customClass="RoundCreateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rzr-uE-XOj"/>
                         <viewControllerLayoutGuide type="bottom" id="fnw-02-xIM"/>
@@ -131,7 +131,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bXZ-Be-NAV" kind="push" id="Y5i-PU-MZV"/>
+                                    <action selector="createPressed:" destination="TQA-we-yMe" eventType="touchUpInside" id="sjZ-Ib-YFD"/>
                                 </connections>
                             </button>
                         </subviews>

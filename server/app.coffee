@@ -44,9 +44,15 @@ app.post('/rounds/leave/:userName/:roundID', routes.rounds.leave)
 
 
 io.sockets.on('connection', (socket) ->
-  # routes.activeRounds.alljson( (res) ->
-    # socket.emit('resetActiveRounds', res[0])
-    # )
 
-    # socket.emit('activeRounds', routes.activeRounds.all())
+  routes.activeRounds.alljson( (res) ->
+    socket.emit('resetActiveRounds', res[0])
+  )
+
+  console.log('connected')
+  socket.on('shootSuccessful', (data) ->
+    # data 
+    console.log(data)
+    routes.rounds.highestScoringUser(data, socket)
+  )
 )

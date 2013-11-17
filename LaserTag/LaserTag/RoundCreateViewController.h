@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RoundsViewController.h"
 
 @interface RoundCreateViewController : UIViewController
 - (IBAction)setRoundDuration:(UIDatePicker*)sender;
 - (IBAction)createRound:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *numberContestantsField;
 @property (nonatomic, retain) IBOutlet UITextField* roundNameField;
+@property (nonatomic, retain) RoundsViewController *roundsViewController;
 @end
