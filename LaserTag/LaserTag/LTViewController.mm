@@ -20,7 +20,10 @@
     GLKView *gView;
     GLfloat _zTranslate;
     NSArray *laserShots;
+    int hours, minutes, seconds;
+    int secondsLeft;
 }
+@synthesize myCounterLabel;
 
 #pragma mark - UIViewController lifecycle
 
@@ -64,8 +67,42 @@
     
     [self addTargetingCircle];
     
+    
    
 }
+
+- (void)startCountdown:(CGFloat)millisecondsRemaining {
+    if (millisecondsRemaining > 0) {
+        secondsLeft = millisecondsRemaining;
+        [self countdownTimer];
+    } else {
+        NSLog(@"Sorry the round ended");
+    }
+}
+
+- (void)updateCounter:(NSTimer *)theTimer {
+    if(secondsLeft > 0 ){
+        secondsLeft -- ;
+        hours = secondsLeft / 3600;
+        minutes = (secondsLeft % 3600) / 60;
+        seconds = (secondsLeft %3600) % 60;
+        myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+}
+
+-(void)countdownTimer{
+    
+    hours = minutes = seconds = 0;
+    if([timer isValid])
+    {
+        [timer release];
+    }
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+    [pool release];
+}
+
+
 
 - (void)viewWillAppear:(BOOL)animated
 {

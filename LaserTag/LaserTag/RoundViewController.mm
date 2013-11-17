@@ -58,13 +58,28 @@ NSMutableArray* usersArray;
     NSError *requestError;
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
     if (response1 !=  nil) {
-        NSDictionary *jsonArray = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
-        NSLog(@"response: %@\n", jsonArray);
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:response1 options:kNilOptions error:&requestError];
+        NSLog(@"response: %@\n", json);
         if ([urlResponse statusCode] == 200) {
+            NSDate *now = [[NSDate alloc] init];
+            NSTimeInterval timeInterval = [now timeIntervalSince1970] ;
+            NSString *timeStartString = [json objectForKey:@"timeStart"];
+            NSString *timeLimitString = [json objectForKey:@"duration"];
+            CGFloat timeNow = [[NSNumber numberWithDouble:timeInterval] floatValue];
+            CGFloat timeStart = (CGFloat)[timeStartString floatValue];
+            CGFloat timeElapsed = timeNow - timeStart;
+            CGFloat timeLimit = (CGFloat)[timeLimitString floatValue];
+            CGFloat timeRemaining = timeLimit - timeElapsed;
+            
+            NSLog(@"Time remaining %f\n", timeRemaining);
+            
             UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             LTViewController *viewController = (LTViewController *)[storyboard instantiateViewControllerWithIdentifier:@"LTViewController"];
+            [viewController startCountdown:timeRemaining];
             [viewController setModalPresentationStyle:UIModalTransitionStyleCoverVertical];
             [self presentViewController:viewController animated:YES completion:nil];
+            
+            
         } else {
             UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Nope"
                                                               message:@"Could not enter room"

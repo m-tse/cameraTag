@@ -13,7 +13,17 @@
 
 @interface LTViewController : MetaioSDKViewController {
     NSString *trackingConfigFile;
+    NSTimer *timer;
+    IBOutlet UILabel *myCounterLabel;
 }
+
+@property (nonatomic, retain) UILabel *myCounterLabel;
+
 - (IBAction)shootButtonPressed:(id)sender;
+
+- (void)startCountdown:(CGFloat)millisecondsRemaining;
+- (void)updateCounter:(NSTimer *)theTimer;
+- (void)countdownTimer;
+
 
 @end
