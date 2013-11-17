@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "MetaioSDKViewController.h"
 #import "EAGLView.h"
+#import <GLKit/GLKit.h>
 
 @interface LTViewController : MetaioSDKViewController {
     NSString *trackingConfigFile;
 }
+- (IBAction)shootButtonPressed:(id)sender;
 
 @end
